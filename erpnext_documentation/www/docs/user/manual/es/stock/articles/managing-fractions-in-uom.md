@@ -3,7 +3,7 @@
 
 UdM significa Unidad de Medida. Algunos ejemplos de UdM son Números o Unidades, Kilos, Litros, Metros, Caja, Cartón, etc. 
 
-Hay pocas UdM que no pueden tener valores decimales. Por ejemplo, si tenemos televisores como productos, con números como UdM, no podemos tener 1.5 númereos de televisión, o 3,7 números de equipos de computación. El valor de cantidad para estos productos tiene que ser un número entero.
+Hay pocas UdM que no pueden tener valores decimales. Por ejemplo, si se tiene televisores como productos, con números como UdM, no se puede tener 1.5 númereos de televisión, o 3,7 números de equipos de computación. El valor de cantidad para estos productos tiene que ser un número entero.
 
 Se puede configurar si una UdM particular puede tener valor en decimales o no. De forma predeterminada, los valores decimales se permitirán para todas las UdM. Para restringir el uso de decimales o de valores en fracción para cualquier UdM se deben seguir los siguientes pasos. 
 
@@ -11,13 +11,13 @@ Se puede configurar si una UdM particular puede tener valor en decimales o no. D
 
 Para acceder al listado UdM ir a:
 
-> Existencias > Configuración > UdM
+> Almacén > Configuración > Unidad de Medida
 
-Del listado de UdM seleccionar aquella a la que se le restringirá el uso de decimales. Asumamos que esa UdM es Números. 
+Del listado de UdM seleccionar aquella a la que se le restringirá el uso de decimales. Para el siguiente ejemplo se eligió Números. 
 
 #### Configurar
 
-En la función UdM, se encontrará un campo llamado "Debe ser un número entero". Seleccionar este campo para restringir al usuario el uso de decimales en el campo cantidad para el producto que utilice esta UdM. 
+En la función UdM, se encontrará un campo llamado "Debe ser un número entero". Tildar esta opción para restringir al usuario el uso de decimales en el campo cantidad para el producto que utilice esta UdM. 
 
 <img alt="UoM Must be Whole No" class="screenshot" src="{{docs_base_url}}/assets/img/articles/uom-fraction-1.png">
 
