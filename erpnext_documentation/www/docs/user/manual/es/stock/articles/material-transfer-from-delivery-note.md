@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Transferencia de Material desde Nota de Entrega 
 
-En ERPNext, se puede crear una entrada de Transferencia de Material desde un documento de [Entrada de Inventario](/docs/user/manual/es/stock/stock-entry). Sin embargo, hay algunos escenarios en la Transferencia de Materiales donde debe ser presentada como Nota de Entrega y Recibo de Compra. 
+En ERPNext se puede crear una entrada de Transferencia de Material desde un documento de [Entrada de Inventario](/docs/user/manual/es/stock/stock-entry). Sin embargo, hay algunos escenarios en la Transferencia de Materiales donde debe ser presentada como Nota de Entrega y Recibo de Compra. 
 
 ## Transferencia de Material desde Nota de Entrega
 
@@ -41,9 +41,9 @@ A continuación se encuentran los pasos para utilizar un Recibo de Compra para c
 
 ### Pasos
 
-#### Habilitar Almacén delProveedor
+#### Habilitar Almacén del Proveedor
 
-Similar al Almacén del Ciente mencionado más arriba, el primer paso es habilitar el Almacén de Proveedor desde [Configuraciones de Inventario](/docs/user/manual/en/stock/stock-settings) como fue mostrado anteriormente. 
+Similar al Almacén del Cliente mencionado más arriba, el primer paso es habilitar el Almacén del Proveedor desde [Configuraciones de Inventario](/docs/user/manual/es/stock/stock-settings) como fue mostrado anteriormente. 
 
 <img class="screenshot" alt="Delivery Note Material Transfer" src="{{docs_base_url}}/assets/img/stock/supplier-warehouse-enable.png">
 
