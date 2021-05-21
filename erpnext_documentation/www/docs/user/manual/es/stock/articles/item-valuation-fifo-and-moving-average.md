@@ -1,11 +1,9 @@
 <!-- add-breadcrumbs -->
 # Valoración: FIFO y Promedio Móvil
 
-### ¿Cómo se valuan los productos?
+### Valoración de productos
 
-Una de las mejores funciones de cualquier sistema de inventario es poder hallar 
-el valor de cualquier producto de acuerdo a su valor histórico o precio promedio. También se puede 
-encontrar el valor de todos los productos para el balance general.
+Una de las mejores funciones de cualquier sistema de inventario es poder hallar el valor de cualquier producto de acuerdo a su valor histórico o precio promedio. También se puede encontrar el valor de todos los productos para el Balance general.
 
 La valoración es importante porque: 
 
@@ -13,14 +11,14 @@ La valoración es importante porque:
   * El valor puede cambiar de acuerdo a un proceso (valor agregado)
   * El valor puede cambiar debido a desgaste, pérdida
 
-Pueden aparecer los siguientes términos, así que es clarifiquemos:
+Pueden aparecer los siguientes términos:
 
   * Precio: Precio con el cual tiene lugar la transacción. 
   * Precio de valoración: Tarifa a la cual el producto es establecido para la valoración. 
 
 Estas son las dos formas principales en que ERPNext valora los productos.
 
-  * **FIFO (Primero que entra, primero que sale):** En este sistema, ERPNext asume que se van a consumir/vender primero esos productos que se compraron primerol Por ejemplo, si se compra un producto a un precio X y luego de unos días a precio Y, cuando sea que se venda el producto,  ERPNext reducirá primero la cantidad del producto con precio X y luego con Y. 
+  * **FIFO (Primero que entra, primero que sale):** En este sistema, ERPNext asume que se van a consumir/vender primero esos productos que se compraron primero. Por ejemplo, si se compra un producto a un precio X y luego de unos días a precio Y, cuando sea que se venda el producto, ERPNext reducirá primero la cantidad del producto con precio X y luego con Y. 
 
 <img alt="FIFO" class="screenshot" src="{{docs_base_url}}/assets/img/stock/fifo.png">
 
