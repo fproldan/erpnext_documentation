@@ -1,16 +1,15 @@
 <!-- add-breadcrumbs -->
-# Entrada de Amortización
+# Crear Amortización para Producto
 
-**Pregunta:** Un Activo Fijo ha sido comprado y almacenado en un depósito ¿Cómo crear una amortización para un Activo Fijo? 
-
-**Respuesta:** Se puede registrar la amortización del activo fijo a través de una entrada de [Conciliación de Inventario](/docs/user/manual/en/stock/opening-stock.html).
+A continuación se detalla el paso a paso de la creación de la amortización para un Activo Fijo que fue comprado y almacenado en un almacén 
+Esto se puede hacer a través de una entrada de [Conciliación de Inventario](/docs/user/manual/es/stock/opening-stock).
 
 #### Paso 1:
 
-Llenar las columnas pertinentes en el archivo Adjunto; 
+Completar las columnas pertinentes en el archivo Adjunto: 
 
 - **Código de Producto** que debe ser amortizado
-- **Depósito** en el que está almacenado el producto.
+- **Almacén** en el que está almacenado el producto.
 - **Cantidad** Dejar columna en blanco
 - **Valoración** el valor del producto después de la amortización. 
 
