@@ -80,7 +80,7 @@ El módulo de Almacén está profundamente integrado con los módulos de Compra,
 1. [Devolver Productos Rechazados](/docs/user/manual/es/stock/articles/return-rejected-item)
 1. [Rastrear Productos Utilizando Código de Barra](/docs/user/manual/es/stock/articles/track-items-using-barcode)
 1. [Crear Amortización para Producto](/docs/user/manual/es/stock/articles/creating-depreciation-for-item)
-1. [Valoración, FIFO y Promedio Móvil](/docs/user/manual/es/stock/articles/item-valuation-fifo-and-moving-average)
+1. [Valoración FIFO y Promedio Móvil](/docs/user/manual/es/stock/articles/item-valuation-fifo-and-moving-average)
 1. [Codificación de Productos](/docs/user/manual/es/stock/articles/item-codification)
 
 ### 2.3 Número de Serie y de Lote
