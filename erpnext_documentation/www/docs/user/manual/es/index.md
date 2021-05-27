@@ -1,22 +1,23 @@
-# Manual de Usuario (Español)
+# Manual de Usuario
 
-## 1. Basics
-1. [Introduction](/docs/user/manual/en/introduction)
-1. [Setting Up](/docs/user/manual/en/setting-up)
-1. [Automation](/docs/user/manual/en/automation)
-1. [Using ERPNext](/docs/user/manual/en/using-erpnext)
+## 1. Básico
+1. [Configuraciones](/docs/user/manual/es/setting-up)
+1. [Uso de ERPNext](/docs/user/manual/es/using-erpnext)
+<!--1. [Introduction](/docs/user/manual/en/introduction)-->
+<!--1. [Automation](/docs/user/manual/en/automation)-->
+
 
 ## 2. Módulos principales
-1. [Cuentas](/docs/user/manual/es/accounts)
-1. [Stock](/docs/user/manual/en/stock)
-1. [CRM](/docs/user/manual/en/CRM)
-1. [Selling](/docs/user/manual/en/selling)
-1. [Buying](/docs/user/manual/en/buying)
-1. [Human Resources](/docs/user/manual/en/human-resources)
-1. [Projects](/docs/user/manual/en/projects)
-1. [Support](/docs/user/manual/en/support)
-1. [Asset](/docs/user/manual/en/asset)
-1. [Quality](/docs/user/manual/en/quality-management)
+1. [Contabilidad](/docs/user/manual/es/accounts)
+1. [Almacén](/docs/user/manual/es/stock)
+2. [Ventas](/docs/user/manual/es/selling)
+1. [Compras](/docs/user/manual/es/buying)
+3. [CRM](/docs/user/manual/es/CRM)
+1. [Proyectos](/docs/user/manual/es/projects)
+2. [Activos](/docs/user/manual/es/asset)
+<!--1. [Human Resources](/docs/user/manual/en/human-resources)-->
+<!--1. [Support](/docs/user/manual/en/support)-->
+<!--1. [Quality](/docs/user/manual/en/quality-management)
 
 ## 3. Industry Specific Modules
 1. [Manufacturing](/docs/user/manual/en/manufacturing)
@@ -36,4 +37,4 @@
 1. [Integrations](/docs/user/manual/en/erpnext_integration)
 
 ## 6. Developer
-1. [Frappe Framework Docs](https://frappe.io/docs/)
+1. [Frappe Framework Docs](https://frappe.io/docs/)-->
