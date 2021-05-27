@@ -52,6 +52,27 @@ Los asientos de apertura se pueden crear usando la Herramienta de Apertura de Cr
 Una vez que los activos y pasivos fueron importados, el balance de la cuenta de **Apertura temporaria** debería ser cero.
 
 ## 5. Paso a paso
+1. Ir al listado de Asiento contable y hacer click en Nuevo.
+2. Seleccionar Asiento de apertura en el campo Tipo de entrada.
+3. Seleccionar la Fecha de Contabilización.
+4. Completar los valores de débito/crédito correspondiente a cada cuenta. En cuentas de cobro/pago se debe especificar la entidad. Estas cuentas pueden repetirse en varias filas, una por cada entidad.
+5. Seleccionar "De apertura: Sí".
+6. Guardar y validar.
+
+También se puede crear un Asiento contable para algunas cuentas temporales, seleccionando "De apertura: Sí".
+
+Las Cuentas de cobro/pago se pueden actualizar mediante facturas de venta/compra respectivamente:
+1. Ir al listado de Factura de venta/compra y hacer click en Nuevo.
+2. Seleccionar Cliente/Proveedor, fechas y productos.
+3. En Detalles de contabilidad seleccionar una cuenta temporal como cuenta de ingreso/gasto e indicar que es de apertura.
+4. Guardar y validar.
+
+Apertura de la cuenta de almacén:
+1. Crear una nueva Conciliación de inventario.
+2. Seleccionar la Fecha de Contabilización.
+3. Seleccionar los productos, indicando su cantidad y precio de apertura.
+4. Elegir una cuenta temporal para el campo Cuenta para la Diferencia.
+5. Guardar y validar.
 
 
 ### 6. Temas relacionados
