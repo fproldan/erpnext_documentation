@@ -55,7 +55,7 @@ En ERPNext, las operaciones contables consisten en 3 transacciones principales:
 1. [Regla de precios](/docs/user/manual/es/accounts/pricing-rule)
 1. [Esquema promocional](/docs/user/manual/es/accounts/promotional-scheme)
 1. [Revalorización del tipo de cambio](/docs/user/manual/es/accounts/exchange-rate-revaluation)
-1. [Cambio de divisas](/docs/user/manual/es/accounts/currency-exchange)
+1. [Tipo de cambio](/docs/user/manual/es/accounts/currency-exchange)
 1. [Divisa/Moneda](/docs/user/manual/es/accounts/currency)
 
 ### 1.6 Operaciones Retail
