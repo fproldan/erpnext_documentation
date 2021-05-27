@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Cuentas
+# Contabilidad
 
 Ya sea que exista un contador en el equipo interno de la empresa, se haya decidido contratar un estudio externo o lo haga uno mismo, el proceso contable es fundamental dentro de cualquier sistema de gestión empresarial (también conocido como ERP).
 
