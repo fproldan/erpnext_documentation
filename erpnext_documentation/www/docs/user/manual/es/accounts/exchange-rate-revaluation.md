@@ -31,7 +31,7 @@ La funcionalidad de Revalorización del tipo de cambio está diseñada para pode
 3. Ir a **Contabilidad > Configuración > Revalorización del tipo de cambio > Nuevo**.
 4. Seleccionar la Compañía.
 5. Hacer click en el botón "Obtener entradas". Esto traerá las cuentas que tienen divisa diferente de la predeterminada definida en la Compañía.
-6. Esto traerá el nuevo Tipo de cambio automáticamente si no fue definido en el [Cambio de divisa](/docs/user/manual/en/accounts/currency-exchange). Si fue definido, traerá ese Tipo de cambio.
+6. Esto traerá el nuevo Valor de cambio automáticamente si no fue definido en el [Tipo de cambio](/docs/user/manual/es/accounts/currency-exchange). Si fue definido, traerá ese Valor de cambio.
  <img class="screenshot" alt="Exchange Rate Revaluation"   src="{{docs_base_url}}/assets/img/accounts/exchange-rate-revaluation.png">
 
 7. Al validar aparecerá el botón **Crear Asiento contable**.
