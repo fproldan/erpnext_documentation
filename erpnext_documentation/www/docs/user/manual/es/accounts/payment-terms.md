@@ -42,6 +42,19 @@ A continuación se explica cada uno de los campos antes mencionados:
 * **Días de Crédito (opcional):** número de días o meses hasta la fecha de vencimiento dependiendo de la opción elegida en "Fecha de Vencimiento basada en". 0 significa que no se permite ningún crédito.
 * **Descripción (opcional):** breve descripción del Término de pago.
 
+### 1.1 Descuento en pagos adelantados
+
+Se puede definir un término de pago de forma que si este es efectuado en el período correspondiente, se aplica un determinado descuento al valor de la factura. Para esto se debe completar los siguientes campos:
+
+* **Tipo de descuento:** por defecto es Porcentaje, pero se puede cambiar por Importe.
+* **Descuento:** en porcentaje o importe (10% o $100).
+* **Vigencia del descuento en base a:** este campo funciona de la misma forma que "Fecha de Vencimiento basada en".
+* **Vigencia del descuento:** número de días o meses en los que el descuento será válido respecto a la fecha de la factura (por ejemplo, 10 días después de la fecha de la factura).
+
+<img class="screenshot" alt="Payment Terms with Discount" src="{{docs_base_url}}/assets/img/accounts/payment-terms-with-discount.png">
+
+Habiendo vinculado el Término de pago con una factura, al registrar el pago se aplicará el descuento correspondiente.
+
 ### 1.2 Término de pago en documentos convertidos
 Al convertir o copiar documentos en el ciclo de compra/venta, las Términos de pago asociados serán copiados también. Al crear una Orden de venta desde una Cotización, la fecha de vencimiento del Término de pago se calculará acorde a la Cotización, por lo que es necesario actualizarla.
 
