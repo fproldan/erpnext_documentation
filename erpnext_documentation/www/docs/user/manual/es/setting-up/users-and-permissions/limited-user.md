@@ -1,44 +1,45 @@
 <!-- add-breadcrumbs -->
 # Usuario con acceso limitado
 
-**El usuario tendrá acceso limitado al sistema.**
+Los usuarios con acceso limitado verán solo documentos específicos de ciertos módulos.
+Algunos usuarios no usan todos los módulos y requieren sólo algunos específicos. Por ejemplo, para registrar las asistencias diarias o solicitud de licencias, cada empleado debe ingresar al sistema. Pero, puede que haya 500 personas trabajando en la Compañía, de los cuales solo 100 usan todos los documentos y los 400 restantes solo necesitan acceder al registro de asistencia y solicitud de licencia.
+El Tipo de usuario tiene un rol importante en el manejo de estos casos. Existen varios tipos de usuario como "Usuario de sistema" y "Usuario del sitio web". El usuario de sistema puede acceder tanto al escritorio como al portal web, mientras que el usuario de sitio web accede solo al portal. Para gestionar el caso de acceso limitado a documentos para empleados existe el tipo de usuario "Autogestión de empleado".
 
-Los usuarios con acceso limitado verán solo documentos específicos de ciertos módulos. Algunos uusarios no usan todos los módulos y requieren sólo algunos específicos. For example, In the company to record the daily attendance or leave application, every employee required system access. But assume 500 people are working in the company out of which only 100 uses all documents and the remaining 400 needs to access the document of daily attendance or leave application. The User Type document plays an important role to handle this use case. There are default User Types, "System User" and "Website User",  the System User can access the desk and website portal whereas the Website User can only access the website portal. To handle the case of limited access of documents for the employees by default ERPNext has added a new user type 'ESS User'.
+## Tipo de usuario
 
-## User Type
+Para acceder a Tipo de usuario ir a:
 
-To access the User Type document, go to:
+> Usuarios > Tipo de usuario
 
-> Users > User Type
 <img class="screenshot" alt="User Type" src="{{docs_base_url}}/assets/img/users-and-permissions/user-type.png">
 
-Website User and System User will be standard user types and these cannot be deleted or edited. However, non-standard (Custom) user types can be deleted, created, edited. By default, delete rights are not given to any user.
+Usuario de sitio web y usuario de sistema son Tipos de usuario estándar y no pueden ser modificados o eliminados. Sin embargo, tipos de usuario personalizados pueden ser creados, editados y eliminados. Por defecto ningún usuario posee permiso de eliminarlos.
 
-## Non-Standard User Type
+## Tipos de usuario personalizados
 
-1) For the non standard user type, user has to select the Custom Role, document on which they want to apply the user permission, and the fieldname of the user.
+1) Para este tipo de usuario se debe seleccionar el Rol personalizado, documento sobre el cual se aplicarán los permisos, y el identificador del usuario.
 
 <img class="screenshot" alt="User Type" src="{{docs_base_url}}/assets/img/users-and-permissions/user-type-role.png">
 
-In the above image, Employee has the link field User ID which is linked to the User document. As the "Apply User Permission on" has been set as "Employee", then the respective employee's user can only view the documents in which the respective employee field is linked. For example, the employee can only able to view the salary slip which has been created against their employee id.
+En la imagen se ve que el Empleado está vinculado al Usuario. Como en el campo "Aplicar permiso de usuario sobre" se seleccionó Empleado, el usuario del empleado solo puede ver los documentos en los que se vinculó el empleado. Por ejemplo, el usuario solo puede ver la nómina salarial creada para su empleado.
 
-2) Document Types:
+2) Tipos de documento:
 
-The non-standard user type users can only access the documents which have been mentioned in the user type.
+El tipo de usuario personalizado solo puede acceder a los documentos mencionados en el tipo de usuario.
 
 <img class="screenshot" alt="User Type" src="{{docs_base_url}}/assets/img/users-and-permissions/user-type-document-type.png">
 
-The above table also acts as the Role Permission Manager for this particular User Type (ESS User in our case). ESS User as a role won't be accessible in the general Role Permission Manager.
+Esta tabla también permite definir los permisos que el tipo de usuario tendrá sobre cada documento, similar a la función Administrar permisos. El tipo de usuario no será accesible como un rol en Administrar permisos.
 
-3) Document Types (Select Permissions Only):
+3) Tipos de documento (selección de permisos):
 
-In this table, you need to list down all the doctypes that you want the ESS user to have SELECT access to. There is no limit to the no. of doctypes you can add here. Users will not be able to create the records for the documents to which they have Select perm access.
+En esta tabla se necesita listar todos los documentos que se desea que el tipo de usuario personalizado pueda seleccionar. No hay límite en el número de documentos que se pueden elegir. Los usuarios no podrán crear registros de documentos para los cuales tienen permiso de seleccionar.
 
 <img class="screenshot" alt="User Type" src="{{docs_base_url}}/assets/img/users-and-permissions/user-type-select-perm.png">
 
-## Adding non-standard User
+## Agregar usuario personalizado
 
-While adding the new user, the user needs to select the user type. In the case of a non-standard user type, the respective user should be linked to the document which has been set in the field "Apply User Permission On".
+Al agregar un nuevo usuario se debe elegir el tipo de usuario. Para usuarios con tipo personalizado, el respectivo usuario debe estar vinculado al documento definido en el campo "Aplicar permiso de usuario sobre".
 
 
 <img class="screenshot" alt="User Type" src="{{docs_base_url}}/assets/img/users-and-permissions/limited-access-user.png">
