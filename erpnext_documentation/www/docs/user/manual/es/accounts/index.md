@@ -23,9 +23,10 @@ En ERPNext, las operaciones contables consisten en 3 transacciones principales:
 1. [Período contable](/docs/user/manual/es/accounts/accounting-period)
 1. [Libro de finanzas](/docs/user/manual/es/accounts/finance-book)
 1. [Dimensiones contables](/docs/user/manual/es/accounts/accounting-dimensions)
-1. [Banco](/docs/user/manual/es/accounts/bank)
-1. [Cuenta bancaria](/docs/user/manual/es/accounts/bank-account)
-1. [Transacción bancaria](/docs/user/manual/es/accounts/bank-transaction)
+2. [Filtros de Dimensiones contables](/docs/user/manual/es/accounts/accounting-dimension-filter)
+3. [Banco](/docs/user/manual/es/accounts/bank)
+4. [Cuenta bancaria](/docs/user/manual/es/accounts/bank-account)
+5. [Transacción bancaria](/docs/user/manual/es/accounts/bank-transaction)
 
 ### 1.2 Asientos contables y pagos
 1. [Asiento contable](/docs/user/manual/es/accounts/journal-entry)
