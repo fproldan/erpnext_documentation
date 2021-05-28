@@ -51,8 +51,8 @@ Si esta opción está tildada, ERPNext no permitirá cambiar el precio de un Pro
 
 Se puede configurar en el campo "Acción si no se mantiene el mismo precio" la acción que el sistema deberá realizar si el precio no es el mismo:
 
-Detener: ERPNext generará un mensaje de error que impedirá cambiar el precio.
-Advertir: el sistema permitirá guardar la transacción pero mostrará un mensaje de advertencia.
+- **Detener**: ERPNext generará un mensaje de error que impedirá cambiar el precio.
+- **Advertir**: el sistema permitirá guardar la transacción pero mostrará un mensaje de advertencia.
 
 ## 3. Permitir que el producto sea añadido varias veces en una transacción
 
