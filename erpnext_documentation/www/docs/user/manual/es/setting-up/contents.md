@@ -31,7 +31,8 @@ Aquí se encontrarán todas las opciones globales de configuración. Para config
 1. [Permisos de Usuarios](/docs/user/manual/es/setting-up/users-and-permissions/user-permissions)
 1. [Permisos de Rol Para Página y Reporte](/docs/user/manual/es/setting-up/users-and-permissions/role-permission-for-page-and-report)
 1. [Compartir](/docs/user/manual/es/setting-up/users-and-permissions/sharing)
-1. [Administrador](/docs/user/manual/es/setting-up/users-and-permissions/administrator)
+1. [Usuario con acceso limitado](/docs/user/manual/es/setting-up/users-and-permissions/limited-user)
+3. [Administrador](/docs/user/manual/es/setting-up/users-and-permissions/administrator)
 
 ### 1.4 Impresión
 1. [Ajustes de Impresión](/docs/user/manual/es/setting-up/print/print-settings)
