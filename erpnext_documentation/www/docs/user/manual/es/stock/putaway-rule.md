@@ -1,10 +1,10 @@
-# Putaway Rule
+# Regla de ubicación
 
-**A Putaway Rule defines a Warehouse Assignment Strategy for incoming stock.**
+**Una Regla de ubicación define una estrategia para asignar los productos entrantes en los almacenes correspondientes.**
 
-A Putaway Rule is uniquely defined for an Item-Warehouse combination in a Company. It takes Warehouse Capacity and Priority into consideration.
+Una Regla de ubicación define una relación única de Producto-Almacén, en la que se tiene en cuenta la capacidad del almacén y se determina una cierta prioridad.
 
-In **Purchase Receipts** and **Stock Entries** (Material Receipt & Material Transfer), the Putaway Rules are applied and Items are **auto-assigned** to Warehouses based on the given strategy.
+En **Recibos de compra** y **Entradas de inventario** (Recepción y Transferencia de materiales), se aplican las Reglas de ubicación y los Productos son auto-asignados a los **Almacenes** en base a la estrategia definida.
 
 This is particularly useful for capacity management in large warehouses with multiple locations.
 
