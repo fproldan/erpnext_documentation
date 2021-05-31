@@ -21,10 +21,10 @@ Opcional:
  * [Orden de venta](/docs/user/manual/es/selling/sales-order)
  * [Nota de entrega](/docs/user/manual/es/stock/delivery-note)
 
-Se recomienda tener cargado el CBU y Alias CBU de la empresa en Configuración de la Compañía, en particular, si se encuadra dentro del régimen MiPyME. Para ciertas transacciones, AFIP solicita esta información, y si la misma no se encuentra el sistema arrojará error.
+También se debe ingresar el CBU y Alias CBU de la empresa en la Compañía si se encuadra dentro del régimen MiPyME. Para ciertas transacciones, AFIP solicita esta información, y si la misma no se encuentra el sistema arrojará un mensaje advirtiéndolo.
 
 ## 2. Creación de facturas de venta
-Una Factura de venta es generalmente creada desde Ordenes de venta o Notas de entrega. Los detalles del producto serán traídos de forma automática a la factura. Sin embargo, también se puede crear facturas de venta directamente, por ejemplo, una factura de POS.
+Una Factura de venta es generalmente creada desde Ordenes de venta o Notas de entrega. Los detalles del producto serán traídos de forma automática a la factura. Sin embargo, también se puede crear facturas de venta directamente.
 
 Para traer los detalles de otros documentos a la factura, hacer click en **Obtener artículos de**. Los detalles pueden ser traídos de Ordenes de venta, Notas de entrega o Cotizaciones.
 
@@ -33,7 +33,7 @@ Para la creación manual, se debe seguir los siguientes pasos:
 1. Ir al listado de Facturas de venta y hacer click en Nuevo.
 1. Seleccionar Punto de venta, Cliente, Secuencia y Concepto incluído.
 1. Definir la Fecha de pago.
-2. Seleccionar la Opción de transmisión (especialmente importante bajo el régimen MiPyme).
+2. Seleccionar la Opción de transmisión (especialmente importante bajo el régimen MiPyME).
 3. En la tabla de Producto, añadir los que correspondan y especificar las cantidades.
 4. Los precios serán traídos automáticamente si exite el correspondiente [Precio de Producto](/docs/user/manual/es/stock/item-price), sino se debe agregar en la tabla.
 5. La fecha y hora de contabilización serán completadas por defecto con los datos actuales, aunque se pueden editar luego de tildar la opción "Editar fecha y hora de envío".
@@ -65,17 +65,17 @@ Estos son los estados que se asignan automáticamente a las facturas de venta:
 
 ### 3.1 Aspectos Fiscales
 
-* **Punto de Venta**: debe crearse previamente, cargando los datos de AFIP, según corresponda. Para más información, clickear [aquí](documentación de punto de venta).
+* **Punto de Venta**: debe crearse previamente, cargando los datos de AFIP, según corresponda. Para más información, hacer click [aquí](/docs/user/manual/es/accounts/punto-de-venta).
 
-* **Secuencia**: dependiendo del punto de venta y del cliente seleccionados se desplegarán posibles opciones de secuencia conforme los diferentes documentos que se puedan emitir. Las opciones dependerán de aspectos impositivos (particularmente, las categorías frente al IVA) de la compañía y del cliente.
+* **Secuencia**: dependiendo del Punto de venta y del Cliente seleccionados se desplegarán posibles opciones de secuencia conforme los diferentes documentos que se puedan emitir. Las opciones dependerán de aspectos impositivos (particularmente, la Condicion de IVA) de la Compañía y del Cliente.
 
-* **Concepto incluído**: debe seleccionarse alguno de los conceptos incluídos en el desplegable. En el caso de que se trate de 'servicios', deberá colocarse la fecha de prestación de los mismos. Es solicitado por AFIP para la validación de la factura.
+* **Concepto incluído**: debe seleccionarse alguno de los conceptos incluídos en el desplegable. En el caso de que se trate de "Servicios", deberá colocarse la fecha de prestación de los mismos. Es solicitado por AFIP para la validación de la factura.
 
-* **Opción de transmisión**: debe seleccionarse alguna de las opciones de transmisión que aparecen en el desplegable, de acuerdo a la información que el contador le brinde. La opción de transmisión es obligatoria para clientes MiPyme, según normativa de AFIP.
+* **Opción de transmisión**: debe seleccionarse alguna de las opciones de transmisión que aparecen en el desplegable, de acuerdo a la información que el contador le brinde. La opción de transmisión es obligatoria para clientes MiPyME, según normativa de AFIP.
 
-* **Posición fiscal**: Debe completarse sólo cuando se trate de alguna de las operaciones comprendidas en el desplegable (no alcanzado, operaciones de canje, no gravado, operaciones exentas, operaciones al exterior, operaciones a zona franca).
+* **Posición fiscal**: Debe completarse sólo cuando se trate de alguna de las operaciones comprendidas en el desplegable (No alcanzado, Operaciones de canje, No gravado, Operaciones exentas, Operaciones al exterior, Operaciones a zona franca).
 
-* **Comprobante asociado**: Si se trata de una nota de crédito/débito debe completar el comprobante asociado con la factura sobre la cual impacta la transacción. Además, en caso de una nota de crédito, debe tildar el checkbox Es devolución.
+* **Comprobante asociado**: Si se trata de una Nota de Crédito/Débito debe completar el comprobante asociado con la factura sobre la cual impacta la transacción. Además, en caso de una Nota de crédito, debe tildar el checkbox Es una Nota de Crédito.
 
 ### 3.2 Fechas
 
