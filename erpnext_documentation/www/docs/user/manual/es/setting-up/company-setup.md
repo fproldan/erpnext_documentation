@@ -122,10 +122,18 @@ Para gestionar activos fijos en una compañía, son necesarias las siguientes cu
     ![Fixed Asset Depreciation](/docs/assets/img/setup/company-asset-depreciation.png)
 
 
-### 2.5 Detalle del presupuesto
+### 2.5 Configuración de Cheques
+Aquí se pueden definir las cuentas que serán usadas por defecto en transacciones con cheques
+* Cuenta de Cheques Rechazados
+* Cuenta de Valores en Cartera
+* Cuenta de Depósitos
+* Cuenta de Cobros
+
+
+### 2.6 Detalle del presupuesto
 Rol de aprobación de presupuesto de excepción: los usuarios con este rol tienen permitido sobrepasar el presupuesto establecido.
 
-### 2.6 Información de la compañía
+### 2.7 Información de la compañía
 Sólo de forma informativa, los siguientes datos pueden ser definidos en ERPNext:
 
 * Fecha de Incorporación
@@ -143,8 +151,33 @@ Sólo de forma informativa, los siguientes datos pueden ser definidos en ERPNext
 Al guardar la compañía, se verán los siguientes detalles/acciones en el tablero:
 ![Company after Save](/docs/assets/img/setup/company-after-save.png)
 
+### 2.8 Datos Fiscales
+Para emitir comprobantes electrónicos se deben completar los siguientes datos:
 
-### 2.7 Eliminar las transacciones de la compañía
+* Razon Social
+* CUIT
+* Condicion de IVA
+* Tipo de Conexion AFIP
+* Inicio de Actividades
+* Número de IIBB
+* Certificado Privado
+* Certificado Público
+> Para saber cómo obtener estos certificados visitar la siguiente [página](docs/user/manual/es/accounts/certificado)
+
+En caso de encuadrar en el régimen MiPyMEs:
+* CBU
+* Alias CBU
+
+En caso de estar dentro de un régimen de percepciones/retenciones:
+* Agente de Percepción
+* Agente de Retención Ganancias
+* Agente de Retención IIBB
+* Jurisdicciones Convenio Multilateral
+* CIT ARBA
+* Ambiente ARBA
+
+
+### 2.9 Eliminar las transacciones de la compañía
 Con este botón se eliminarán todas las transacciones de la compañía. *Usar con precaución* ya que las transacciones eliminadas no podrán ser recuperadas.
 
 #### Requerimientos
