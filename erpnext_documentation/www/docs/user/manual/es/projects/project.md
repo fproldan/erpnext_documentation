@@ -49,7 +49,7 @@ Para acceder a Proyectos ir a:
   | **Manual**          | -                                                  |-                                    | Manual              |
   | **Finalización de Tareas** | Tareas Finalizadas / Número Total de Tareas  | 2/3                                 | 66.66               |
   | **Progreso de Tareas** | Suma % Progreso de las Tareas / N° Total de Tareas| (100+100+50)/3                | 83.33               |
-  | **Peso de Tareas** | Suma de (Peso de Tareas * % Progreso)           | (0.4 * 100 + 0.2 * 100 + 0.2 * 100)| 70                   |
+  | **Peso de Tareas** | Suma de (Peso de Tareas * % Progreso)           | (0.4 * 100 + 0.2 * 100 + 0.2 * 50)| 70                   |
 
 
 **Observación:** Si el peso total de las Tareas no es 100, entonces el resultado calculado se dividirá por el peso total.
@@ -116,5 +116,3 @@ Al habilitar la opción "Rastrear Progreso" haciendo click en la casilla de veri
   1. [Tarea](/docs/user/manual/es/projects/tasks)
   2. [Tipo de Proyecto](/docs/user/manual/es/projects/project-type)
   3. [Plantilla de Proyecto](/docs/user/manual/es/projects/project-template)
-
-{siguiente}
