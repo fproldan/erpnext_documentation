@@ -145,6 +145,8 @@ Los impuestos y cargos serán traídos desde la [Orden de compra](/docs/user/man
 
 Visitar la página [Plantilla de Impuestos y Gastos de Compra](/docs/user/manual/es/buying/purchase-taxes-and-charges-template) para saber más sobre impuestos.
 
+En caso de que existan retenciones sufridas, las mismas deberán ingresarse de manera manual, asignando la cuenta contable sobre la cual se desea que impacten. Más información acerca de Retenciones [aquí](link a la docu de Retenciones). 
+
 Los impuestos y cargos totales aparecerán debajo de la tabla.
 
 Para agregar impuestos automáticamente mediante Categoría de impuesto, visitar la siguiente [página](/docs/user/manual/es/accounts/tax-category).
