@@ -47,10 +47,14 @@ Una vez Guardada y Validada esta Entrada de pago, el cheque pasará a estado Ent
 
 ## 3. Depósito de cheque de tercero
 
-Para reflejar en el sistema el depósito de un cheque recibido En mano se puede ingresar al mismo y hacer click en *Acciones > Depositar*.
+Hay dos opciones para reflejar en el sistema el depósito de un cheque recibido con estado En mano. 
+
+La primera consiste en ingresar al mismo y hacer click en *Acciones > Depositar*.
 Esto llevará a la creación de un Asiento contable de tipo Cheque Depositado, donde la cuenta de débito por defecto será la definida como Cuenta de Depósitos en la Compañía. 
 
 Las cuentas contables que el sistema arroja por defecto pueden modificarse al momento de contabilización de la operación. 
+
+La segunda opción consiste en realizar el depósito desde la conciliación bancaria. Se sugiere revisar la documentación de [conciliación bancaria](link a la docu), en particular, el apartado de cheques.
 
 Al Validar el asiento, el cheque pasará a estado Depositado.
 
@@ -65,9 +69,9 @@ Al Validar el asiento, el cheque pasará a estado Cobrado.
 
 ## 5. Vencimiento de un cheque de tercero
 
-En el supuesto caso de que se tenga un cheque recibido En mano y pase la Fecha de pago, es decir, se exceda en más de 30 días corridos la fecha de cobro; este pasará a estado Vencido. 
+En el supuesto caso de que se tenga un cheque recibido En mano y supere el plazo de pago, es decir, se exceda en más de 30 días corridos la fecha de pago del valor; este pasará a estado Vencido. El sistema corre un proceso automático diario mediante el cual va cambiando los estados para aquellos cheques que correspondan. 
 
-Se deberán realizar las gestiones comerciales correspondintes y registrar las mismas en sistema, según corresponda; lo que a continuación se detallará. 
+Se deberán realizar las gestiones comerciales correspondientes y registrar las mismas en sistema, según corresponda; lo que a continuación se detallará. 
 
 ### 5.1. Actualización de fecha
 Si el vencimiento resultó de un error en la selección de la Fecha de pago, es posible actualizarla haciendo click en *Acciones > Actualizar Fecha de pago*. Así se puede seleccionar una fecha posterior y el cheque volverá a estado En mano.
@@ -87,12 +91,19 @@ Para esto ingresar al cheque y hacer click en *Acciones > Rechazar Vencido*. Est
 ### 5.5. Cobro de cheque vencido
 Por más que el cheque esté vencido, el sistema permite registrar el cobro del mismo. Esta facultad está dada por la posibilidad de que exista un desfasaje temporal entre el movimiento diario de Bancos y el momento en el cual se realiza la conciliación de las cuentas bancarias. Para esto hacer click en *Acciones > Cobrar* y validar el asiento de cobro explicado [anteriormente](/docs/user/manual/es/accounts/cheque-de-tercero.md#4-cobro-de-cheque-de-tercero).
 
+
 ## 6. Rechazo de cheque de tercero
 
 Se puede registrar en el sistema el rechazo de cheques en estado Vencido, Depositado o Entregado.
 
 ### 6.1. Rechazo de cheque depositado
-Para esto ingresar al cheque y hacer click en *Acciones > Rechazar Depositado*. Esto llevará a la creación de un Asiento contable de tipo Cheque Rechazado, donde la cuenta de débito por defecto será la definida como Cuenta de Cheques Rechazados en la Compañía. Al Validar el asiento, el cheque pasará a estado Rechazado. Es importante generar la Nota de débito con el producto Cheque rechazado para volver a generar la deuda del Cliente ya que el pago queda anulado.
+Hay dos opciones para reflejar en sistema el rechazo de un cheque depositado en la cuenta bancaria. 
+
+La primera consiste en ingresar al cheque y hacer click en *Acciones > Rechazar Depositado*. Esto llevará a la creación de un Asiento contable de tipo Cheque Rechazado, donde la cuenta de débito por defecto será la definida como Cuenta de Cheques Rechazados en la Compañía. Al Validar el asiento, el cheque pasará a estado Rechazado. Es importante generar la Nota de débito con el producto Cheque rechazado para volver a generar la deuda del Cliente ya que el pago queda anulado.
+
+La segunda opción consiste en realizar el depósito desde la conciliación bancaria. Se sugiere revisar la documentación de [conciliación bancaria](link a la docu), en particular, el apartado de cheques.
+
+Al Validar el asiento, el cheque pasará a estado Cobrado.
 
 ### 6.2. Rechazo de cheque entregado
 Para esto ingresar al cheque y hacer click en *Acciones > Rechazar Entregado*. En este caso no se debe crear el asiento de rechazo, sino que se debe cargar la la Nota de Débito del proveedor al cual se le entregó el cheque y generar la Nota de débito con el producto Cheque rechazado para volver a generar la deuda del Cliente ya que el pago queda anulado.
