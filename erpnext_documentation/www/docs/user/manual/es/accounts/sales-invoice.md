@@ -168,7 +168,7 @@ Los Impuestos y cargos son traídos desde la [Orden de venta](/docs/user/manual/
 
 Visitar la página [Plantilla de Impuestos y Gastos](/docs/user/manual/es/selling/sales-taxes-and-charges-template) para saber más sobre impuestos.
 
-De acuerdo a las categorías impositivas de la empresa y del cliente, pueden existir percepciones sobre la factura de venta. Las mismas se calcularán automáticamente, una vez guardado el documento; y se visualizarán como una fila adicional dentro del apartado Impuestos y Gastos. Para ello deberán estar previamente configurados los distintos impuestos de retención aplicables a cada cliente. Más información acerca de Retenciones [aquí](link a la docu de Retenciones).
+De acuerdo a las categorías impositivas de la Compañía y del Cliente, pueden existir percepciones sobre la Factura de venta. Las mismas se calcularán automáticamente, una vez guardado el documento; y se visualizarán como una fila adicional dentro del apartado Impuestos y cargos. Para ello deberán estar previamente configurados los distintos impuestos de percepción aplicables a cada cliente. Más información acerca de Percepciones [aquí](/docs/user/manual/es/accounts/percepciones).
 
 El Total Impuestos y Cargos se muestra en la sección debajo de la tabla.
 
