@@ -4,6 +4,7 @@ Una percepción es un valor adicional que se aplica a una factura a cuenta de al
 
 ## 1. Prerrequisitos
 
+Se sugiere tener creado previamente
 * Cliente
 
 ## 2. Percepciones emitidas
