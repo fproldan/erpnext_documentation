@@ -35,6 +35,11 @@ Se deberán especificar en la [Compañía](docs/user/manual/es/setting-up/compan
 
 (Imagen con las cuentas a setear)
 
+* **Cuenta Cheque rechazado**: Deberá colocarse aquí la cuenta creada en el Plan de Cuentas conforme al punto 2 del presente artículo. 
+* **Cuenta de Valores en Cartera**: Deberá colocarse aquí la cuenta patrimonial del Activo sobre la cual impactarán los valores en cartera.
+* **Cuenta de Depósitos**: Deberá colocarse aquí la cuenta de Banco sobre la que se pretende que, por defecto y salvo indicación de lo contrario, impacte el depósito de los cheques. 
+* **Cuenta de Cobros**: Deberá colocarse aquí la cuenta de Banco sobre la que se pretende que, por defecto y salvo indicación de lo contrario, impacte el cobro de los cheques. 
+
 Las cuentas que se establecen por defecto son modificables al momento de ingreso de la transacción. 
 
 ## 4. Método de pago tipo Cheque
