@@ -36,4 +36,4 @@ Se deberán especificar en la [Compañía](docs/user/manual/es/setting-up/compan
 
 ## 4. Método de pago tipo Cheque
 
-Para registrar Entradas de pago con cheque se necesita tener al menos un método de pago de este tipo. Para crear uno ingresar a *Inicio > Contabilidad > Configuración > Método de pago*, hacer click en Nuevo, "Editar en pantalla completa" y en el campo Tipo seleccionar "Cheque".
+Para registrar Entradas de pago con cheque se necesita tener al menos un método de pago de este tipo. Para crear uno ingresar a *Inicio > Contabilidad > Configuración > Método de pago*, hacer click en Nuevo, "Editar en pantalla completa" y en el campo Tipo seleccionar "Cheque". Se puede visualizar cómo crear un método de pago en detalle en la [documentación](link a la docu de método de pago) correspondiente.
