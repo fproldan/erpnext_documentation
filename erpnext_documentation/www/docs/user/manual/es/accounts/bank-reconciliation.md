@@ -85,9 +85,15 @@ También se puede crear un nuevo pago o factura directamente desde el tablero de
 
 <img class="screenshot" alt="New payment entry" src="{{docs_base_url}}/assets/img/accounts/new_payment.gif">
 
-#### Conciliación de cheques desde la herramienta de conciliación bancaria
+#### Conciliación de cheques de terceros desde la herramienta de conciliación bancaria
 
-Si se verifica en el extracto un movimiento correspondiente a un pago, cobro o depósito de un cheque; la conciliación adquiere ciertas particularidades.
+Si se verifica en el extracto un movimiento correspondiente a un pago, cobro o depósito de un cheque de terceros; el mismo puede matchearse de acuerdo a la opción *Match against Voucher* con el movimiento que corresponda.
+
+Se deberán completar los campos restantes y validar la operación.
+
+#### Conciliación de cheques propios desde la herramienta de conciliación bancaria
+
+Si se verifica en el extracto un movimiento correspondiente a un pago, cobro o depósito de un cheque propio; la conciliación adquiere ciertas particularidades.
 
 En primer lugar, deberá seleccionarse en el selector de *Acción* la opción *Create Voucher*, y en *Tipo de Documento* deberá seleccionarse *Asiento Contable*. Luego, en *Journal Entry Type* deberá elegirse entre *Cheque Rechazado, Cheque Depositado y Cheque Cobrado*, y eso permitirá que se desplieguen los valores posibles a elegir en el selector de *Cheque*. 
 
