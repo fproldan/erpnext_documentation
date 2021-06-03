@@ -70,8 +70,6 @@ El archivo será procesado por ERPNext y se usará la información obtenida para
 
 #### Sincronización de cuentas bancarias
 
-You can use Plaid (see [Plaid Integrations page](/docs/user/manual/en/erpnext_integration/plaid_integration)) to automatically synchronize your bank account with ERPNext. All your bank transactions will be automatically imported into ERPNext.
-
 Luego de haber cargado en el sistema todas las transacciones bancarias, se las puede conciliar con los pagos existentes. Si se encuentra un pago que parece coincidir con la transacción bancaria seleccionada, ERPNext propondrá dicho pago para conciliar con la transacción.
 
 Si el pago cioncide, solo se deberá hacer click en Conciliar para confirmar la operación.
