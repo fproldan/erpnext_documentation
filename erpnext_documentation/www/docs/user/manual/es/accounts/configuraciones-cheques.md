@@ -5,20 +5,21 @@ Para hacer uso del módulo de Cheques, es necesario configurar los siguientes as
 * **Chequera**
 * **Cuenta y producto para cheques rechazados**
 * **Cuentas por defecto**
+* **Método de pago tipo Cheque**
 
 ## 1. Chequera
 
 Para crear cheques propios se necesita tener en el sistema al menos una chequera.
 
 Para acceder al listado de Chequeras ir a:
-> Inicio > Cheques > Chequera
+> Inicio > Contabilidad > Cheques > Chequera
 
 ### Creación de una nueva chequera
 1. Ir al listado de Chequera y hacer click en Nuevo.
 2. Ingresar un Nombre, el Banco y la Sucursal al cual pertenece.
 3. Seleccionar el Tipo:
-    * **Manual**: para este tipo de chequera se debe especificar el Nro Desde y Nro Hasta, asignándosele al primer cheque el Nro Desde y así sucesivamente hasta llegar al Nro Hasta, momento en el cual la chequera será Deshabilitada.
-    * **Electrónica**: la numeración de los cheques generados con este tipo de chequera es dado por el banco y se ingresa en la creacióndel mismo.
+    * **Manual**: para este tipo de chequera se debe especificar el Nro Desde y Nro Hasta. Al primer cheque creado en el sistema se le asignará el Nro Desde, al segundo el Nro desde + 1, y así sucesivamente hasta llegar al Nro Hasta, momento en el cual la chequera será Deshabilitada.
+    * **Electrónica**: la numeración de los cheques generados con este tipo de chequera es dado por el banco y se ingresa en la creación del mismo.
 4. Guardar.
 
 ## 2. Cuenta y producto para cheques rechazados
@@ -32,3 +33,6 @@ Para representar el rechazo de un cheque en el sistema se debe contar con:
 
 Se deberán especificar en la [Compañía](docs/user/manual/es/setting-up/company-setup) las cuentas que serán tomadas por defecto para las diferentes transacciones que se relizarán involucrando cheques (recepción, pago, cobro, depósito, rechazo, etc.).
 
+## 4. Método de pago tipo Cheque
+
+Para registrar Entradas de pago con cheque se necesita tener al menos un método de pago de este tipo. Para crear uno ingresar a *Inicio > Contabilidad > Configuración > Método de pago*, hacer click en Nuevo, "Editar en pantalla completa" y en el campo Tipo seleccionar "Cheque".
