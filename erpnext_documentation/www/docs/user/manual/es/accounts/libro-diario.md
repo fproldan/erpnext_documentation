@@ -1,18 +1,16 @@
 # Libro Diario
 
-### El Libro Diario es aquel en el cual se registran todas las operaciones que la empresa realiza.
+### En el Libro Diario se registran todas las operaciones que la empresa realiza.
 
-Las operaciones se registran mediante asientos contables. En Argentina, es de carácter obligatorio.
+Las operaciones se registran mediante Asientos contables. Es de carácter obligatorio.
 
-La ruta para esto es 
+Para acceder al Libro Diario ir a: 
 
 > Inicio > Contabilidad > Reportes AFIP > Libro Diario
 
+## Reporte de Libro Diario
 
-
-## Reporte del Libro Diario
-
-Se debe colocar la *Compañía* para la cual se solicita (relevante en el caso de operatoria multicompany) y filtrar por fecha, de acuerdo a la información que se desee obtener.
+Se debe seleccionar la Compañía para la cual se consulta (relevante en el caso de operar con múltiples compañías) y filtrar por fecha, de acuerdo a la información que se desee obtener.
 
 (IMAGEN)
 
