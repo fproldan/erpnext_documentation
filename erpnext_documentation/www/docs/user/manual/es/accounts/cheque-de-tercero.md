@@ -10,16 +10,9 @@ Al recibir un cheque de un tercero, este debe registrarse en el sistema de forma
 
 Los cheques pueden crearse de dos maneras:
 
-### 1.1. Creación desde el listado
-
-   1. Ir al listado de Cheques en *Inicio > Contabilidad > Cheques > Cheque* y hacer click en Nuevo.
-   2. Seleccionar Tipo de Cheque, indicar Nro de Cheque, Importe, Fecha de Pago, Banco y Sucursal. Fecha de emisión no es un dato obligatorio.
-   3. Guardar.
-    
-Así el cheque se creará con estado En mano.
-> Importante: el cheque deberá ser ingresado en la Entrada de pago a la cual corresponde para registrar su impacto contable.
-
 ### 1.2. Creación desde la Entrada de pago
+
+Es la forma de creación más usual. 
 
    1. En la Entrada de pago, seleccionar "Recibir/Recibido" en Tipo de pago (opción por defecto).
    2. Elegir Método de pago Cheque.
@@ -28,7 +21,21 @@ Así el cheque se creará con estado En mano.
     
 Luego de Guardar y Validar la Entrada de pago, el cheque quedará en estado En mano.
 
-Estos pasos aplican para el uso de un cheque creado desde el listado, solo que en lugar de crearlo se lo debe seleccionar entre el listado de cheques.
+Estos pasos aplican para el uso de un cheque creado desde el listado, cuyo caso se verá a continuación. La única diferencia es que, en lugar de crearlo (paso 3 del procedimiento descripto), se lo debe seleccionar entre el listado de cheques.
+
+El ingreso del cheque en sistema tiene aparejado la creación de un asiento contable.
+
+### 1.2. Creación desde el listado
+
+Es la forma de creación de cheques en sistema que luego se aplicarán a distintas operaciones.
+
+   1. Ir al listado de Cheques en *Inicio > Contabilidad > Cheques > Cheque* y hacer click en Nuevo.
+   2. Seleccionar Tipo de Cheque, indicar Nro de Cheque, Importe, Fecha de Pago, Banco y Sucursal. Fecha de emisión no es un dato obligatorio.
+   3. Guardar.
+    
+Así el cheque se creará con estado En mano.
+
+> Importante: El cheque aparece como tal en sistema pero aún sin impacto contable. Por lo tanto, deberá ser ingresado en la Entrada de pago/asiento contable, según corresponda, para registrar su impacto contable.
 
 ## 2. Pago con cheque de tercero
 
