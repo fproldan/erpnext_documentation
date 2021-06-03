@@ -79,4 +79,4 @@ Para esto ingresar al cheque y hacer click en *Acciones > Rechazar Depositado*. 
 Para esto ingresar al cheque y hacer click en *Acciones > Rechazar Entregado*. En este caso no se debe crear el asiento de rechazo, sino que se debe cargar la la Nota de Débito del proveedor al cual se le entregó el cheque y generar la Nota de débito con el producto Cheque rechazado para volver a generar la deuda del Cliente ya que el pago queda anulado.
 
 ## 7. Reemplazo de cheque de tercero
-El reemplazo de cheques (por otro cheque o por efectivo) se puede realizar no solo para aquellos en estado Vencido, sino también para los En mano o Rechazados. En todos los casos se debe seguir los pasos indicados anteriormente(/docs/user/manual/es/accounts/cheque-de-tercero.md#52-reemplazo-de-cheque-vencido)
+El reemplazo de cheques (por otro cheque o por efectivo) se puede realizar no solo para aquellos en estado Vencido, sino también para los En mano o Rechazados. En todos los casos se debe seguir los pasos indicados [anteriormente](/docs/user/manual/es/accounts/cheque-de-tercero.md#52-reemplazo-de-cheque-vencido).
