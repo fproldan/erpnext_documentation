@@ -1,8 +1,6 @@
-# Percepciones
+# Configuración de Percepciones
 
 Una percepción es un valor adicional que se aplica a una factura a cuenta de algún impuesto, dependiendo de las condiciones impositivas de la Compañía y del Cliente/Proveedor.
-
-Se recomienda tener previamente configuradas las cuentas de impuestos para las percepciones sufridas, así como para las emitidas, en el Plan de Cuentas de la empresa. 
 
 ## 1. Percepciones emitidas
 
