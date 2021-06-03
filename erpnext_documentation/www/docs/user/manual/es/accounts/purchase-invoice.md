@@ -145,7 +145,7 @@ Los impuestos y cargos serán traídos desde la [Orden de compra](/docs/user/man
 
 Visitar la página [Plantilla de Impuestos y Gastos de Compra](/docs/user/manual/es/buying/purchase-taxes-and-charges-template) para saber más sobre impuestos.
 
-En caso de que existan percepciones sufridas, las mismas deberán ingresarse de manera manual, asignando la cuenta contable sobre la cual se desea que impacten. Más información acerca de Percepciones [aquí](/docs/user/manual/es/accounts/percepciones). 
+En caso de que existan percepciones sufridas, las mismas deberán ingresarse de manera manual, asignando la cuenta contable sobre la cual se desea que impacten. Más información acerca de Percepciones [aquí](/docs/user/manual/es/accounts/configuracion-de-percepciones). 
 
 Los impuestos y cargos totales aparecerán debajo de la tabla.
 
