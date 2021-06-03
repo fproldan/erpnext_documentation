@@ -1,27 +1,16 @@
 # Informe de Percepciones
 
-### El Informe de Percepciones muestra las distintas operaciones de percepciones de las cuales la empresa ha sido parte.
+**El Informe de Percepciones muestra las distintas operaciones de percepciones de las cuales la empresa ha sido parte.**
 
 Permite visualizar tanto las percepciones emitidas como las sufridas, discriminando por fecha y aplicando distintos filtros.
 
-Los totales arrojados por el mismo permiten realizar las declaraciones juradas correspondientes a los distintos impuestos, de acuerdo a la normativa vigente.
+Los totales mostrados en el mismo permiten realizar las declaraciones juradas correspondientes a los distintos impuestos, de acuerdo a la normativa vigente.
 
 Para acceder a Informe de Percepciones, ir a:
 
 > Inicio > Contabilidad > Reportes AFIP > Informe de Percepciones
 
-
-
-## 1. Prerrequisitos
-
-* Facturas de compra, y/o
-* Facturas de Venta
-
 El Informe de Percepciones se genera como consecuencia de la emisión o recepción de facturas con percepciones impositivas. 
-
-
-
-## 2. Creación del Informe de Percepciones
 
 Los fitros presentes en el mismo permiten obtener detalle discriminando por:
 
