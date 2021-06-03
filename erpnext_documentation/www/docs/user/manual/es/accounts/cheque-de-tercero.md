@@ -54,10 +54,29 @@ Al Validar el asiento, el cheque pasará a estado Cobrado.
 
 En el supuesto caso de que se tenga un cheque recibido En mano y pase la Fecha de pago, este pasará a estado Vencido.
 
+### 5.1. Actualización de fecha
 Si esto sucedió por un error en la selección de la Fecha de pago, es posible actualizarla haciendo click en *Acciones > Actualizar Fecha de pago*. Así se puede seleciconar una fecha futura y el cheque volverá a estado En mano.
 
+### 5.2. Reemplazo de cheque vencido
 Por otro lado, si el cheque realmente se venció y el Cliente decide entregar uno nuevo en su lugar, se puede crear el nuevo cheque desde el listado y seleccionar el cheque vencido en el campo Reemplaza a. Así el cheque Vencido pasará a estado Reemplazado y se tendrá el nuevo cheque con estado En mano.
-En el caso de que se reemplace el cheque vencido por efectivo, se puede hacer click en *Acciones > Reemplazar*, lo que cambiará el estado del cheque a Reemplazado y ya no estará disponible para futuras transacciones.
+En el caso de que se reemplace el cheque vencido por efectivo, se puede hacer click en *Acciones > Reemplazar*, lo que cambiará el estado del cheque a Reemplazado y ya no estará disponible para futuras transacciones. Al hacer esto se puede añadir un comentario en el cheque aclarando la razón del reemplazo a modo informativo.
 
-Por último, se puede optar por rechazar el cheque vencido, lo cual registrará la deuda del Cliente en el sistema.
-Para esto ingresar al cheque y hacer click en *Acciones > Rechazar vencido*. Esto llevará a la creación de un Asiento contable de tipo Cheque Rechazado, donde la cuenta de débito por defecto será la definida como Cuenta de Cheques Rechazados en la Compañía. Al Validar el asiento, el cheque pasará a estado Rechazado. Es importante generar la Nota de débito para volver a generar la deuda del Cliente ya que el pago queda anulado.
+### 5.3. Rechazo de cheque vencido
+También se puede optar por rechazar el cheque vencido, lo cual registrará la deuda del Cliente en el sistema.
+Para esto ingresar al cheque y hacer click en *Acciones > Rechazar Vencido*. Esto llevará a la creación de un Asiento contable de tipo Cheque Rechazado, donde la cuenta de débito por defecto será la definida como Cuenta de Cheques Rechazados en la Compañía. Al Validar el asiento, el cheque pasará a estado Rechazado. Es importante generar la Nota de débito con el producto Cheque rechazado para volver a generar la deuda del Cliente ya que el pago queda anulado.
+
+### 5.4. Cobro de cheque vencido
+Por más que el cheque esté vencido, el sistema permite registrar el cobro del mismo. Para esto hacer click en *Acciones > Cobrar* y validar el asiento de cobro explicado [anteriormente](/docs/user/manual/es/accounts/cheque-de-tercero.md#4-cobro-de-cheque-de-tercero).
+
+## 6. Rechazo de cheque de tercero
+
+Se puede registrar en el sistema el rechazo de cheques en estado Vencido, Depositado o Entregado.
+
+### 6.1. Rechazo de cheque depositado
+Para esto ingresar al cheque y hacer click en *Acciones > Rechazar Depositado*. Esto llevará a la creación de un Asiento contable de tipo Cheque Rechazado, donde la cuenta de débito por defecto será la definida como Cuenta de Cheques Rechazados en la Compañía. Al Validar el asiento, el cheque pasará a estado Rechazado. Es importante generar la Nota de débito con el producto Cheque rechazado para volver a generar la deuda del Cliente ya que el pago queda anulado.
+
+### 6.2. Rechazo de cheque entregado
+Para esto ingresar al cheque y hacer click en *Acciones > Rechazar Entregado*. En este caso no se debe crear el asiento de rechazo, sino que se debe cargar la la Nota de Débito del proveedor al cual se le entregó el cheque y generar la Nota de débito con el producto Cheque rechazado para volver a generar la deuda del Cliente ya que el pago queda anulado.
+
+## 7. Reemplazo de cheque de tercero
+El reemplazo de cheques (por otro cheque o por efectivo) se puede realizar no solo para aquellos en estado Vencido, sino también para los En mano o Rechazados. En todos los casos se debe seguir los pasos indicados anteriormente(/docs/user/manual/es/accounts/cheque-de-tercero.md#52-reemplazo-de-cheque-vencido)
