@@ -69,14 +69,6 @@ El archivo será procesado por ERPNext y se usará la información obtenida para
 
  <img class="screenshot" alt="Reconcile bank transactions" src="{{docs_base_url}}/assets/img/accounts/bank_transaction_upload.gif">
  
-#### Conciliación de cheques desde la herramienta de conciliación bancaria
-
-Si se verifica en el extracto un movimiento correspondiente a un pago, cobro o depósito de un cheque; la conciliación adquiere ciertas particularidades.
-
-En primer lugar, deberá seleccionarse en el selector de *Acción* la opción *Create Voucher*, y en *Tipo de Documento* deberá seleccionarse *Asiento Contable*. Luego, en *Journal Entry Type* deberá elegirse entre *Cheque Rechazado, Cheque Depositado y Cheque Cobrado*, y eso permitirá que se desplieguen los valores posibles a elegir en el selector de *Cheque*. 
-
-Se deberán completar los restantes campos y validar la operación.
-
 #### Sincronización de cuentas bancarias
 
 Luego de haber cargado en el sistema todas las transacciones bancarias, se las puede conciliar con los pagos existentes. Si se encuentra un pago que parece coincidir con la transacción bancaria seleccionada, ERPNext propondrá dicho pago para conciliar con la transacción.
@@ -92,6 +84,14 @@ Si ERPNext no propone ningún pago, es posible seleccionarlo de forma manual:
 También se puede crear un nuevo pago o factura directamente desde el tablero de Conciliación bancaria.
 
 <img class="screenshot" alt="New payment entry" src="{{docs_base_url}}/assets/img/accounts/new_payment.gif">
+
+#### Conciliación de cheques desde la herramienta de conciliación bancaria
+
+Si se verifica en el extracto un movimiento correspondiente a un pago, cobro o depósito de un cheque; la conciliación adquiere ciertas particularidades.
+
+En primer lugar, deberá seleccionarse en el selector de *Acción* la opción *Create Voucher*, y en *Tipo de Documento* deberá seleccionarse *Asiento Contable*. Luego, en *Journal Entry Type* deberá elegirse entre *Cheque Rechazado, Cheque Depositado y Cheque Cobrado*, y eso permitirá que se desplieguen los valores posibles a elegir en el selector de *Cheque*. 
+
+Se deberán completar los restantes campos y validar la operación.
 
 ### 4. Temas relacionados
 1. [Conciliación de pagos](/docs/user/manual/es/accounts/payment-reconciliation)
