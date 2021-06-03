@@ -3,9 +3,11 @@
 
 **La Conciliación bancaria es utilizada en ERPNExt para vincular los estados contables con los estados bancarios.**
 
-Si se recibe o realiza un pago mediante cheque, el estado bancario no coincidirá exactamente con las fechas de la entrada, ya que normalmente al banco le lleva un determinado tiempo efectuar este tipo de pagos.
+Si se recibe o realiza un pago mediante cheque, el estado bancario no coincidirá exactamente con las fechas de la entrada de pago. Desde la fecha de pago del cheque, el tenedor del mismo dispone de ciertos días para enviarlo al cobro (actualmente en Argentina se trata de un plazo de 30 días). A su vez, también hay una demora entre el depósito y el cobro del cheque, que oscila alrededor de las 48 horas hábiles.
 
-Además, puede que se haya enviado un cheque al Proveedor y se produzca una demora en su entrega, por lo que se depositará días después. En ERPNext se pueden sincronizar los estados contables y los Asientos contables mediante las fechas de transacciones.
+Todo esto hace que las fechas de las entradas de pagos, las fechas de depósito de los cheques, y las fechas de débito/crédito de los mismos sean diferentes.
+
+En ERPNext se pueden sincronizar los estados contables y los Asientos contables mediante las fechas de transacciones.
 
 ## 1. Estado de conciliación bancaria
 El reporte de Conciliación bancaria muestra la diferencia entre el balance informado en el estado bancario de la organización provisto por el banco contra el importe registrado en el Plan de cuentas de la compañía.
@@ -66,7 +68,6 @@ El archivo será procesado por ERPNext y se usará la información obtenida para
 3. Actualizar el archivo en el sistema
 
  <img class="screenshot" alt="Reconcile bank transactions" src="{{docs_base_url}}/assets/img/accounts/bank_transaction_upload.gif">
-
 
 #### Sincronización de cuentas bancarias
 
