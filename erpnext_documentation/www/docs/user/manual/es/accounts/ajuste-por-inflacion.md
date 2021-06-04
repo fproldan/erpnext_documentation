@@ -38,7 +38,7 @@ Una vez completado, se debe Guardar y luego Validar. Esto habilitará entonces e
 
 Al presionar este botón se accede a una pantalla donde es posible revisar todos los cálculos, antes de que se cree el Asiento contable.
 
-**Pantalla de control**
+### Reporte Ajuste por inflacion
 
 Aquí se puede revisar por cada cuenta, y en cada mes, el ajuste del período y el saldo que quedaría al cierre.
 
@@ -50,7 +50,7 @@ Es posible descargar este reporte en excel, csv o pdf, para su propio control, d
 
 Una vez que controlados los resultados, se pasa a generar el Asiento contable presionando el botón Generar ubicado arriba a la derecha.
 
-**Asiento contable**
+### Asiento contable
 
 Se generan los movimientos contables teniendo en cuenta las siguientes consideraciones:
 
