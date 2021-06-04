@@ -26,8 +26,8 @@ Para acceder al listado de Chequeras ir a:
 
 Para representar el rechazo de un cheque en el sistema se debe contar con:
 
-* **Cuenta Cheque rechazado**: se debe crear en el Plan de cuentas de la Compañía, en el ACTIVO, una cuenta denominada "Cheques rechazados" de tipo **Temporal**. Así, una vez rechazado el cheque y generada la Nota de débito correspondiente, la cuenta mostrará saldo cero. Para mayor información acerca del Plan de Cuentas presione [aquí](...) -> *colocamos link de acceso a la docu de plan de cuentas y creación de cuentas*. 
-* **Producto Cheque rechazado**: este producto no debe tener tildada la opción "Mantener stock", debe indicarse que es un producto tanto de venta como de compra, y se deberá colocar la cuenta "Cheque rechazado" en Ingreso por Defecto y Gastos por Defecto en la tabla "Valores Predeterminados de Ventas, Compras y Contabilidad". Este producto se utilizará que para generar las Notas de débito (propias y de proveedores) provenientes del rechazo de cheques. Para mayor información acerca de Producto presione [aquí](...) -> *colocamos link de acceso a la docu de producto y alta de producto*. 
+* **Cuenta Cheque rechazado**: se debe crear en el [Plan de cuentas](/docs/user/manual/es/accounts/chart-of-accounts) de la Compañía, en el ACTIVO, una cuenta denominada "Cheques rechazados" de tipo **Temporal**. Así, una vez rechazado el cheque y generada la Nota de débito correspondiente, la cuenta mostrará saldo cero. 
+* **Producto Cheque rechazado**: este [producto](/docs/user/manual/es/stock/item) no debe tener tildada la opción "Mantener stock", debe indicarse que es un producto tanto de venta como de compra, y se deberá colocar la cuenta "Cheque rechazado" en Ingreso por Defecto y Gastos por Defecto en la tabla "Valores Predeterminados de Ventas, Compras y Contabilidad". Este producto se utilizará que para generar las Notas de débito (propias y de proveedores) provenientes del rechazo de cheques. 
 
 ## 3. Cuentas por defecto
 
@@ -44,4 +44,4 @@ Las cuentas que se establecen por defecto son modificables al momento de ingreso
 
 ## 4. Método de pago tipo Cheque
 
-Para registrar Entradas de pago con cheque se necesita tener al menos un método de pago de este tipo. Para crear uno ingresar a *Inicio > Contabilidad > Configuración > Método de pago*, hacer click en Nuevo, "Editar en pantalla completa" y en el campo Tipo seleccionar "Cheque". Se puede visualizar cómo crear un método de pago en detalle en la [documentación](link a la docu de método de pago) correspondiente.
+Para registrar Entradas de pago con cheque se necesita tener al menos un [Método de pago](/docs/user/manual/es/accounts/mode-of-payment) de este tipo. Para crear uno ingresar a *Inicio > Contabilidad > Configuración > Método de pago*, hacer click en Nuevo, "Editar en pantalla completa" y en el campo Tipo seleccionar "Cheque".
