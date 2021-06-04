@@ -48,6 +48,8 @@ Una vez Guardada y Validada esta Entrada de pago, el cheque pasará a estado Ent
 
 ## 3. Depósito de cheque de tercero
 
+Es posible depositar los cheques de terceros recibidos en la cuenta bancaria de la firma.
+
 Hay dos opciones para reflejar en el sistema el depósito de un cheque recibido con estado En mano. 
 
 La primera consiste en ingresar al mismo y hacer click en *Acciones > Depositar*.
@@ -59,6 +61,8 @@ La segunda opción consiste en realizar el depósito desde la Conciliación banc
 Al Validar el asiento, el cheque pasará a estado Depositado.
 
 ## 4. Cobro de cheque de tercero
+
+Existe la posibilidad de cobrar por ventanilla, en efectivo, un cheque de terceros. De acuerdo a la normativa vigente, aplican ciertas limitaciones.  
 
 Para reflejar en el sistema el cobro de un cheque recibido En mano se puede ingresar al mismo y hacer click en *Acciones > Cobrar*.
 Esto llevará a la creación de un Asiento contable de tipo Cheque Cobrado, donde la cuenta de débito por defecto será la definida como Cuenta de Cobros en la Compañía. 
@@ -92,9 +96,12 @@ Por más que el cheque esté vencido, el sistema permite registrar el cobro del 
 
 ## 6. Rechazo de cheque de tercero
 
-Se puede registrar en el sistema el rechazo de cheques en estado Vencido (explicado anteriormente), Depositado o Entregado. A contnuación se detallan los últimos dos casos.
+Se puede registrar en el sistema el rechazo de cheques en estado Vencido (explicado anteriormente), Depositado o Entregado. A continuación se detallan los últimos dos casos.
 
 ### 6.1. Rechazo de cheque depositado
+
+Un cheque depositado en la cuenta bancaria de la empresa puede ser rechazado por diferentes motivos: falta de fondos, defectos formales, plazos vencidos, etc.
+
 Hay dos opciones para reflejar en sistema el rechazo de un cheque depositado en la cuenta bancaria. 
 
 La primera consiste en ingresar al cheque y hacer click en *Acciones > Rechazar Depositado*. Esto llevará a la creación de un Asiento contable de tipo Cheque Rechazado, donde la cuenta de débito por defecto será la definida como Cuenta de Cheques Rechazados en la Compañía. Al Validar el asiento, el cheque pasará a estado Rechazado. Es importante crear la Nota de débito con el producto Cheque rechazado para volver a generar la deuda del Cliente ya que el pago queda anulado.
@@ -104,9 +111,13 @@ La segunda opción consiste en realizar el depósito desde la conciliación banc
 Al Validar el asiento, el cheque pasará a estado Cobrado.
 
 ### 6.2. Rechazo de cheque entregado
+
+Un cheque entregado a un tercero (por ejemplo, a un proveedor) puede ser rechazado por diferentes motivos: falta de fondos, defectos formales, plazos vencidos, etc.
+
 Para esto ingresar al cheque y hacer click en *Acciones > Rechazar Entregado*. En este caso no se debe crear el asiento de rechazo, sino que se debe cargar la Nota de Débito del proveedor al cual se le entregó el cheque y generar la Nota de débito con el producto Cheque rechazado para volver a generar la deuda del Cliente ya que el pago queda anulado.
 
 ## 7. Reemplazo de cheque de tercero
+
 Existen situaciones en las cuales un cheque puede ser reemplazado, ya sea por motivos comerciales (cheque en mano), como también porque el cheque se haya vencido y el Cliente decida entregar uno nuevo en su lugar (cheque vencido, caso visto anteriormente) o porque el cheque fue rechazado. En todos los casos se debe seguir los pasos indicados [anteriormente](/docs/user/manual/es/accounts/cheque-de-tercero.md#52-reemplazo-de-cheque).
 
 Si el reemplazo es por efectivo Como la transacción implicó un cambio en la composición del activo de la empresa, deberá realizarse además el Asiento contable correspondiente. Por ejemplo, en el caso de que un cheque en mano sea reemplazado por efectivo, la cuenta Valores a Depositar (Activo) disminuye por el importe correspondiente al cheque, mientras que la cuenta Caja aumenta por el mismo valor.
