@@ -5,7 +5,7 @@
 
 Pueden existir diferencias entre los movimientos bancarios registrados en sistema y los que se visualizan en el extracto bancario por distintos motivos. 
 
-El Banco puede, y de hecho es habitual, que debite gastos de la cuenta bancaria que no se conocen a priori con importe y fecha cierta (y por ende no se podrán tener registrados de antemano en el sistema).
+Es habitual que el Banco debite gastos de la cuenta bancaria que no se conocen a priori con importe y fecha cierta (y por ende no se podrán tener registrados de antemano en el sistema).
 
 A su vez, si se recibe o realiza un pago mediante cheque, el estado bancario no coincidirá exactamente con las fechas de la entrada de pago. Desde la fecha de pago del cheque, el tenedor del mismo dispone de un plazo cierto para enviarlo al cobro (actualmente en Argentina es de 30 días). A su vez, también hay una demora entre el depósito y el cobro del cheque (debido al clearing bancario), que oscila alrededor de las 48 horas hábiles.
 
