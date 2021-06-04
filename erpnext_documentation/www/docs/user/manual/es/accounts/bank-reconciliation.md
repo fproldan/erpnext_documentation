@@ -3,7 +3,7 @@
 
 **La Conciliación bancaria es utilizada en ERPNExt para vincular los estados contables con los estados bancarios.**
 
-Si se recibe o realiza un pago mediante cheque, el estado bancario no coincidirá exactamente con las fechas de la entrada de pago. Desde la fecha de pago del cheque, el tenedor del mismo dispone de ciertos días para enviarlo al cobro (actualmente en Argentina es un plazo de 30 días). A su vez, también hay una demora entre el depósito y el cobro del cheque, que oscila alrededor de las 48 horas hábiles.
+Si se recibe o realiza un pago mediante cheque, el estado bancario no coincidirá exactamente con las fechas de la entrada de pago. Desde la fecha de pago del cheque, el tenedor del mismo dispone de un plazo cierto para enviarlo al cobro (actualmente en Argentina es de 30 días). A su vez, también hay una demora entre el depósito y el cobro del cheque (debido al clearing bancario), que oscila alrededor de las 48 horas hábiles.
 
 Todo esto hace que las fechas de las entradas de pagos, las fechas de depósito de los cheques, y las fechas de débito/crédito en las cuentas bancarias sean diferentes.
 
