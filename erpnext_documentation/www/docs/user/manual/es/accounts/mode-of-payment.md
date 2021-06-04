@@ -9,7 +9,7 @@ Para acceder a la lista de Método de pago ir a:
 ## 1. Creación de un Método de pago
 1. Ir al listado de métodos de pago y hacer click en Nuevo.
 1. Ingresar un nombre para el Método de pago.
-1. Seleccionar el Tipo (puede ser Efectivo, Banco o General). Esto es útil para saber el método de pago usado en [Punto de venta POS](/docs/user/manual/es/accounts/point-of-sales).
+1. Seleccionar el Tipo (puede ser Efectivo, Banco, General o Cheque). Esto es útil para saber el método de pago usado en [Punto de venta POS](/docs/user/manual/es/accounts/point-of-sales).
 1. Seleccionar una Cuenta predeterminada para cada compañía.
 1. Guardar.
 
