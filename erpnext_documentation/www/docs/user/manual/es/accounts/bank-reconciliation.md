@@ -3,7 +3,11 @@
 
 **La Conciliación bancaria es utilizada en ERPNExt para vincular los estados contables con los estados bancarios.**
 
-Si se recibe o realiza un pago mediante cheque, el estado bancario no coincidirá exactamente con las fechas de la entrada de pago. Desde la fecha de pago del cheque, el tenedor del mismo dispone de un plazo cierto para enviarlo al cobro (actualmente en Argentina es de 30 días). A su vez, también hay una demora entre el depósito y el cobro del cheque (debido al clearing bancario), que oscila alrededor de las 48 horas hábiles.
+Pueden existir diferencias entre los movimientos bancarios registrados en sistema y los que se visualizan en el extracto bancario por distintos motivos. 
+
+El Banco puede, y de hecho es habitual, que debite gastos de la cuenta bancaria que no se conocen a priori con importe y fecha cierta (y por ende no se podrán tener registrados de antemano en el sistema).
+
+A su vez, si se recibe o realiza un pago mediante cheque, el estado bancario no coincidirá exactamente con las fechas de la entrada de pago. Desde la fecha de pago del cheque, el tenedor del mismo dispone de un plazo cierto para enviarlo al cobro (actualmente en Argentina es de 30 días). A su vez, también hay una demora entre el depósito y el cobro del cheque (debido al clearing bancario), que oscila alrededor de las 48 horas hábiles.
 
 Todo esto hace que las fechas de las entradas de pagos, las fechas de depósito de los cheques, y las fechas de débito/crédito en las cuentas bancarias sean diferentes.
 
@@ -35,21 +39,11 @@ Luego de hacer esto se podrá sincronizar las entradas y los estados bancarios e
 
 <img class="screenshot" alt="Bank Reconciliation" src="{{docs_base_url}}/assets/img/accounts/bank-reconciliation.png">
  
-## 3. Tipos de herramientas de conciliación
+## 3. Herramienta de conciliación bancaria
 
-ERPNext ofrece dos herramientas de conciliación:
+ERPNext ofrece una herramienta de conciliación semi-automática, que permite liquidar transacciones bancarias contra pagos a facturas de venta o compra, entradas de pago o reembolsos de gastos.
 
-1. Una herramienta de conciliación manual que permite establecer fechas de liquidación contra entradas de pago, pagos a facturas de venta o asientos contables.
-2. Una herramienta de conciliación semi-automática que permite liquidar transacciones bancarias contra entradas de pago, pagos a facturas de venta o compra, entradas de pago o reembolsos de gastos.
-
-### 3.1 Herramienta de conciliación bancaria manual
-
-Para ver este reporte, ir a **Contabilidad > Banco y Pagos > Estados de conciliación bancarios**. En el reporte, verificar que el campo 'Balance as per bank' coincida con el Bank Account Statement. Si coincide, significa que la fecha de liquidación está actualizada para todas las entradas bancarias. Si hay alguna discordancia significa que la fecha de liquidación todavía no está actualizada en las entradas bancarias.
-
-
-### 3.2 Herramienta de conciliación bancaria semi-automática
-
-#### Actualización del estado bancario
+### Actualización del estado bancario
 
 Se puede importar en el sistema el estado bancario en formato CSV o XLS mediante la herramienta de conciliación bancaria.
 
@@ -69,7 +63,7 @@ El archivo será procesado por ERPNext y se usará la información obtenida para
 
  <img class="screenshot" alt="Reconcile bank transactions" src="{{docs_base_url}}/assets/img/accounts/bank_transaction_upload.gif">
  
-#### Sincronización de cuentas bancarias
+### Sincronización de cuentas bancarias
 
 Luego de haber cargado en el sistema todas las transacciones bancarias, se las puede conciliar con los pagos existentes. Si se encuentra un pago que parece coincidir con la transacción bancaria seleccionada, ERPNext propondrá dicho pago para conciliar con la transacción.
 
@@ -85,13 +79,13 @@ También se puede crear un nuevo pago o factura directamente desde el tablero de
 
 <img class="screenshot" alt="New payment entry" src="{{docs_base_url}}/assets/img/accounts/new_payment.gif">
 
-#### Conciliación de cheques de terceros desde la herramienta de conciliación bancaria
+### Conciliación de cheques de terceros desde la herramienta de conciliación bancaria
 
 Si se verifica en el extracto un movimiento correspondiente a un pago, cobro o depósito de un cheque de terceros; el mismo puede matchearse de acuerdo a la opción *Match against Voucher* con el movimiento que corresponda.
 
 Se deberán completar los campos restantes y validar la operación.
 
-#### Conciliación de cheques propios desde la herramienta de conciliación bancaria
+### Conciliación de cheques propios desde la herramienta de conciliación bancaria
 
 Si se verifica en el extracto un movimiento correspondiente a un pago, cobro o depósito de un cheque propio; la conciliación adquiere ciertas particularidades.
 
@@ -99,7 +93,7 @@ En primer lugar, deberá seleccionarse en el selector de *Acción* la opción *C
 
 Se deberán completar los restantes campos y validar la operación.
 
-### 4. Temas relacionados
+## 4. Temas relacionados
 1. [Conciliación de pagos](/docs/user/manual/es/accounts/payment-reconciliation)
 1. [Garantía Bancaria](/docs/user/manual/es/accounts/bank-guarantee)
 1. [Entrada de pago](/docs/user/manual/es/accounts/payment-entry)
