@@ -65,6 +65,6 @@ Se generan los movimientos contables teniendo en cuenta las siguientes considera
 * Si se generó el Ajuste por inflación y quedó en la Pantalla de control, es decir, no se creó todavía el asiento contable, se puede retomar en cualquier momento, dirigiéndose al módulo Factura Electrónica -Informes Estándares - Ajuste por inflación, eligiendo el ajuste que tiene como nombre la fecha del último mes.
 * Si se generó el asiento contable de ajuste pero resulta que algún dato era incorrecto, es posible eliminarlo cancelando el Ajuste por inflación que lo generó.
 
-En el Balance General o Libro Mayor, hay una opción para ocultar los ajustes por inflación del mismo.
+* En el Balance General o Libro Mayor, hay una opción para ocultar los ajustes por inflación del mismo.
 
-Es posible generar asientos contables de Ajuste por inflación manualmente, en el caso de que los cálculos se realicen por fuera del sistema, teniendo en cuenta solamente de elegir como Tipo de Asiento: Ajuste por inflación.
+* Es posible generar asientos contables de Ajuste por inflación manualmente, en el caso de que los cálculos se realicen por fuera del sistema, teniendo en cuenta solamente de elegir como Tipo de Asiento: Ajuste por inflación.
