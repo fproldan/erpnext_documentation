@@ -84,7 +84,7 @@ Si el vencimiento resultó de un error en la selección de la Fecha de pago, es 
 Existen situaciones en las cuales un cheque vencido puede ser reemplazado, ya que el Cliente decide entregar uno nuevo en su lugar. En estos casos, se puede crear el nuevo cheque desde el listado de cheques, y seleccionar el cheque vencido en el campo Reemplaza a. Así el cheque Vencido pasará a estado Reemplazado y se tendrá el nuevo cheque con estado En mano.
 
 En el caso de que se reemplace el cheque por otra forma de pago, se debe hacer click en *Acciones > Reemplazar*, lo que cambiará el estado del cheque a Reemplazado y ya no estará disponible para futuras transacciones. Al hacer esto se puede añadir un comentario en el cheque aclarando la razón del reemplazo, a modo informativo. 
-Como la transacción implicó un cambio en la composición del activo de la empresa, deberá realizarse además el Asiento contable correspondiente. Por ejemplo, en el caso de que un cheque en mano sea reemplazado por efectivo, la cuenta Valores a Depositar (Activo) disminuye por el importe correspondiente al cheque, mientras que la cuenta Caja aumenta por el mismo valor.
+Como la transacción implicó un cambio en la composición del activo de la empresa, deberá realizarse además el Asiento contable correspondiente.
 
 ### 5.3. Rechazo de cheque vencido
 También se puede optar por rechazar el cheque vencido, lo cual registrará la deuda del Cliente en el sistema.
@@ -120,4 +120,4 @@ Para esto ingresar al cheque y hacer click en *Acciones > Rechazar Entregado*. E
 
 Existen situaciones en las cuales un cheque puede ser reemplazado, ya sea por motivos comerciales (cheque en mano), como también porque el cheque se haya vencido y el Cliente decida entregar uno nuevo en su lugar (cheque vencido, caso visto anteriormente) o porque el cheque fue rechazado. En todos los casos se debe seguir los pasos indicados [anteriormente](/docs/user/manual/es/accounts/cheque-de-tercero.md#52-reemplazo-de-cheque).
 
-Si el reemplazo es por efectivo Como la transacción implicó un cambio en la composición del activo de la empresa, deberá realizarse además el Asiento contable correspondiente. Por ejemplo, en el caso de que un cheque en mano sea reemplazado por efectivo, la cuenta Valores a Depositar (Activo) disminuye por el importe correspondiente al cheque, mientras que la cuenta Caja aumenta por el mismo valor.
+Si el reemplazo es por efectivo, como la transacción implica un cambio en la composición del activo de la empresa, deberá realizarse además el Asiento contable correspondiente. Por ejemplo, en el caso de que un cheque en mano sea reemplazado por efectivo, la cuenta Valores a Depositar (Activo) disminuye por el importe correspondiente al cheque, mientras que la cuenta Caja aumenta por el mismo valor.
