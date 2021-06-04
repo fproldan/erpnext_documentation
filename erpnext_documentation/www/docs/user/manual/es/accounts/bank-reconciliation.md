@@ -63,7 +63,7 @@ El archivo será procesado por ERPNext y se usará la información obtenida para
 
  <img class="screenshot" alt="Reconcile bank transactions" src="{{docs_base_url}}/assets/img/accounts/bank_transaction_upload.gif">
  
-### Sincronización de cuentas bancarias
+### Conciliación de cuentas bancarias
 
 Luego de haber cargado en el sistema todas las transacciones bancarias, se las puede conciliar con los pagos existentes. Si se encuentra un pago que parece coincidir con la transacción bancaria seleccionada, ERPNext propondrá dicho pago para conciliar con la transacción.
 
