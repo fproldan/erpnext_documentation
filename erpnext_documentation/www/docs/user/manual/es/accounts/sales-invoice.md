@@ -21,7 +21,7 @@ Opcional:
  * [Orden de venta](/docs/user/manual/es/selling/sales-order)
  * [Nota de entrega](/docs/user/manual/es/stock/delivery-note)
 
-También se debe ingresar el CBU y Alias CBU de la empresa en la Compañía si se encuadra dentro del régimen MiPyME. Para ciertas transacciones, AFIP solicita esta información, y si la misma no se encuentra el sistema arrojará un mensaje advirtiéndolo.
+> Nota: También se debe ingresar el CBU y Alias CBU de la empresa en la Compañía si se encuadra dentro del **régimen MiPyME**. Para ciertas transacciones, AFIP solicita esta información, y si la misma no se encuentra el sistema arrojará un mensaje advirtiéndolo.
 
 ## 2. Creación de facturas de venta
 Una Factura de venta es generalmente creada desde Ordenes de venta o Notas de entrega. Los detalles del producto serán traídos de forma automática a la factura. Sin embargo, también se puede crear facturas de venta directamente.
@@ -33,7 +33,7 @@ Para la creación manual, se debe seguir los siguientes pasos:
 1. Ir al listado de Facturas de venta y hacer click en Nuevo.
 1. Seleccionar Punto de venta, Cliente, Secuencia y Concepto incluído.
 1. Definir la Fecha de pago.
-2. Seleccionar la Opción de transmisión (especialmente importante bajo el régimen MiPyME).
+2. Seleccionar la Opción de transmisión (especialmente importante bajo el **régimen MiPyME**).
 3. En la tabla de Producto, añadir los que correspondan y especificar las cantidades.
 4. Los precios serán traídos automáticamente si exite el correspondiente [Precio de Producto](/docs/user/manual/es/stock/item-price), sino se debe agregar en la tabla.
 5. La fecha y hora de contabilización serán completadas por defecto con los datos actuales, aunque se pueden editar luego de tildar la opción "Editar fecha y hora de envío".
@@ -71,11 +71,11 @@ Estos son los estados que se asignan automáticamente a las facturas de venta:
 
 * **Concepto incluído**: debe seleccionarse alguno de los conceptos incluídos en el desplegable. En el caso de que se trate de "Servicios", deberá colocarse la fecha de prestación de los mismos. Es solicitado por AFIP para la validación de la factura.
 
-* **Opción de transmisión**: debe seleccionarse alguna de las opciones de transmisión que aparecen en el desplegable, de acuerdo a la información que el contador le brinde. La opción de transmisión es obligatoria para clientes MiPyME, según normativa de AFIP.
+* **Opción de transmisión**: debe seleccionarse alguna de las opciones de transmisión que aparecen en el desplegable, de acuerdo a la información que el contador le brinde. La opción de transmisión es **obligatoria para clientes MiPyME**, según normativa de AFIP.
 
 * **Posición fiscal**: Debe completarse sólo cuando se trate de alguna de las operaciones comprendidas en el desplegable (No alcanzado, Operaciones de canje, No gravado, Operaciones exentas, Operaciones al exterior, Operaciones a zona franca).
 
-* **Comprobante asociado**: Si se trata de una Nota de Crédito/Débito debe completar el comprobante asociado con la factura sobre la cual impacta la transacción. Además, en caso de una Nota de crédito, debe tildar el checkbox Es una Nota de Crédito.
+* **Comprobante asociado**: Si se trata de una **Nota de Crédito/Débito** debe completar el comprobante asociado con la factura sobre la cual impacta la transacción. Además, en caso de una Nota de crédito, debe tildar el checkbox Es una Nota de Crédito.
 
 ### 3.2 Fechas
 
@@ -85,7 +85,7 @@ Estos son los estados que se asignan automáticamente a las facturas de venta:
 El límite de crédito puede establecerse desde el [Cliente](/docs/user/manual/en/CRM/customer#24-credit-limit-and-payment-terms) mismo.
 
 ### 3.3 Exportación
-* **Inconterms**: Deberá completarse sólo en el caso de que se trate de una factura de exportación de bienes.
+* **Inconterms**: Deberá completarse sólo en el caso de que se trate de una **factura de exportación de bienes**.
 
 ### 3.4 Dimensiones contables
 Las dimensiones contables permiten diferenciar las transacciones basándose en un aspecto específico, como territorio, sucursal, cliente, etc. Esto ayuda a visualizar estados financieros por separado en base a la dimensión seleccionada. Para saber más, visitar la sección [Dimensiones contables](/docs/user/manual/es/accounts/accounting-dimensions).
@@ -168,7 +168,7 @@ Los Impuestos y cargos son traídos desde la [Orden de venta](/docs/user/manual/
 
 Visitar la página [Plantilla de Impuestos y Gastos](/docs/user/manual/es/selling/sales-taxes-and-charges-template) para saber más sobre impuestos.
 
-De acuerdo a las categorías impositivas de la Compañía y del Cliente, pueden existir percepciones sobre la Factura de venta. Las mismas se calcularán automáticamente, una vez guardado el documento; y se visualizarán como una fila adicional dentro del apartado Impuestos y cargos. Para ello deberán estar previamente configurados los distintos impuestos de percepción aplicables a cada cliente. Más información acerca de Percepciones [aquí](/docs/user/manual/es/accounts/configuracion-de-percepciones).
+De acuerdo a las categorías impositivas de la Compañía y del Cliente, pueden existir percepciones sobre la Factura de venta. Las mismas se calcularán **automáticamente** una vez guardado el documento, y se visualizarán como una fila adicional dentro del apartado Impuestos y cargos. Para ello deberán estar previamente configurados los distintos impuestos de percepción aplicables a cada Cliente. Más información acerca de Percepciones [aquí](/docs/user/manual/es/accounts/configuracion-de-percepciones#2-percepciones-emitidas).
 
 El Total Impuestos y Cargos se muestra en la sección debajo de la tabla.
 
@@ -304,11 +304,11 @@ Al registrar una venta (aumento):
 
 ## 5. Temas relacionados
 1. [Centro de costos](/docs/user/manual/es/accounts/cost-center)
-1. [Asiento contable](/docs/user/manual/es/accounts/journal-entry)
-1. [Entrada de pago](/docs/user/manual/es/accounts/payment-entry)
-1. [Factura de compra](/docs/user/manual/es/accounts/purchase-invoice)
-1. [Recibo de compra](/docs/user/manual/es/stock/purchase-receipt)
-1. [Impuestos del producto](/docs/user/manual/es/accounts/item-tax-template)
-1. [Orden de venta](/docs/user/manual/es/selling/sales-order)
-1. [Cotización](/docs/user/manual/es/selling/quotation)
-1. [Nota de entrega](/docs/user/manual/es/stock/delivery-note)
+3. [Asiento contable](/docs/user/manual/es/accounts/journal-entry)
+4. [Entrada de pago](/docs/user/manual/es/accounts/payment-entry)
+5. [Factura de compra](/docs/user/manual/es/accounts/purchase-invoice)
+6. [Recibo de compra](/docs/user/manual/es/stock/purchase-receipt)
+7. [Impuestos del producto](/docs/user/manual/es/accounts/item-tax-template)
+8. [Orden de venta](/docs/user/manual/es/selling/sales-order)
+9. [Cotización](/docs/user/manual/es/selling/quotation)
+10. [Nota de entrega](/docs/user/manual/es/stock/delivery-note)
