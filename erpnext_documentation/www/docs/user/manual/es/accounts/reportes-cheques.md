@@ -1,12 +1,18 @@
 # Reportes de Cheques
 
+Los Reportes de Cheques brindan información acerca de los valores de la empresa, tanto propios como de terceros.
+
 ## Seguimiento de cheques
+
+Ir a: > Inicio > Contabilidad > Cheques > Seguimiento de Cheques
 
 Este reporte permite ver todos los cheques propios y de terceros, con sus datos completos y todos los movimientos que ha tenido hasta llegar al estado actual.
 
 Permite filtrar por Número de cheque, Fechas desde y hasta, Estado del cheque y Entidad que lo emitió.
 
 ## Reporte de Cheques
+
+Ir a: > Inicio > Contabilidad > Cheques > Reporte de Cheques (VER DONDE VA)
 
 Este reporte muestra los cheques recibidos en estado "En mano" pendientes de cobro o a cobrar en fechas posteriores, indicando con diferentes colores la proximidad de su fecha de vencimiento. En color violeta expondrá los cheques que están disponibles para el cobro y en rojo aquellos que tienen tres días o menos para su cobro antes del vencimiento.
 
