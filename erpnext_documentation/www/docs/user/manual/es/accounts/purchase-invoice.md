@@ -61,34 +61,18 @@ Las dimensiones contables permiten clasificar transacciones basándose en un det
 
 > Nota: Proyecto y Centro de costos son tratados como dimensiones por defecto.
 
-### 3.2 Retener la Factura
-
-A veces se necesita retener la factura para que no sea validada hasta determinada fecha.
-
-**Retener la Factura**: tildar esta opción para poner la factura en espera. Esto solo puede realizarse antes de validar la factura. Una vez que "Retener la Factura" es seleccionado y la factura validada, el estado cambiará a "Temporalmente en Espera".
-
-![PI Hold](/docs/assets/img/accounts/pi-hold.png)
-
-Si la factura está validad y se quiere cambiar la "Fecha de Lanzamiento" se puede utilizar el botón "Cambiar Fecha de Lanzamiento" ubicado en el desplegable "Retener la factura".
-
-Si se quiere retener facturas ya validadas, se debe usar el botón "Bloquear factura" y si se desea desbloquear hacer click en "Desbloquear factura".
-
-![Block PI](/docs/assets/img/accounts/pi_block.png)
-
-Esta tipo de bloqueo es a nivel de factura; se puede también aplicar una retención al Proveedor. Para aprender más hacer click [aquí](/docs/user/manual/es/buying/supplier#23-credit-limit).
-
-### 3.3 Detalles de la factura del proveedor
+### 3.2 Detalles de la factura del proveedor
 
 * **Factura de proveedor No.**: el Proveedor puede tener un código propio para identificar cada factura, esto solo sirve como referencia.
 * **Fecha de factura de proveedor**: fecha en la cual el Proveedor generó o confirmó la orden.
 
-### 3.4 Dirección y contacto
+### 3.3 Dirección y contacto
 
 * **Dirección del proveedor:** esta es la dirección de facturación del Proveedor.
 * **Persona de contacto**: si el Proveedor es una Compañía, la persona con la cual se realizará la comunicación es definida en este campo si se la seleccionó también en el [Proveedor](/docs/user/manual/es/buying/supplier).
 * **Dirección de envío:** dirección a la cual se enviarán los productos.
 
-### 3.5 Divisa y listas de precios
+### 3.4 Divisa y listas de precios
 Se puede definir la divisa en la cual se debe enviar la Factura de compra. Esto es traído de la Orden de compra. Si se elige una Lista de precio, entonces el precio del producto será traído de esa lista. Tildando "Ignorar la Regla Precios" se ignorará la [Regla de precios](/docs/user/manual/es/accounts/pricing-rule) existente en Cuentas > Regla de precios.
 
 ![PI Price List](/docs/assets/img/accounts/pi-price-list.png)
@@ -97,11 +81,11 @@ Para saber sobre Listas de precios, hacer click [aquí](/docs/user/manual/es/sto
 
 Para saber sobre gestión de transacciones en distintas divisas, hacer click [aquí](/docs/user/manual/es/accounts/articles/managing-transactions-in-multiple-currency).
 
-### 3.6 Materias primas suministradas
+### 3.5 Materias primas suministradas
 
 Esta opción es útil para subcontrataciones en las que se provee la materia prima para la fabricación del producto. Para saber más, visitar la página [Subcontratación](/docs/user/manual/en/manufacturing/subcontracting).
 
-### 3.7 Productos
+### 3.6 Productos
 
 * **Escanear código de barras**: se puede agregar productos a la tabla escaneando sus códigos de barra. Para saber cómo hacer esto visitar la siguiente [página](/docs/user/manual/es/stock/articles/track-items-using-barcode)
 
@@ -137,7 +121,7 @@ La "Tarifa de la lista de precios" será traída si se especificó un precio par
 
 La opción **Actualizar el Inventario** debería estar tildada si se desea que el sistema actualice automáticamente el inventario. Al hacer esto no es necesario crear una Nota de entrega.
 
-### 3.8 Impuestos y cargos
+### 3.7 Impuestos y cargos
 
 Los impuestos y cargos serán traídos desde la [Orden de compra](/docs/user/manual/es/buying/purchase-order) o el [Recibo de compra](/docs/user/manual/es/stock/purchase-receipt).
 
@@ -145,7 +129,7 @@ Los impuestos y cargos serán traídos desde la [Orden de compra](/docs/user/man
 
 Visitar la página [Plantilla de Impuestos y Gastos de Compra](/docs/user/manual/es/buying/purchase-taxes-and-charges-template) para saber más sobre impuestos.
 
-En caso de que existan percepciones sufridas, las mismas deberán ingresarse de manera manual, asignando la cuenta contable sobre la cual se desea que impacten. Más información acerca de Percepciones [aquí](/docs/user/manual/es/accounts/configuracion-de-percepciones). 
+En caso de que existan percepciones sufridas, las mismas deberán ingresarse de manera manual, asignando la cuenta contable sobre la cual se desea que impacten. Más información acerca de Percepciones [aquí](/docs/user/manual/es/accounts/configuracion-de-percepciones#3-percepciones-sufridas). 
 
 Los impuestos y cargos totales aparecerán debajo de la tabla.
 
@@ -157,7 +141,7 @@ Es importante asegurarse de marcar todos los Impuestos y cargos correctamente pa
 
 Una Regla de envío ayuda a calcular el costo del envío de un producto. Este incrementará con la distancia del envío. Para saber más, visitar la página [Regla de envío](/docs/user/manual/es/selling/shipping-rule).
 
-### 3.9 Descuento adicional
+### 3.8 Descuento adicional
 
 Cualquier descuento adicional hecho sobre el total de la factura puede ser asignado en esta sección. El descuento puede calcularse en base al Total (después de sumarle los impuestos y cargos) o sobre el Total Neto. El descuento adicional puede definirse en porcentaje o ser un monto fijo.
 
@@ -165,11 +149,11 @@ Cualquier descuento adicional hecho sobre el total de la factura puede ser asign
 
 Visitar la página [Aplicar un descuento](/docs/user/manual/es/selling/articles/applying-discount) para más detalles.
 
-### 3.10 Pagos adelantados
+### 3.9 Pagos adelantados
 
 Para productos de costo elevado, el vendedor puede solicitar un pago adelantado antes de procesar la orden. El botón **Obtener anticipos recibidos** permite traer a la factura los pagos adelantados. Para saber más, visitar la página [Pagos adelantados](/docs/user/manual/es/accounts/advance-payment-entry).
 
-### 3.11 Términos de pago
+### 3.10 Términos de pago
 
 El pago de una factura puede realizarse en partes dependiendo de lo acordado con el Proveedor. Esto es traído si se lo especificó en la Orden de compra.
 
@@ -177,15 +161,15 @@ El pago de una factura puede realizarse en partes dependiendo de lo acordado con
 
 Para saber más, visitar la página [Términos de pago](/docs/user/manual/es/accounts/payment-terms).
 
-### 3.12 Desajuste
+### 3.11 Desajuste
 
 El desajuste ocurre cuando el Cliente paga un importe menor al total de la factura. Puede ser una diferencia mínima de $0,50. Si ocurre en muchas ordenes, puede sumar una cifra mucho mayor. Para precisión contable esta diferencia es "anulada". Para saber más, visitar la página [Entrada de pago](/docs/user/manual/es/accounts/payment-entry#25-deductions-or-loss).
 
-### 3.13 Términos y condiciones
+### 3.12 Términos y condiciones
 
 En transacciones de compra/venta puede haber ciertos términos y condiciones dependiendo de si el Proveedor suministra bienes o servicios al Cliente. Se pueden aplicar estos términos a las transacciones y los mismos aparecerán en la impresión del documento. Para saber sobre Términos y condiciones hacer click [aquí](/docs/user/manual/es/setting-up/print/terms-and-conditions).
 
-### 3.14 Ajustes de impresión
+### 3.13 Ajustes de impresión
 
 #### Membrete
 
@@ -199,12 +183,12 @@ El encabezado de las facturas también puede ser seleccionado al imprimir el doc
 
 Existen ajustes adicionales para la impresión de Facturas de compra sin el importe, esto puede ser útil para productos con precio elevado.
 
-### 3.15 Más información
+### 3.14 Más información
 
 * **De apertura**: si esta es una entrada de apertura seleccionar "Sí". Ej: si se está migrando desde otro sistema a ERPNext, se necesitará usar un Asiento de apertura para actualizar los balances en ERPNext.
 * **Observaciones**: cualquier observación adicional sobre la factura puede agregarse en este campo.
 
-### 3.16 Luego de validar
+### 3.15 Luego de validar
 
 Al validar la factura, se pueden crear los siguentes documentos contra la misma:
 
