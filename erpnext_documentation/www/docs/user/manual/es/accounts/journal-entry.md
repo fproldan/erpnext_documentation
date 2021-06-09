@@ -249,7 +249,7 @@ Este tipo de asiento se genera al utilizar la herramienta [Ajuste por inflación
 
 ### 3.15 Cheque Rechazado / Depositado / Cobrado
 
-Cada uno de estos asientos se utiliza para registrar la operación respectiva realizada sobre cheques. Más información al respecto en los artículos [Cheque de tercero](/docs/user/manual/es/accounts/cheque-de-tercero) y [Cheque propio](/docs/user/manual/es/accounts/cheque-propio).
+Cada uno de estos asientos se utiliza para registrar la operación respectiva realizada sobre cheques. Al seleccionar una de estas opciones aparecerá el campo Cheque en el cual se eligirá el cheque sobre el cual se está realizando la operación. Más información al respecto en los artículos [Cheque de tercero](/docs/user/manual/es/accounts/cheque-de-tercero) y [Cheque propio](/docs/user/manual/es/accounts/cheque-propio).
 
 ### 4. Temas relacionados
 1. [Asiento contable entre compañías](/docs/user/manual/es/accounts/inter-company-journal-entry)
