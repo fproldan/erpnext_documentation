@@ -243,6 +243,14 @@ Para saber más, visitar la página [Depreciacion de activos](/docs/user/manual/
 
 Si el Plan de cuentas posee múltiple divisas, un asiento contable del tipo "Revalorización del tipo de cambio" ayuda a lidiar con esta situación. Este asiento debe crearse desde el documento de Revalorización del tipo de cambio. Para saber más visitar la página [Revalorización del tipo de cambio](/docs/user/manual/es/accounts/exchange-rate-revaluation).
 
+### 3.14 Ajuste por inflación
+
+Este tipo de asiento se genera al utilizar la herramienta [Ajuste por inflación](/docs/user/manual/es/accounts/ajuste-por-inflacion).
+
+### 3.15 Cheque Rechazado / Depositado / Cobrado
+
+Cada uno de estos asientos se utiliza para registrar la operación respectiva realizada sobre cheques. Más información al respecto en los artículos [Cheque de tercero](/docs/user/manual/es/accounts/cheque-de-tercero) y [Cheque propio](/docs/user/manual/es/accounts/cheque-propio).
+
 ### 4. Temas relacionados
 1. [Asiento contable entre compañías](/docs/user/manual/es/accounts/inter-company-journal-entry)
 1. [Nota de crédito](/docs/user/manual/es/accounts/credit-note)
