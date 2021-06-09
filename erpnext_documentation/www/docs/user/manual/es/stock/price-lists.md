@@ -29,7 +29,9 @@ Para acceder al listado de Listas de Precio ir a:
 
 * De forma predeterminada se crearán Listas de Precio Estándar tanto para Compra como para Venta. 
 
-**Observación**: Si se cuenta con múltiples Listas de Precios, se puede seleccionar una Lista de Precios o asignárselo a un Cliente (de forma que sea seleccionado automáticamente). Los Precios de Productos serán actualizados automáticamente desde la Lista de Precios. 
+**Observación**: Si se cuenta con múltiples Listas de Precios, se puede seleccionar una Lista de Precios o asignárselo a un Cliente (de forma que sea seleccionado automáticamente). Los Precios de Productos serán actualizados automáticamente desde la Lista de Precios.
+
+* **Duplicar lista completa**: es posible crear una nueva Lista de precios usando de base otra existente. Para esto ingresar a la Lista que se desea duplicar, hacer click en el botón "Duplicar lista completa", ingresar el nombre y modificar si se desea algun aspecto de la nueva Lista y guardar. Hacer esto no solo ayuda a crear de forma sencilla una nueva lista sino que generará todos los Precios de Productos que existían para la Lista original, con la lista nueva en su lugar.
 
 ### Temas Relacionados
 1. [Precio de Producto](/docs/user/manual/es/stock/item-price)
