@@ -74,9 +74,11 @@ Una Entrada de pago creada manualmente no estará vinculada con ninguna orden o 
 
 ### 3.1 Método de pago
 
-**Método de pago**: este atributo ayuda a clasificar las Entradas de pago basándose en el método de pago usado. Este puede ser Banco, Caja, Transferencia directa, etc.
+Este atributo ayuda a clasificar las Entradas de pago basándose en el método de pago usado. Este puede ser Banco, Caja, Transferencia directa, etc.
 
 > **Tip**: En el [Método de pago](/docs/user/manual/es/accounts/mode-of-payment) se puede definir una cuenta predeterminada, la cual será usada en las Entradas de pago.
+
+En el caso de seleccionar un Método de pago de tipo **Cheque**, aparecerá una tabla para cargar los mismos debajo de la sección Cuentas. Para más información sobre el uso de Entradas de pago con Cheques visitar los artículos [Cheque de tercero](/docs/user/manual/es/accounts/cheque-de-tercero) y [Cheque propio](/docs/user/manual/es/accounts/cheque-propio).
 
 ### 3.2 Pago de/a
 
