@@ -27,8 +27,6 @@ Esta es la forma en que el balance general es afectado al registrarse el pago de
 
 Más información al respecto en la página de [Factura de compra](/docs/user/manual/en/accounts/purchase-invoice).
 
-### 1.2 Factura de venta sin pago
-En el caso de que no se haya registrado pago alguno para la factura original, se puede cancelar la Factura de venta. Pero, si solo 5 de 10 productos de la factura son devueltos, crear una Nota de débito es útil para actualizar el balance general.
 
 ## 2. Ejemplo
 Se realizó la compra de algodón por $2400 + impuestos; pero al recibir los productos se nota que el producto no está en condiciones. Al devolverlo, se debe generar la Nota de débito en el sistema.
