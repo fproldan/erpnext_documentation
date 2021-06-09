@@ -65,6 +65,10 @@ Las dimensiones contables permiten clasificar transacciones basándose en un det
 
 * **Factura de proveedor No.**: el Proveedor puede tener un código propio para identificar cada factura, esto solo sirve como referencia.
 * **Fecha de factura de proveedor**: fecha en la cual el Proveedor generó o confirmó la orden.
+* **Tipo de Comprobante**: en este campo aparecerán las opciones de comprobante que se pueden emitir para el Proveedor de la factura.
+* **Punto de Venta**: en este campo se puede ingresar el número del Punto de venta con el que se generó la factura.
+* **CAE**: campo no obligatorio donde puedan cargar el CAE de la factura.
+
 
 ### 3.3 Dirección y contacto
 
