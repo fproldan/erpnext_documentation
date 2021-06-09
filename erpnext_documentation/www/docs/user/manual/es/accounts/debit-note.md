@@ -1,36 +1,17 @@
 <!-- add-breadcrumbs -->
-# Nota de débito
+# Nota de Débito
 
-**Una Nota de débito es un documento enviado al proveedor notificando que se ha registrado un débito respecto a los bienes devueltos al mismo.**
+**Una Nota de Débito es un documento enviado al Cliente notificando que se ha registrado una deuda o saldo para con la Compañía.**
 
-El monto de la Nota de débito será igual al valor de los productos devueltos. En algunos casos, los vendedores envían Notas de débito que deberán ser tratadas como cualquier otra factura.
+## 1. Creación de una Nota de Débito
 
-## 1. Creación de una Nota de débito
+La creación de una Nota de Débito en el sistema es similar a la de una [Factura de venta](/docs/user/manual/es/accounts/sales-invoice), con la diferencia de que se deberá seleccionar una **Secuencia** que corresponda con este tipo de comprobante y se tiene que especificar en el campo **Comprobante Asociado** la Factura de venta con la cual se relciona este nuevo saldo.
 
-Se puede hacer una Nota de débito contra la Factura de compra o directamente desde la misma sin referencia.
+## 2. Casos de uso de la Nota de Débito
 
-1. Ir a la Factura de compra correspondiente y hacer click en **Crear > Retorno / Nota de Débito**.
- ![Debit Note from Invoice](/docs/assets/img/accounts/debit-note-from-invoice.png)
-1. Los detalles del proveedor y del producto serán traídos desde la Factura.
-1. Si se había realizado el pago por la compra, ya sea de forma completa o parcial, se deberá generar una Entrada de pago contra la factura original.
-1. Guardar y validar.
- <img class="screenshot" alt="Sales Invoice" src="{{docs_base_url}}/assets/img/accounts/debit-note.png">
+### 2.1. Nota de Débito con Cheque rechazado
 
-Los demás pasos son similares a los de una [Factura de compra](/docs/user/manual/en/accounts/purchase-invoice).
+En el caso de que se rechace un cheque recibido de un tercero (por ejemplo, un Cliente), se debe generar una Nota de Débito para registrar la deuda nuevamente en el sistema, ya que al rechazarse el cheque el pago se considera anulado.
+En la tabla de Productos se deberá elegir Cheque rechazado e ingresar el importe correspondiente al cheque.
 
-
-### 1.1 Impacto contable de la Nota de débito
-Una vez que el pago es creado contra la factura original, el monto será agregado a la cuenta del Proveedor con signo negativo de forma que en la próxima compra al mismo, el valor se ajuste automáticamente. 
-
-Esta es la forma en que el balance general es afectado al registrarse el pago de una factura devuelta:
-![Debit Note Ledger](/docs/assets/img/accounts/debit-note-ledger.png)
-
-Más información al respecto en la página de [Factura de compra](/docs/user/manual/en/accounts/purchase-invoice).
-
-
-## 2. Ejemplo
-Se realizó la compra de algodón por $2400 + impuestos; pero al recibir los productos se nota que el producto no está en condiciones. Al devolverlo, se debe generar la Nota de débito en el sistema.
-
-### 3. Temas relacionados
-1. [Entrada de pago](/docs/user/manual/es/accounts/payment-entry)
-1. [Nota de crédito](/docs/user/manual/es/accounts/credit-note)
+Para más información visitar el artículo sobre [Cheque de tercero](/docs/user/manual/es/accounts/cheque-de-tercero).
