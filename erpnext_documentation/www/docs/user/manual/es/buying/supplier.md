@@ -22,9 +22,9 @@ En transacciones futuras, los campos se completarán automáticamente si se conf
 ### 2.1 Detalles de Impuestos
 
 * **País**: Si el Proveedor es de otro país, se lo puede cambiar aquí.
+* **Condición de IVA**: tipo de responsabilidad que el Proveedor tiene frente a AFIP.
+* **Tipo de Documento**: tipo de Identificación Fiscal del Proveedor.
 * **CUIT/CUIL**: Número de Identificación Fiscal del Proveedor.
-* **Categoría de impuestos**: Esto está vinculado a [Reglas fiscales](/docs/user/manual/es/accounts/tax-rule). Si se configura aquí una Categoría de impuestos, cuando se seleccione este proveedor, se aplicará la Plantilla de Impuestos (Compra) correspondiente. Esta plantilla está vinculada a las Reglas Fiscales y éstas últimas, a una Categoría de impuestos. La Categoría de impuestos puede utilizarse para agrupar proveedores a los cuáles se aplicarán los mismos impuestos. Por ejemplo: Gobierno, Comercial, etc. 
-* **Categoría de Retención de Impuestos**: Al configurar una categoría aquí, la misma será ingresada en la [Factura de Compra](/docs/user/manual/es/accounts/purchase-invoice). Para más información, visitar la página [Categoría de Retención de Impuestos](/docs/user/manual/es/accounts/tax-withholding-category).
 * **Deshabilitado**: Deshabilita al Proveedor, el cual no será mostrado en la Lista de Proveedores.
 * **Es Transportista**: Si el proveedor está vendiendo servicios de transporte, hacer click en esta casilla. 
 * **Es un Proveedor Interno**: Si el proveedor es de una empresa hermana o principal/subsidiaria, hacer click en este campo y seleccionar la empresa que representa.
