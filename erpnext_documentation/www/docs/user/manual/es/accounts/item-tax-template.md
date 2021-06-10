@@ -21,7 +21,7 @@ Antes de crear y usar una Plantilla de impuesto de producto, se aconseja crear l
 ## 2. Creación de una Plantilla de impuestos de producto
 1. Ir al listado de Plantillas de impuestos de productos y hacer click en Nuevo.
 1. Ingresar un título para la plantilla.
-1. Seleccionar la cuenta y definir el porcentaje del impuesto. Añadir más filas si es necesario.
+1. Seleccionar la cuenta en el campo de la columna Impuesto, y el Tipo de impuesto. Al hacer esto se autocompletará el campo Porcentaje del impuesto con el definido en el Tipo de impuesto. Se puede añadir más filas si es necesario.
 1. Guardar.
 
 A continuación se podrá asignar la plantilla al producto correspondiente. Para hacer esto, ir al producto y seleccionar la plantilla en la sección IMPUESTOS DEL PRODUCTO:
