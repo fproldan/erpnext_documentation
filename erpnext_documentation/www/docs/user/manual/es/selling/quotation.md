@@ -90,6 +90,8 @@ El total de impuestos y gastos se verá al final de la tabla. Haciendo click en 
 
 Para añadir impuestos de forma automática a través de una Categoría de impuestos, visitar [esta página](/docs/user/manual/es/accounts/tax-category).
 
+Después de guardar la Cotización aparece en el desplegable de Acciones el botón **Calcular percepciones**, mediante el cual se pueden agregar automáticamente en esta tabla los impuestos de percepción que correpsondan para el Cliente en particular. Para más información al respecto visitar [Configuración de Percepciones](/docs/user/manual/es/accounts/configuracion-de-percepciones).
+
 #### Regla de Envío
 Una Regla de Envío ayuda a determinar el costo de enviar un producto. El costo tenderá a aumentar a medida que la distancia de envío sea mayor. Para saber más, vistar la sección [Regla de Envío](/docs/user/manual/es/selling/shipping-rule).
 
