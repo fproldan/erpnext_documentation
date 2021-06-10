@@ -12,7 +12,8 @@ Para acceder al listado de Direcciones ir a:
 
 1. Ir al listado de Dirección y hacer click en Nuevo. 
 1. Seleccionar el Tipo de Dirección.
-1. Ingresar los detalles en Dirección línea 1, Dirección línea 2, Ciudad, Provincia, Estado, País. 
+1. Ingresar los detalles en Dirección línea 1, Dirección línea 2, Ciudad/Pueblo, Provincia/Jurisdicción, Partido/Departamento, Provincia/Estado
+y País. 
 1. Ingresar Correo Electrónico, Teléfono y Fax. 
 1. Ingresar el vínculo de DocType y vínculo de Nombre para vincular esta dirección a un cliente, proveedor, etc.
 4. Guardar.
@@ -51,5 +52,3 @@ De forma similar, si se selecciona "Dirección de facturación preferida", la di
 1. [Cliente](/docs/user/manual/es/CRM/customer)
 1. [Proveedor](/docs/user/manual/es/buying/supplier)
 1. [Socio de ventas](/docs/user/manual/es/selling/sales-partner)
-
-{siguiente}
