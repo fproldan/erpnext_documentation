@@ -87,7 +87,7 @@ Se deberán realizar las gestiones comerciales correspondientes y registrar las 
 Si el vencimiento resultó de un error en la selección de la Fecha de pago, es posible actualizarla haciendo click en *Acciones > Actualizar Fecha de pago*. Así se puede seleccionar una fecha posterior y el cheque volverá a estado **En mano**.
 
 #### 2.5.2. Reemplazo de cheque por nuevo cheque o por otra forma de pago
-Existen situaciones en las cuales un cheque vencido puede ser reemplazado, ya que el Cliente decide entregar uno nuevo en su lugar. En estos casos, se puede crear el nuevo cheque desde el listado de cheques, y seleccionar el cheque vencido en el campo Reemplaza a. Así el cheque Vencido pasará a estado Reemplazado y se tendrá el **nuevo cheque con estado En mano**.
+Existen situaciones en las cuales un cheque vencido puede ser reemplazado, ya que el Cliente decide entregar uno nuevo en su lugar. En estos casos, se puede crear el nuevo cheque desde el listado de cheques, y seleccionar el cheque vencido en el campo Reemplaza a. Así el cheque Vencido pasará a estado **Reemplazado** y se tendrá el **nuevo cheque con estado En mano**.
 
 En el caso de que se reemplace el cheque por **otra forma de pago**, se debe hacer click en *Acciones > Reemplazar*, lo que cambiará el estado del cheque a Reemplazado y ya no estará disponible para futuras transacciones. Al hacer esto se puede añadir un comentario en el cheque aclarando la razón del reemplazo, a modo informativo.
 
