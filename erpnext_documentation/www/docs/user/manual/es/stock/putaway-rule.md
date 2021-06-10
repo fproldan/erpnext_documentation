@@ -6,46 +6,48 @@ Una Regla de ubicación define una relación única de Producto-Almacén, en la 
 
 En **Recibos de compra** y **Entradas de inventario** (Recepción y Transferencia de materiales), se aplican las Reglas de ubicación y los Productos son auto-asignados a los **Almacenes** en base a la estrategia definida.
 
-This is particularly useful for capacity management in large warehouses with multiple locations.
+Esto es particularmente útil para administrar la capacidad en almacenes grandes con múltiples ubicaciones.
 
-To access a Putaway Rule, go to:
+Para acceder a la Regla de ubicación ir a:
 
-> Home > Stock > Stock Transactions > Putaway Rule
-## 1. Prerequisites
+> Inicio > Almacén > Transacciones de Inventario > Regla de ubicación
 
-Before creating and using a Putaway Rule, it is advised that you create the following first:
+## 1. Prerrequisitos
 
-- [Stock Item](/docs/user/manual/en/stock/item)
-- [Warehouse](/docs/user/manual/en/stock/warehouse)
+Antes de crear y usar una Regla de ubicación se recomienda crear lo siguiente:
 
-## 2. How to create a Putaway Rule
+- [Producto](/docs/user/manual/es/stock/item)
+- [Almacén](/docs/user/manual/es/stock/warehouse)
 
-1. Go to the Putaway Rule list, click on New.
+## 2. Creación de una Regla de ubicación
+
+1. Ir al listado de Regla de ubicación y hacer click en Nuevo.
  <img class='screenshot' alt='Unsaved Pick List' src='{{docs_base_url}}/assets/img/stock/unsaved-putaway-rule.png'>
 
-1. Set the Company and Select an Item.
-1. Set the Warehouse on which this rule is applicable.
-1. Set the Capacity. You can also select a UOM if you want to set the Capacity in a different UOM. The Capacity in Stock UOM will be set automatically.
+1. Elegir la Compañía y el Producto.
+1. Selecionar el Almacén para el cual aplica esta regla.
+1. Definir la Capacidad. También se puede seleccionar la UOM si se desea usar una diferente. La Capacidad en Stock UOM se completará automáticamente.
  <img class='screenshot' alt='Unsaved Pick List' src='{{docs_base_url}}/assets/img/stock/multi-uom-putaway-rule.png'>
 
-1. Set the Priority. This can begin from 1 onwards, 1 being the highest priority.
-1. Save.
+1. Ingresar la Prioridad, la cual puede ir de 1 en adelante, siendo 1 la mayor prioridad.
+1. Guardar.
  <img class='screenshot' alt='Unsaved Pick List' src='{{docs_base_url}}/assets/img/stock/saved-putaway-rule.png'>
 
-1. You can additionally Disable a Putaway Rule as well.
+1. Es posible Desactivar luego las Reglas creadas.
 
-The rule is unique to each Item-Warehouse combination.
+Cada Regla es una combinación única de Producto-Almacén.
 
-## 3. How Putaway is strategized
-1. Here the strategy is purely based on **Capacity** and **Priority**.
-1. Warehouses will be auto-assigned until they reach full capacity.
-1. Priority will be considered first. Followed by free space. If two rules have the same priority, the rule with more free space available will be assigned.
-1. If you are running at full capacity (no free space in any Warehouse), ERPNext will let you know.
+## 3. Estrategia de las Reglas de ubicación
+
+1. La estrategia se basa principalmente en la **Capacidad** y la **Prioridad**.
+1. Los Almacenes serán asignados automáticamente hasta que no tengan más capacidad libre.
+1. Primero se tendrán en consideración la prioridad, luego el espacio libre. Si dos Reglas poseen la misma prioridad, se usará la que disponga de mayor espacio libre.
+1. Si ya no se posee espacio libre en ningún Almacén, el sistema mostrará un mensaje advirtiéndolo.
 
 
-## 4. How does it work
+## 4. Funcionamiento
 
-As mentioned above the Putaway Rules are applied on the creation of a **Purchase Receipt** from a **Purchase Order**. Let us see that in action:
+Como se mencionó anteriormente, las Reglas de ubicación son aplicadas en la creación de un **Recibo de compra** o una **Entrada de inventario** (Recepción o Transferencia de Material).
 
 A checkbox called **Apply Putaway Rule** will allocate items to Warehouses based on the Putaway Rules.
  <img class='screenshot' alt='Apply Putaway Rule checkbox' src='{{docs_base_url}}/assets/img/stock/apply-putaway-rule.png'>
