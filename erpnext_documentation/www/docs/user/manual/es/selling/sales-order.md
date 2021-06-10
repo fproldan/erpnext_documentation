@@ -91,6 +91,8 @@ El total de impuestos se verá al final de la tabla. Haciendo click en Disoluci�
 
 <img class="screenshot" alt="Taxes in Quotation" src="{{docs_base_url}}/assets/img/selling/sales-order-taxes.png">
 
+Después de guardar la Orden de venta aparece en el desplegable de Acciones el botón **Calcular percepciones**, mediante el cual se pueden agregar automáticamente en esta tabla los impuestos de percepción que correpsondan para el Cliente en particular. Para más información al respecto visitar [Configuración de Percepciones](/docs/user/manual/es/accounts/configuracion-de-percepciones).
+
 #### Regla de Envío
 Una Regla de Envío ayuda a determinar el costo de enviar un producto. Este tenderá a aumentar a medida que la distancia de envío sea mayor. Para saber más, vistar la sección [Regla de Envío](/docs/user/manual/es/selling/shipping-rule).
 
