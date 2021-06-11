@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Dirección
 
-Se pueden registrar las direcciones asociadas con una Iniciativa, un Cliente, Proveedor, Accionista, Socio de ventas o Depósito. 
+Se pueden registrar las direcciones asociadas con una Iniciativa, un Cliente, Proveedor, Accionista, Socio de ventas o Almacén. 
 
 También se puede agregar una Dirección como un registro independiente sin vincularla a ninguna de las entidades mencionadas anteriormente.
 
