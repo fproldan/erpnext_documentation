@@ -24,16 +24,16 @@ Antes de crear y usar una Regla de ubicación se recomienda crear lo siguiente:
 1. Ir al listado de Regla de ubicación y hacer click en Nuevo.
  <img class='screenshot' alt='Unsaved Pick List' src='{{docs_base_url}}/assets/img/stock/unsaved-putaway-rule.png'>
 
-1. Elegir la Compañía y el Producto.
+2. Elegir la Compañía y el Producto.
 1. Selecionar el Almacén para el cual aplica esta regla.
 1. Definir la Capacidad. También se puede seleccionar la UOM si se desea usar una diferente. La Capacidad en Stock UOM se completará automáticamente.
  <img class='screenshot' alt='Unsaved Pick List' src='{{docs_base_url}}/assets/img/stock/multi-uom-putaway-rule.png'>
 
-1. Ingresar la Prioridad, la cual puede ir de 1 en adelante, siendo 1 la mayor prioridad.
-1. Guardar.
+5. Ingresar la Prioridad, la cual puede ir de 1 en adelante, siendo 1 la mayor prioridad.
+6. Guardar.
  <img class='screenshot' alt='Unsaved Pick List' src='{{docs_base_url}}/assets/img/stock/saved-putaway-rule.png'>
 
-1. Es posible Desactivar luego las Reglas creadas.
+Es posible Desactivar luego las Reglas creadas.
 
 Cada Regla es una combinación única de Producto-Almacén.
 
@@ -44,56 +44,56 @@ Cada Regla es una combinación única de Producto-Almacén.
 1. Primero se tendrán en consideración la prioridad, luego el espacio libre. Si dos Reglas poseen la misma prioridad, se usará la que disponga de mayor espacio libre.
 1. Si ya no se posee espacio libre en ningún Almacén, el sistema mostrará un mensaje advirtiéndolo.
 
-
 ## 4. Funcionamiento
 
 Como se mencionó anteriormente, las Reglas de ubicación son aplicadas en la creación de un **Recibo de compra** o una **Entrada de inventario** (Recepción o Transferencia de Material).
 
-A checkbox called **Apply Putaway Rule** will allocate items to Warehouses based on the Putaway Rules.
+Tildar la opción **Aplicar Regla de ubicación** asignará los Productos en los Almacenes en base a las reglas existentes.
  <img class='screenshot' alt='Apply Putaway Rule checkbox' src='{{docs_base_url}}/assets/img/stock/apply-putaway-rule.png'>
 
-Putaway Rules are applied on checking this checkbox. They are also re-applied on save if this checkbox is enabled.
+Las Reglas también vuelven a aplicarse al guardar el documento si la opción está tildada.
 
-Let us see the same in action:
+Ejemplo:
 
-1. Here is a Purchase Order with a requirement of 5 Cartons (60 Nos) of Mineral Water.
+1. En este caso se genera una Orden de compra con 5 botellas (60 Nos) de agua mineral.
  <img class='screenshot' alt='Purchase Order' src='{{docs_base_url}}/assets/img/stock/po-putaway-demo.png'>
 
-1. Two active Putaway Rules have been created below with capacity 4 Cartons (48 Nos) each. One has a higher priority than the other.
+2. Existen dos Reglas de ubicación, cada una con capacidad menor a 4 botellas (48 Nos). Una posee mayor prioridad que la otra.
+  <img class='screenshot' alt='Active Putaway Rules List' src='{{docs_base_url}}/assets/img/stock/active-putaway-rules-list.png'>
 
-1. A Purchase Receipt is created from this Purchase Order.
+3. Un Recibo de compra es creado para dicha Orden.
 
-1. On checking **Apply Putaway Rule**, one row of 5 Cartons is split and assigned according to the rules.
+4. Al tildar **Aplicar Regla de ubicación**, la fila de 5 botellas es dividida y asignada de acuerdo a las reglas.
  <img class='screenshot' alt='Putaway Rules applied in a Purchase Receipt' src='{{docs_base_url}}/assets/img/stock/pr-putaway-apply.gif'>
 
-1. First, 4 out of 5 Cartons are accommodated in the 'Finished Goods - UPI' Warehouse. Once this Warehouse is at capacity, it assigns the rest (1 Carton) to the 'Stores - UPI' Warehouse.
+5. Primero, 4 de las 5 botellas con acomodadas en el Almacén 'Finished Goods'. Al quedar ese Almacén sin espacio libre, se asigna el resto (1 botella) al Almacén 'Stores'.
 
-## 5. Warehouse Capacity Summary
+## 5. Resumen de capacidad de almacenes
 
-The **Warehouse Capacity Summary** Report shows Warehouse capacities and their respective stock levels.
+Este reporte muestra el nivel de capacidad de cada Almacén.
 
-Only Warehouses having Putaway Rules will be listed here. The **Edit Capacity** button gives provision to edit the Putaway Rule capacity.
+Solo se muestran Almacenes con Reglas de ubicación. El botón **Editar Capacidad** permite editar la capacidad definida en la Regla de ubicación.
 
  <img class='screenshot' alt='Warehouse Capacity Summary' src='{{docs_base_url}}/assets/img/stock/warehouse-capacity-summary.png'>
 
 
-## 6. Types of Putaway Application
+## 6. Tipos de aplicación de las Reglas de ubicación
 
-### 6.1. Direct Putaway
+### 6.1. Ubicación directa
 
-1. The example in the previous section explains **Direct Putaway**.
-1. It is, essentially, directly assigning incoming stock to certain Warehouses based on a strategy.
-1. This can easily be exercised via a Purchase Receipt.
+1. El ejemplo anterior explica la **Ubicación directa**.
+1. Esto esto es, básicamente, asignar directamente el inventario entrante a ciertos Almacenes en base a la estrategia establecida.
+1. Esto puede realizarse fácilmente desde un Recibo de compra.
 
-### 6.2. Indirect (Combined) Putaway
+### 6.2. Ubicación indirecta (combinada)
 
-1. Stock is often received into **temporary** or **staging** Warehouses first.
-1. From here it is placed into appropriate locations within the Warehouse.
-1. This is called **Indirect or Combined** Putaway.
-1. To simulate this within ERPNext, a simple Purchase Receipt can be created into the temporary Warehouse, without Putaway applied.
-1. From here, a Stock Entry (Material Transfer) can be done, where Putaway Rules can be applied similar to Purchase Receipts.
+1. El inventario es normalmente recibido primero en almacenes **temporarios**.
+1. Desde aquí es enviado a una ubicación apropiada en el Almacén.
+1. Esto se conoce como Ubicación **indirecta o combinada**.
+1. Para simular esto en el sistema, se puede crear un Recibo de compra común, sin aplicar ninguna regla.
+1. Desde aquí, se puede crear una Entrada de inventario (transferencia de material), donde sí se aplicará la Regla de ubicación.
 
-## 7. Related Topics
+## 7. Temas relacionados
 
-1. [Purchase Receipt](/docs/user/manual/en/stock/purchase-receipt)
-1. [Stock Entry](/docs/user/manual/en/stock/stock-entry)
+1. [Recibo de compra](/docs/user/manual/es/stock/purchase-receipt)
+1. [Entrada de inventario](/docs/user/manual/es/stock/stock-entry)
