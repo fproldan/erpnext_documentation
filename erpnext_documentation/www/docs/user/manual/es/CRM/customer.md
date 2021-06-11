@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Cliente
 
-**Un cliente, conocido también como comprador o consumidor, es quien recibe los bienes, servicios, productos o ideas desde un vendedor, a cambio de una retribución monetaria.**
+**Un cliente, conocido también como comprador o consumidor, es quien recibe los bienes, servicios, productos o ideas de un vendedor, a cambio de una retribución monetaria.**
 
 A cada cliente debe asignársele una identificación única. El nombre del cliente puede ser la identificación o se puede configurar la generación de series de identificación en las [Configuraciones de Venta](/docs/user/manual/en/selling/selling-settings).
 
