@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Contacto
 
-**Un Contacto representa a una persona.**
+**Un Contacto representa a una persona en el sistema.**
 
 Un contacto puede estar asociado con una Iniciativa, un Cliente, Proveedor, Accionista, Socio Comercial o un Usuario.
 
