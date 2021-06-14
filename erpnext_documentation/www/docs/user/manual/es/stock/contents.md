@@ -27,7 +27,7 @@ El módulo de Almacén está profundamente integrado con los módulos de Compra,
 ### 1.3 Configuración
 1. [Precio de Producto](/docs/user/manual/es/stock/item-price)
 1. [Grupo de Producto](/docs/user/manual/es/stock/item-group)
-1. [Unidad de Medida (UdM)](/docs/user/manual/es/stock/uom)
+1. [Unidad de Medida (UOM)](/docs/user/manual/es/stock/uom)
 1. [Fabricante](/docs/user/manual/es/stock/manufacturer)
 
 ### 1.4 Transacciones de Inventario
@@ -38,7 +38,7 @@ El módulo de Almacén está profundamente integrado con los módulos de Compra,
 1. [Lista de Embalaje](/docs/user/manual/es/stock/packing-slip)
 1. [Retener Stock de Muestras](/docs/user/manual/es/stock/retain-sample-stock)
 1. [Comprobante de Costo de Destino](/docs/user/manual/es/stock/landed-cost-voucher)
-1. [Lista de Selección](/docs/user/manual/es/stock/pick-list)
+1. [Lista de picking](/docs/user/manual/es/stock/pick-list)
 
 ### 1.5 Número de Serie y de Lote
 1. [Número de Serie](/docs/user/manual/es/stock/serial-no)
