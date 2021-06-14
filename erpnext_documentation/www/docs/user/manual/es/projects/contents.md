@@ -29,5 +29,5 @@ ERPNext ayuda a cualquier empresa a administrar de forma efectiva aspectos de ne
 1. [Costo de Proyecto](/docs/user/manual/es/projects/project-costing)
 1. [Rentabilidad de Proyecto](/docs/user/manual/es/projects/project-profitability)
 1. [Proyecto y Administración de Gastos](/docs/user/manual/es/projects/project-expense-claims)
-1. [Portal de Cliente para Proyecto](/docs/user/manual/es/projects/project-customer-portal)
+1. [Proyecto desde el Portal de Cliente](/docs/user/manual/es/projects/project-customer-portal)
 1. [Crear un Gráfico de Gantt Colorido](/docs/user/manual/es/projects/articles/make-a-colorful-gantt-chart)
