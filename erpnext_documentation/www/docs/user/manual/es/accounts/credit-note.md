@@ -4,7 +4,7 @@
 
 ## 1. Nota de Crédito contra Factura de venta
 
-**Una Nota de Crédito es un documento enviado por el vendedor al Cliente notificando que se generó un crédito en su cuenta contra los bienes devueltos por el comprador.**
+**Una Nota de Crédito es un documento enviado por el vendedor al Cliente notificando que se generó un crédito en su cuenta contra los bienes devueltos.**
 
 La Nota de crédito se genera por el valor de los bienes devueltos por el Cliente, el cual puede ser menor o igual al monto total de la Orden. 
 
