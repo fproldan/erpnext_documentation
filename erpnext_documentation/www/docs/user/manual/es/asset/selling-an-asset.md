@@ -1,5 +1,5 @@
 <!-- add breadcrumbs -->
-# Vender un Activo
+# Venta de un Activo
 
 Para vender un activo, abrir el registro de activos y hacer click en el botón **Vender Activo**. Esto llevará a una [Factura de Venta](/docs/user/manual/es/accounts/sales-invoice). En la Factura de Venta, ingresar los detalles como Cliente y Fecha de Vencimiento para el Pago.
 
