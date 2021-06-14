@@ -17,10 +17,10 @@ En ERPNext, se pueden mantener registros de activos fijos de la Empresa como com
 1. [Registro de mantenimiento de activos](/docs/user/manual/es/asset/asset-maintenance-log)
 1. [Reparación de Activos](/docs/user/manual/es/asset/asset-repair)
 
-### 1.3 Transacciones de Activos
+### 1.3 Transacciones con Activos
 1. [Ajuste del valor del activo](/docs/user/manual/es/asset/asset-value-adjustment)
 1. [Compra de un Activo](/docs/user/manual/es/asset/purchasing-an-asset)
-1. [Vender un Activo](/docs/user/manual/es/asset/selling-an-asset)
+1. [Venta de un Activo](/docs/user/manual/es/asset/selling-an-asset)
 
 ### 1.4 Descartar Activos
 1. [Depreciación de Activo](/docs/user/manual/es/asset/asset-depreciation)
