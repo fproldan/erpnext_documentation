@@ -1,4 +1,4 @@
-# Comprar un Activo
+# Compra de un Activo
 
 Para comprar un nuevo activo:
 
