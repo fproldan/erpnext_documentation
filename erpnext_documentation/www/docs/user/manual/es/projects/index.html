@@ -1,0 +1,75 @@
+{% set doc=[
+	{
+		"links": [
+			{
+				"content": "Un Proyecto es un trabajo individual o grupal planeado cuidadosamente para lograr un determinado objetivo.",
+				"link": "/docs/user/manual/es/projects/project",
+				"title": "Proyecto"
+			},
+			{
+				"content": "Una tarea es una unidad de acción o actividad independiente dentro de un proyecto que debe ser completada por un individuo.",
+				"link": "/docs/user/manual/es/projects/tasks",
+				"title": "Tareas"
+			},
+			{
+				"content": "Una Plantilla de Proyecto es una secuencia predefinida de tareas organizadas en un cronograma estipulado.",
+				"link": "/docs/user/manual/es/projects/project-template",
+				"title": "Plantilla de Proyecto"
+			},
+			{
+				"content": "Se puede permitir al Cliente ver el progreso del Proyecto desde el Portal de Clientes.",
+				"link": "/docs/user/manual/es/projects/articles/project-customer-portal",
+				"title": "Proyecto desde el Portal de Cliente"
+			}
+		],
+		"title": "Administración de Proyectos"
+	},
+	{
+		"links": [
+			{
+				"content": "El salario de un empleado puede calcularse en base al número de horas que ha trabajado en un proyecto en particular.",
+				"link": "/docs/user/manual/es/projects/salary-slip-from-timesheet",
+				"title": "Recibo de Sueldo desde Registro de horas"
+			},
+			{
+				"content": "Se puede facturar a un Cliente en base al número total de horas que ha trabajado un Empleado para ese Cliente.",
+				"link": "/docs/user/manual/es/projects/sales-invoice-from-timesheet",
+				"title": "Factura de Ventas Desde Registro de horas"
+			},
+			{
+				"content": "Tipo de Actividad es una lista de diferentes tipos de actividades para las cuales puede crearse un Registro de horas.",
+				"link": "/docs/user/manual/es/projects/activity-type",
+				"title": "Tipo de Actividad"
+			},
+			{
+				"content": "El Costo de Actividad registra la tarifa de facturación por hora y la tarifa de costo de un Empleado, para un Tipo de Actividad en particular.",
+				"link": "/docs/user/manual/es/projects/activity-cost",
+				"title": "Costo de Actividad"
+			}
+		],
+		"title": "Seguimiento de Tiempo"
+	},
+	{
+		"links": [
+			{
+				"content": "Estos informes ayudan a analizar la facturación por proyecto y por empleado para un período determinado.",
+				"link": "/docs/user/manual/es/projects/project-reports",
+				"title": "Informes de Proyecto"
+			},
+			{
+				"content": "Este reporte ayuda a registrar el costo real de un Proyecto, principalmente en términos de servicios, para lo cual un Usuario debe crear un Registro de horas basado en el tiempo invertido en una Tarea dentro de un Proyecto.",
+				"link": "/docs/user/manual/es/projects/articles/project-costing",
+				"title": "Costos de Proyecto"
+			},
+			{
+				"content": "Mientras el proyecto se sigue desarrollando, se puede realizar un seguimiento de los distintos ingresos y gastos que ocurren dentro del mismo.",
+				"link": "/docs/user/manual/es/projects/articles/project-profitability",
+				"title": "Rentabilidad de Proyecto"
+			}
+		],
+		"title": "Herramientas e informes"
+	}
+] %}
+
+{% from 'erpnext_documentation/templates/includes/macros.html' import doc_page %}
+{{ doc_page('Proyectos', 'Gestión de Proyectos y tareas e integración completa con facturación y Centros de costos', doc, '/docs/user/manual/es/projects/contents') }}
