@@ -1,6 +1,6 @@
 # Cheque propio
 
-Se registra un cheque propio en el sistema cuando se usa el mismo para realizar un pago.
+Se registra un cheque propio en el sistema cuando se emite el mismo. 
 
 ## 1. Prerrequisitos
 
@@ -12,7 +12,7 @@ A continuación se detalla el ciclo de vida de un cheque propio en el sistema.
 
 ### 2.1. Pago con un cheque propio
 
-Normalmente el cheque propio se registra en el sistema al realizar un pago a, por ejemplo, a un Proveedor.
+Normalmente el cheque propio se registra en el sistema al realizar un pago, por ejemplo, a un Proveedor.
 
    1. En la Entrada de pago, seleccionar "Pagar" en Tipo de pago (opción por defecto si se crea el pago desde una Factura).
    2. Elegir Método de pago: Cheque.
