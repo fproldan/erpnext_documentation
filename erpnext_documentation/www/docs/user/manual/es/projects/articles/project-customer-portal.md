@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Portal de Cliente para Proyecto
+# Proyecto desde el Portal de Cliente 
 
 Si se está trabajando en un Proyecto para un Cliente, entonces el mismo deberá ser notificado de forma periódica respecto a su progreso. Esto se puede realizar en ERPNext a través del Portal de Cliente.
 
