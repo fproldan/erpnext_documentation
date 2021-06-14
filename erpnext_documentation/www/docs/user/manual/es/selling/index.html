@@ -1,0 +1,90 @@
+{% set doc=[
+	{
+		"links": [
+			{
+				"content": "Una Cotización es un costo estimado de los productos/servicios que se le ofrecen al cliente actual o futuro.",
+				"link": "/docs/user/manual/es/selling/quotation",
+				"title": "Cotización"
+			},
+			{
+				"content": "Una Orden de Venta es la confirmación de un pedido del cliente.",
+				"link": "/docs/user/manual/es/selling/sales-order",
+				"title": "Orden de Venta"
+			},
+			{
+				"content": "Una Orden General es un pedido que un cliente realiza a un proveedor para recibir materiales para Productos específicos durante un período de tiempo determinado y a tarifas pre-negociadas.",
+				"link": "/docs/user/manual/es/selling/blanket-order",
+				"title": "Orden General"
+			},
+			{
+				"content": "Permiten observar el desempeño comercial de la compañía y analizar los datos de venta de distintas formas a fin de visualizar el comportamiento de las ventas.",
+				"link": "/docs/user/manual/es/selling/sales-analytics",
+				"title": "Informes de ventas"
+			},
+			{
+				"content": "Los Socios de Ventas son aquellas personas y empresas que asisten a otras para hacer negocios.",
+				"link": "/docs/user/manual/es/selling/sales-partner",
+				"title": "Socios de Ventas"
+			}
+		],
+		"title": "Ventas"
+	},
+	{
+		"links": [
+			{
+				"content": "La Configuración de Ventas es donde se pueden definir las propiedades y validaciones que luego serán aplicadas a las transacciones involucradas en el ciclo de ventas.",
+				"link": "/docs/user/manual/es/selling/selling-settings",
+				"title": "Configuración de Ventas"
+			},
+			{
+				"content": "Precio de Producto es el registro donde se pueden cargar los precios de compra y venta de un producto.",
+				"link": "/docs/user/manual/es/stock/item-price",
+				"title": "Precio de Producto"
+			},
+			{
+				"content": "Utilizando Reglas de Envío se puede definir el costo de enviar el Producto al Cliente.",
+				"link": "/docs/user/manual/es/selling/shipping-rule",
+				"title": "Reglas de Envío"
+			},
+			{
+				"content": "Un Paquete de Productos es un documento donde se puede crear una lista de productos existentes que se agrupan y se venden en conjunto (o paquete).",
+				"link": "/docs/user/manual/es/selling/product-bundle",
+				"title": "Paquete de Productos"
+			},
+			{
+				"content": "Los Impuestos y Cargos de Venta pueden ser aplicados a cualquier producto que se venda.",
+				"link": "/docs/user/manual/es/selling/sales-taxes-and-charges-template",
+				"title": "Plantilla de impuestos (ventas)"
+			}
+		],
+		"title": "Configuración de ventas"
+	},
+	{
+		"links": [
+			{
+				"content": "Se puede tener precios de venta con distintas UOM para cualquier Producto en inventario.",
+				"link": "/docs/user/manual/es/selling/articles/Selling-in-different-UOM",
+				"title": "Vender en Diferentes Unidades de Medida (UOM)"
+			},
+			{
+				"content": "El usuario puede aplicar el margen en Productos de Cotización y Productos de Orden de Venta. El sistema aplicará el margen en productos de cotización y de ordenes de venta si la regla de precio está habilitada.",
+				"link": "/docs/user/manual/es/selling/articles/adding-margin",
+				"title": "Añadir Margen"
+			},
+			{
+				"content": "El Envío Triangulado es una técnica de administración de la cadena de suministro en la cual el vendedor no mantiene existencias de los productos.",
+				"link": "/docs/user/manual/es/selling/articles/drop-shipping",
+				"title": "Envío Triangulado"
+			},
+			{
+				"content": "Las Reglas de envío ayudan a definir una regla en base a la cual se aplican los gastos de envío en las transacciones de venta.",
+				"link": "/docs/user/manual/es/selling/articles/shipping-rule",
+				"title": "Regla de Envío"
+			}
+		],
+		"title": "Avanzado"
+	}
+] %}
+
+{% from 'erpnext_documentation/templates/includes/macros.html' import doc_page %}
+{{ doc_page('Ventas', 'La venta abarca operaciones como Cotizaciones, Ordenes de venta y el seguimiento de las entregas', doc, '/docs/user/manual/es/selling/contents') }}
