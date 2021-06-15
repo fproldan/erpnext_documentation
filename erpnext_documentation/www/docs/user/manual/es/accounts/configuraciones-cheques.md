@@ -45,3 +45,5 @@ Las cuentas que se establecen por defecto son modificables al momento de ingreso
 ## 4. Método de pago tipo Cheque
 
 Para registrar Entradas de pago con cheque se necesita tener al menos un [Método de pago](/docs/user/manual/es/accounts/mode-of-payment) de este tipo. Para crear uno ingresar a *Inicio > Contabilidad > Configuración > Método de pago*, hacer click en Nuevo, "Editar en pantalla completa" y en el campo Tipo seleccionar "Cheque".
+
+Se recomienda tener un Método de pago para [Cheques de tercero](/docs/user/manual/es/accounts/cheque-de-tercero) y uno para [Cheques propios](/docs/user/manual/es/accounts/cheque-propio). La única diferencia es que la cuenta que se configura en el Método para cheques propios debe ser de tipo Temporal.
