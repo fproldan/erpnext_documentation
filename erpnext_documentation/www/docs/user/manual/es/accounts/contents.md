@@ -16,17 +16,22 @@ En ERPNext, las operaciones contables consisten en 3 transacciones principales:
 1. [Configuración de cuentas](/docs/user/manual/es/accounts/accounts-settings)
 1. [Compañía](/docs/user/manual/es/setting-up/company-setup)
 1. [Plan de cuentas](/docs/user/manual/es/accounts/chart-of-accounts)
-1. [Apertura de cuentas](/docs/user/manual/es/accounts/opening-balance)
-1. [Centro de costos](/docs/user/manual/es/accounts/cost-center)
-1. [Centro de costos distribuido](/docs/user/manual/es/accounts/distributed-cost-center)
-1. [Año fiscal](/docs/user/manual/es/accounts/fiscal-year)
-1. [Período contable](/docs/user/manual/es/accounts/accounting-period)
-1. [Libro de finanzas](/docs/user/manual/es/accounts/finance-book)
-1. [Dimensiones contables](/docs/user/manual/es/accounts/accounting-dimensions)
-2. [Filtros de Dimensiones contables](/docs/user/manual/es/accounts/accounting-dimension-filter)
-3. [Banco](/docs/user/manual/es/accounts/bank)
-4. [Cuenta bancaria](/docs/user/manual/es/accounts/bank-account)
-5. [Transacción bancaria](/docs/user/manual/es/accounts/bank-transaction)
+2. [Certificado de AFIP](/docs/user/manual/es/accounts/certificado)
+3. [Punto de venta](/docs/user/manual/es/accounts/punto-de-venta)
+6. [Apertura de cuentas](/docs/user/manual/es/accounts/opening-balance)
+7. [Centro de costos](/docs/user/manual/es/accounts/cost-center)
+8. [Centro de costos distribuido](/docs/user/manual/es/accounts/distributed-cost-center)
+9. [Año fiscal](/docs/user/manual/es/accounts/fiscal-year)
+10. [Período contable](/docs/user/manual/es/accounts/accounting-period)
+11. [Libro de finanzas](/docs/user/manual/es/accounts/finance-book)
+12. [Dimensiones contables](/docs/user/manual/es/accounts/accounting-dimensions)
+13. [Filtros de Dimensiones contables](/docs/user/manual/es/accounts/accounting-dimension-filter)
+15. [Banco](/docs/user/manual/es/accounts/bank)
+16. [Cuenta bancaria](/docs/user/manual/es/accounts/bank-account)
+17. [Transacción bancaria](/docs/user/manual/es/accounts/bank-transaction)
+18. [Configuraciones de cheques](/docs/user/manual/es/accounts/configuraciones-cheques)
+19. [Cheque propio](/docs/user/manual/es/accounts/cheque-propio)
+20. [Cheque de tercero](/docs/user/manual/es/accounts/cheque-de-tercero)
 
 ### 1.2 Asientos contables y pagos
 1. [Asiento contable](/docs/user/manual/es/accounts/journal-entry)
@@ -51,6 +56,8 @@ En ERPNext, las operaciones contables consisten en 3 transacciones principales:
 1. [Plantilla de impuesto de producto](/docs/user/manual/es/accounts/item-tax-template)
 1. [Regla fiscal](/docs/user/manual/es/accounts/tax-rule)
 1. [Categoría de impuesto](/docs/user/manual/es/accounts/tax-category)
+2. [Percepciones](/docs/user/manual/es/accounts/configuracion-de-percepciones)
+5. [Retenciones]()
 
 ### 1.5 Precios
 1. [Regla de precios](/docs/user/manual/es/accounts/pricing-rule)
@@ -70,9 +77,15 @@ En ERPNext, las operaciones contables consisten en 3 transacciones principales:
 1. [Cierre de período](/docs/user/manual/es/accounts/period-closing-voucher)
 1. [Orden de pago](/docs/user/manual/es/accounts/payment-order)
 1. [Procesamiento de Estados de cuentas](/docs/user/manual/es/accounts/process-statement-of-accounts)
+2. [Ajuste por Inflación](/docs/user/manual/es/accounts/ajuste-por-inflacion)
 
 ### 1.8 Reportes
 1. [Reportes contables](/docs/user/manual/es/accounts/accounting-reports)
+2. [Reportes de Cheques](/docs/user/manual/es/accounts/reportes-cheques)
+3. [Libro Diario](/docs/user/manual/es/accounts/libro-diario)
+4. [Libro de IVA Digital](/docs/user/manual/es/accounts/libro-de-iva-digital)
+5. [Informe de Percepciones](/docs/user/manual/es/accounts/informe-de-percepciones)
+6. [Ventas y Compras por provincias](/docs/user/manual/es/accounts/ventas-compras-por-provincias)
 
 ### 1.9 Avanzado
 <!--1. [Ingresos diferidos](/docs/user/manual/es/accounts/deferred-revenue)
@@ -85,10 +98,10 @@ En ERPNext, las operaciones contables consisten en 3 transacciones principales:
 1. [Repetición automática](/docs/user/manual/es/automation/auto-repeat)
 1. [Descuento de facturas](/docs/user/manual/es/accounts/invoice_discounting)
 
-### 1.10 Suscripciones
+<!-- ### 1.10 Suscripciones
 1. [Suscripción](/docs/user/manual/es/accounts/subscription)
 1. [Plan de suscripción](/docs/user/manual/es/accounts/subscription-plan)
-1. [Configuración de suscripción](/docs/user/manual/es/accounts/subscription-settings)
+1. [Configuración de suscripción](/docs/user/manual/es/accounts/subscription-settings) -->
 
 <!-- ### 1.11 Gestión de accionistas
 1. [Accionista](/docs/user/manual/es/accounts/shareholder)
