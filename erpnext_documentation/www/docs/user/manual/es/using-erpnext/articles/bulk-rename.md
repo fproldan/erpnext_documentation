@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Renombrar en Grupo
 
-Utilizando la herramienta Renombrar en Grupo, se puede rectificar/cambiar la identificación de muchos documentos a la vez. Esta herramienta sólo es accesible para el Usuario que tenga asignado el rol de Administrador de Sistema. 
+Utilizando la herramienta Renombrar en Grupo, se puede rectificar/cambiar el identificador de muchos documentos a la vez. Esta herramienta sólo es accesible para el Usuario que tenga asignado el rol de Administrador de Sistema. 
 
 ### Herramienta Renombrar
 
