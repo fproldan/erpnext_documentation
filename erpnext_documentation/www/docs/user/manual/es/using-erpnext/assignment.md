@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Asignación
 
-**"Asignar a" es una característica en ERPNext que permite asignar un documento en particular a un usuario específico, que debe realizar algún trabajo en ese documento.**
+**"Asignar a" es una funcionalidad que permite asignar un documento en particular a un usuario específico, quien deberá realizar algún trabajo en ese documento.**
 
 Por ejemplo, si una Orden de Venta debe ser aprobada o enviada por el Gerente de Ventas, el primer usuario que realiza el borrador puede asignar la Orden de Venta al Gerente de Ventas. 
 
