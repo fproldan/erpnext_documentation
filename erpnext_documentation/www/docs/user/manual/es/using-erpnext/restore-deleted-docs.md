@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Eliminar y Restaurar Documentos
 
-**En ERPNext, se puede borrar un documento si ya no resulta necesario. Dichos documentos pueden ser funcionalidades generales como Productos, Clientes, o transacciones como Orden de Venta, Registros de Pago, etc.**
+**En ERPNext, se puede borrar un documento si ya no resulta necesario. Dichos documentos pueden ser funcionalidades generales como Productos, Clientes, o transacciones como Orden de Venta, Entradas de Pago, etc.**
 
 Para borrar un documento, se puede ir al menú desplegable del mismo y seleccionar "Eliminar".
 
