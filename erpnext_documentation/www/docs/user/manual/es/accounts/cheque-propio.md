@@ -12,6 +12,8 @@ A continuación se detalla el ciclo de vida de un cheque propio en el sistema.
 
 ### 2.1. Pago con un cheque propio
 
+### 2.1.1. Creación desde la Entrada de pago
+
 Normalmente el cheque propio se registra en el sistema al realizar un pago, por ejemplo, a un Proveedor.
 
    1. En la Entrada de pago, seleccionar "Pagar" en Tipo de pago (opción por defecto si se crea el pago desde una Factura).
@@ -26,13 +28,30 @@ Luego de Validar la Entrada de pago, el cheque pasará a estado **Entregado**.
 > - No se puede crear una Entrada de pago de dos o más chequeras distintas que tengan dos bancos distintos, ya que solo puede debitar de una cuenta de banco llegada a la fecha. En ese caso se deberá generar una Entrada de pago por cada chequera.
 > - No puede en una misma Entrada de pago haber cheques propios y de tercero, ya que se tiene una sola cuenta de destino.
 
+### 2.1.2. Creación desde el listado
+
+También es posible crear el cheque propio desde el listado de cheques para usarlo luego en la operación que corresponda.
+
+1. Ir al listado de Cheques en *Inicio > Contabilidad > Cheques > Cheque* y hacer click en Nuevo.
+2. Completar los datos correspondientes.
+3. Guardar.
+
+Así el cheque se creará con estado **En mano**.
+
+> IMPORTANTE: el cheque aparece como tal en sistema pero aún sin impacto contable. Por lo tanto, deberá ser ingresado en la Entrada de pago/Asiento contable, según corresponda, para registrar su impacto contable.
+
 ### 2.2 Anulación de un cheque propio
 
-En el caso de que el cheque propio haya quedado con estado En mano (no esté vinculado a ninguna transacción validada) y se desee que el sistema no lo tenga en cuenta para futuras operaciones, se puede ingresar al mismo y hacer click en *Acciones > Anular*. luego de confirmar la acción el cheque pasará a estado **Anulado**.
+En el caso de que el cheque propio haya quedado con estado En mano (no esté vinculado a ninguna transacción validada) y se desee que el sistema no lo tenga en cuenta para futuras operaciones, se puede ingresar al mismo y hacer click en *Acciones > Anular*. Luego de confirmar la acción el cheque pasará a estado **Anulado** y ya no podrá ser utilizado.
 
 ### 2.3 Depósito de cheque propio
 
+El caso más común es que se entregue el cheque a un tercero y este lo deposite en su cuenta; aunque también es posible depositar en la cuenta de la Compañía un cheque que quedó con estado En mano.
 
+Para ambos casos se puede utilizar la [Conciliación bancaria](/docs/user/manual/es/accounts/bank-reconciliation#conciliación-de-cheques-propios-desde-la-herramienta-de-conciliación-bancaria) o mediante la acción *Depositar* del cheque.
+
+En el segundo caso se llevará a la creación de un Asiento contable de tipo Cheque Depositado, donde la cuenta de débito por defecto será la definida como Cuenta de Depósitos en la Compañía. Las cuentas contables que el sistema arroja por defecto pueden modificarse al momento de contabilización de la operación.
+Al Validar el asiento, el cheque pasará a estado **Depositado**.
 
 ### 2.4 Cobro de cheque propio
 
