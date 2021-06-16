@@ -5,7 +5,7 @@
 
 ## 1. Creación de una Nota de Débito
 
-La creación de una Nota de Débito en el sistema es similar a la de una [Factura de venta](/docs/user/manual/es/accounts/sales-invoice), con la diferencia de que se deberá seleccionar una **Secuencia** que corresponda con este tipo de comprobante y se tiene que especificar en el campo **Comprobante Asociado** la Factura de venta con la cual se relciona este nuevo saldo. El sistema solicita asociar una Nota de Débito a una Factura de Venta, en función de la operación que le dió origen. 
+La creación de una Nota de Débito en el sistema es similar a la de una [Factura de venta](/docs/user/manual/es/accounts/sales-invoice). La diferencia está en que se deberá seleccionar una **Secuencia** que corresponda con este tipo de comprobante y es obligatorio seleccionar en el campo **Comprobante Asociado** la Factura de venta que dió origen a este nuevo saldo. 
 
 ## 2. Casos de uso de la Nota de Débito
 
