@@ -131,3 +131,7 @@ Para esto ingresar al cheque y hacer click en *Acciones > Rechazar Entregado*.
 Existen situaciones en las cuales un cheque puede ser reemplazado, ya sea por motivos comerciales (cheque en mano), como también porque el cheque se haya vencido y el Cliente decida entregar uno nuevo en su lugar (cheque vencido, caso visto anteriormente) o porque el cheque fue rechazado. En todos los casos se debe seguir los pasos indicados [anteriormente](/docs/user/manual/es/accounts/cheque-de-tercero.md#52-reemplazo-de-cheque).
 
 Si se realiza un **reemplazo por efectivo**, como la transacción implica un cambio en la composición del activo de la empresa, deberá realizarse además el Asiento contable correspondiente.
+
+### 2.8. Transferencia interna con cheques de tercero
+
+Se puede realizar una Entrada de pago de tipo Transeferencia interna, con Método de pago de tipo Cheque, en el caso de que se desee pasar cheques en estado En mano o Vencido de la cuenta en la que se encuentran a otra, sin afectar el estado del cheque.
