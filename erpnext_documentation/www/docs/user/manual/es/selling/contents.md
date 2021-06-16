@@ -14,17 +14,19 @@ La venta es la comunicación que ocurre con el cliente antes y durante la venta.
 1. [Territorio](/docs/user/manual/es/selling/territory)
 1. [Cupón de descuento](/docs/user/manual/es/website/coupon-code)
 
-### 1.2 Configuración
-1. [Configuración de ventas](/docs/user/manual/es/selling/selling-settings)
+### 1.2 Precios
 1. [Precio del producto](/docs/user/manual/es/stock/item-price)
+2. [Actualizacion de Lista de Precio](/docs/user/manual/es/selling/act-lista-de-precios)
+3. [Actualización de Precio por Producto](/docs/user/manual/es/selling/act-por-producto)
+4. [Reporte de Últimos Precios](/docs/user/manual/es/selling/reporte-ultimos-precios)
+
+### 1.3 Configuración
+1. [Configuración de ventas](/docs/user/manual/es/selling/selling-settings)
 1. [Regla de envío](/docs/user/manual/es/selling/shipping-rule)
 1. [Conjunto / paquete de productos](/docs/user/manual/es/selling/product-bundle)
 1. [Asignación de objetivos a vendedores](/docs/user/manual/es/selling/sales-person-target-allocation)
 1. [Plantilla de impuestos (ventas)](/docs/user/manual/es/selling/sales-taxes-and-charges-template)
-2. [Actualizacion de Lista de Precio](/docs/user/manual/es/selling/act-lista-de-precios)
-3. [Actualización de Precio por Producto](/docs/user/manual/es/selling/act-por-producto)
-4. [Actualizacion de Plan de Suscripción]()
-5. [Reporte de Últimos Precios](/docs/user/manual/es/selling/reporte-ultimos-precios)
+
 
 ## 2. Artículos
 ### 2.1 Ventas
