@@ -34,7 +34,7 @@ Tildar esta opción hará que se seleccione de forma automática el Membrete al 
 
 ### 2.2 Impresión compacta de Productos
 
-En transacciones como Ordenes/Facturas de venta, hay una tabla que detalla los productos comprados o vendidos. Tiene muchas columnas como Nombre del Producto, Descripción, UdM, Monto de Tarifa, etc. Si hay muchas columnas en la tabla de Producto, el Formato de Impresión puede verse un poco abarrotado. Se puede mejorar la vista de la tabla permitiendo la Impresión compacta de los Productos.
+En transacciones como Ordenes/Facturas de venta, hay una tabla que detalla los productos comprados o vendidos. Tiene muchas columnas como Nombre del Producto, Descripción, UOM, Monto de Tarifa, etc. Si hay muchas columnas en la tabla de Producto, el Formato de Impresión puede verse un poco abarrotado. Se puede mejorar la vista de la tabla permitiendo la Impresión compacta de los Productos.
 
 De acuerdo con esta configuración, solo habrá cuatro columnas en el Formato de Impresión: Descripción, Cantidad, Precio e Importe. 
 
