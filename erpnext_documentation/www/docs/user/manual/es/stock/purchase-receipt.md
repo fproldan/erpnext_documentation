@@ -73,7 +73,7 @@ Los siguientes Almacenes configurados se aplicarán a todos los Productos de la 
 
 * El Código de Producto, el nombre, descripción, Imagen y Fabricante serán obtenidos desde el Producto.
 
-* **Recibidos y Aceptados**: Configurar la cantidad recibida, aceptada y rechazada. La UdM se obtiene desde el Producto. Se deberá actualizar el "Factor de Conversión de UdM" si la Orden de Compra para un Producto está en una Unidad de Medida (UdM) diferente que la de almacenamiento (UdM de existencias). 
+* **Recibidos y Aceptados**: Configurar la cantidad recibida, aceptada y rechazada. La UOM se obtiene desde el Producto. Se deberá actualizar el "Factor de Conversión de UOM" si la Orden de Compra para un Producto está en una Unidad de Medida (UOM) diferente que la de almacenamiento (UOM de existencias). 
 
     ![Purchase Receipt Items table](/docs/assets/img/stock/purchase-receipt-item.png)
 
@@ -81,7 +81,7 @@ Los siguientes Almacenes configurados se aplicarán a todos los Productos de la 
 
 * **Plantilla de Impuesto de Producto**: Se puede configurar una Plantilla de Impuesto de Producto para aplicar un Impuesto específico a este Producto en particular. Para saber más, visitar [esta página](/docs/user/manual/es/accounts/item-tax-template).
 
-* Si hubiesen sido configurados allí, los Detalles de Peso del Producto por unidad y Peso en UdM serán tomados del Producto.
+* Si hubiesen sido configurados allí, los Detalles de Peso del Producto por unidad y Peso en UOM serán tomados del Producto.
 
 * **Almacén y Referencia**: Se pueden configurar los Almacenes para productos aceptados y rechazados, así como también añadir una Inspección de Calidad. Ver la sección siguiente. 
 
