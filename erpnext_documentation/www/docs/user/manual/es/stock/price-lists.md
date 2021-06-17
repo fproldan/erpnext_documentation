@@ -23,7 +23,7 @@ Para acceder al listado de Listas de Precio ir a:
 
 * Para desactivar una Lista de Precios determinada, destildar la opción "Habilitado". Las Listas de Precios desactivadas no podrán ser seleccionadas en las transacciones de Compra y Venta.
 
-* **Precio no dependiente de UdM**: considérese un producto como tomates que se compra en Cajas y se vende en Kilos. 1 Caja = 10 kilos y el precio de compra de 1 Kilo es $10. Si esta opción está destilda y se selecciona una Caja en la transacción, el precio se mostrará para un Kilo, debido a que ese es el único precio guardado para el Producto. 
+* **Precio no dependiente de UOM**: considérese un producto como tomates que se compra en Cajas y se vende en Kilos. 1 Caja = 10 kilos y el precio de compra de 1 Kilo es $10. Si esta opción está destilda y se selecciona una Caja en la transacción, el precio se mostrará para un Kilo, debido a que ese es el único precio guardado para el Producto. 
 
     Ahora, si esta opción está tilda y se realiza una transacción por una Caja de tomates, entonces el precio será configurado automáticamente como $100 debido a que el precio de una Caja (10 Kilos) es 100. 
 
