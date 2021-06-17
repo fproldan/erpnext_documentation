@@ -70,7 +70,7 @@ Configurar la opción "Suministro de materia prima" es útil para subcontratacio
 
 * **Escanear Código de Barras**: Se pueden añadir Productos a la tabla de Productos al escanear sus códigos de barra si se cuenta con un lector de código de barra. Para aprender a rastrearlos hacer click [aquí](/docs/user/manual/es/stock/articles/track-items-using-barcode)
 
-* **Cantidad y Precio**: Al seleccionar el código de Producto, se obtendrán su nombre, descripción y UdM. El "Factor de Conversión UdM" se configurará de forma predeterminada en 1, se puede cambiar dependiendo de la UdM recibida del vendedor (más información al respecto en la próxima sección). 
+* **Cantidad y Precio**: Al seleccionar el código de Producto, se obtendrán su nombre, descripción y UOM. El "Factor de Conversión UOM" se configurará de forma predeterminada en 1, se puede cambiar dependiendo de la UOM recibida del vendedor (más información al respecto en la próxima sección). 
 
     El "Precio de la lista de precios" será obtenido si se configura una tarifa de Compra Estándar. El "Precio de la última compra" muestra el precio del producto de la última Orden de Compra. Si fue configurado, el Precio se obtendrá desde el producto. Se puede adjuntar una Plantilla de Impuestos de Producto para aplicar una tasa impositiva específica al producto. 
 
@@ -78,7 +78,7 @@ Configurar la opción "Suministro de materia prima" es útil para subcontratacio
 
 * **Almacén**: El Almacén a donde se entregarán los productos; será completado automáticamente si fue configurado en el campo "Asignar Almacén Destino". Tildando la opción "Contra la Orden general" puede vinsularse a una determinada [Orden general](/docs/user/manual/es/selling/blanket-order). También pueden vincularse un "Proyecto" y una "Lista de Materiales" para rastrear su progreso. 
 
-* "Cantidad de acuerdo a la UdM predeterminada" mostrará las existencias actuales de acuerdo con la UdM configurada en el producto. La "Cantidad recibida" se acualizará cuando los productos sean facturados. 
+* "Cantidad de acuerdo a la UOM predeterminada" mostrará las existencias actuales de acuerdo con la UOM configurada en el producto. La "Cantidad recibida" se acualizará cuando los productos sean facturados. 
 
 * **Detalles de Contabilidad**: Esta sección se completa de forma automática para una Orden de compra. La "Cuenta de Gastos" es aquella contra la cual se factura la Orden de Compra y el Centro de Costo es la cuenta a la cual se carga la Orden de Compra.
 
@@ -97,19 +97,19 @@ Esta sección aparece si se selecciona "Sí" en el campo "Suministro de materia 
 
     ![Subcontract Transfer Material](/docs/assets/img/buying/subcontract-transfer-materials.gif)
 
-### 3.6 Conversión de UdM de Compra y UdM de Inventario
+### 3.6 Conversión de UOM de Compra y UOM de Inventario
 
-En la Orden de Compra, se puede cambiar la UdM de acuerdo con los requerimientos de inventario.
+En la Orden de Compra, se puede cambiar la UOM de acuerdo con los requerimientos de inventario.
 
-Por ejemplo, si se compró la materia prima en grandes cantidades con una UdM - Cajas, y se desea convertirla en UdM - Unidades, se puede realizar esto al crear la Orden de Compra. 
+Por ejemplo, si se compró la materia prima en grandes cantidades con una UOM - Cajas, y se desea convertirla en UOM - Unidades, se puede realizar esto al crear la Orden de Compra. 
 
-1. Configurar la UdM como unidades en el producto. Tener en cuenta que la UdM configurada en el Producto es la UdM de inventario. 
-2. En la Orden de Compra mencionar la UdM como Caja. (Debido a que el material va a llegar en Cajas)
-3. En la sección Almacén y Referencia, la UdM será obtenida automáticamente y será Unidades (desde el formulario de Producto):
+1. Configurar la UOM como unidades en el producto. Tener en cuenta que la UOM configurada en el Producto es la UOM de inventario. 
+2. En la Orden de Compra mencionar la UOM como Caja. (Debido a que el material va a llegar en Cajas)
+3. En la sección Almacén y Referencia, la UOM será obtenida automáticamente y será Unidades (desde el formulario de Producto):
 
  <img class="screenshot" alt="Purchase Order - UOM" src="{{docs_base_url}}/assets/img/buying/purchase-order-uom.png">
 
-4. Mencionar el factor de conversión de UdM. Por ejemplo, (1); si una caja tiene 1 kilo. 
+4. Mencionar el factor de conversión de UOM. Por ejemplo, (1); si una caja tiene 1 kilo. 
 5. Tener en cuenta que la cantidad de existencias será actualizada de acuerdo con lo anterior. 
 
  <img class="screenshot" alt="Purchase Order - UOM" src="{{docs_base_url}}/assets/img/buying/po-stock-uom.png">
