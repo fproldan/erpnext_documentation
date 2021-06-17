@@ -55,7 +55,12 @@ Al Validar el asiento, el cheque pasará a estado **Depositado**.
 
 ### 2.4 Cobro de cheque propio
 
+El caso más común es que se entregue el cheque a un tercero y este lo cobre; aunque también es posible que quien emitió el cheque vuelva a tenerlo En mano y necesite cobrarlo.
 
+Para ambos casos se puede utilizar la [Conciliación bancaria](/docs/user/manual/es/accounts/bank-reconciliation#conciliación-de-cheques-propios-desde-la-herramienta-de-conciliación-bancaria) o mediante la acción *Cobrar* del cheque.
+
+En el segundo caso se llevará a la creación de un Asiento contable de tipo Cheque Cobrado, donde la cuenta de débito por defecto será la definida como Cuenta de Cobro en la Compañía. Las cuentas contables que el sistema arroja por defecto pueden modificarse al momento de contabilización de la operación.
+Al Validar el asiento, el cheque pasará a estado **Cobrado**.
 
 ### 2.5 Vencimiento de un cheque propio
 
@@ -82,19 +87,38 @@ Para esto ingresar al cheque y hacer click en *Acciones > Rechazar Vencido*. Est
 
 #### 2.5.4. Cobro de cheque vencido
 
-
+Por más que el cheque esté vencido, el sistema permite registrar el cobro del mismo. Esta facultad está dada por la posibilidad de que exista un desfasaje temporal entre el movimiento diario de Bancos y el momento en el cual se realiza la conciliación de las cuentas bancarias. Para esto hacer click en *Acciones > Cobrar* y validar el Asiento de cobro explicado [anteriormente](/docs/user/manual/es/accounts/cheque-propio#4-cobro-de-cheque-propio). Al Validar el asiento, el cheque pasará a estado **Cobrado**.
 
 ### 2.6. Rechazo de cheque propio
 
-
+Se puede registrar en el sistema el rechazo de cheques en estado Vencido (explicado anteriormente), Depositado o Entregado. A continuación se detallan los últimos dos casos.
 
 #### 2.6.1. Rechazo de cheque depositado
 
+Un cheque depositado en la cuenta bancaria de la empresa o de un tercero puede ser rechazado por diferentes motivos: falta de fondos, defectos formales, plazos vencidos, etc.
 
+Hay dos opciones para reflejar en sistema el rechazo de un cheque depositado en la cuenta bancaria. 
+
+La primera consiste en ingresar al cheque y hacer click en *Acciones > Rechazar Depositado*. Esto llevará a la creación de un Asiento contable de tipo Cheque Rechazado, donde la cuenta de débito por defecto será la definida como Cuenta de Cheques Rechazados en la Compañía. Al Validar el Asiento, el cheque pasará a estado **Rechazado**.
+
+> IMPORTANTE: si el cheque había sido entregado, se debe crear la Nota de débito con el producto Cheque rechazado para volver a generar la deuda con el Proveedor ya que el pago queda anulado.
+
+La segunda opción consiste en realizar el depósito desde la conciliación bancaria. Se sugiere revisar la documentación de [Conciliación bancaria](/docs/user/manual/es/accounts/bank-reconciliation#conciliación-de-cheques-de-terceros-desde-la-herramienta-de-conciliación-bancaria), en particular, el apartado de cheques.
 
 #### 2.6.2. Rechazo de cheque entregado
 
+Un cheque entregado a un tercero (por ejemplo, a un proveedor) puede ser rechazado por diferentes motivos: falta de fondos, defectos formales, plazos vencidos, etc.
 
+Para esto ingresar al cheque y hacer click en *Acciones > Rechazar Entregado*. Esto llevará a la creación de un Asiento contable de tipo Cheque Rechazado, donde la cuenta de débito por defecto será la definida como Cuenta de Cheques Rechazados en la Compañía. Al Validar el Asiento, el cheque pasará a estado **Rechazado**.
+
+> IMPORTANTE: se debe crear la Nota de débito con el producto Cheque rechazado para volver a generar la deuda con el Proveedor ya que el pago queda anulado.
 
 ### 2.7. Reemplazo de cheque propio
 
+Existen situaciones en las cuales un cheque puede ser reemplazado, ya sea por motivos comerciales (cheque en mano), como también porque el cheque se haya vencido se decide entregar uno nuevo en su lugar (cheque vencido, caso visto anteriormente) o porque el cheque fue rechazado. En todos los casos se debe seguir los pasos indicados [anteriormente](/docs/user/manual/es/accounts/cheque-propio#252-reemplazo-de-cheque).
+
+Si se realiza un **reemplazo por efectivo**, como la transacción implica un cambio en la composición del activo de la empresa, deberá realizarse además el Asiento contable correspondiente.
+
+### 2.8. Transferencia interna con cheques propio
+
+Se puede realizar una Entrada de pago de tipo Transeferencia interna, con Método de pago de tipo Cheque, en el caso de que se desee pasar cheques en estado En mano o Vencido de la cuenta en la que se encuentran a otra, sin afectar el estado del cheque.
