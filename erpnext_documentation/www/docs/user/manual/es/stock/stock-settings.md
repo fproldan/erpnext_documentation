@@ -14,7 +14,7 @@ De forma predeterminada, el nombre del Producto se establece de acuerdo al Códi
 ### 2.1 Grupo de productos predeterminado
 Este será el grupo de productos predeterminado al cual se asignará un nuevo producto. Los Grupos de Productos son últiles para clasificar y configurar propiedades para todo el grupo. Para saber más, visitar la página [Grupo de Productos](/docs/user/manual/es/stock/item-group).
 
-### 2.2 Unidad de Medida (UdM) predeterminada para Inventario
+### 2.2 Unidad de Medida (UOM) predeterminada para Inventario
 La unidad de medida predeterminada para las existencias es Números (Nos), puede ser modificada desde este campo. 
 
 ### 2.3 Almacén por defecto
