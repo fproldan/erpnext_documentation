@@ -32,7 +32,7 @@ Antes de crear y utilizar un Producto se recomienda crear lo siguiente:
   
   * **Grupo de Productos:** El Grupo de Productos se utiliza para clasificar un producto de acuerdo a diferentes criterios como productos, materias primas, servicios, subproductos, bienes de consumo o todos los grupos de productos. Crear un Grupo de Productos predeterminado en el listado de Grupo de Productos en Configuración > Grupo de Productos y preseleccionar la opción mientras se completan los detalles del Nuevo Producto en [Grupo de Productos](/docs/user/manual/es/stock/item-group). Los Grupos de Productos pueden ser subproductos, materias primas, etc o también pueden basarse en lo que necesite el negocio. 
   
-  * **Unidad de Medida predeterminada:** Esta es la unidad de medida predeterminada que se utilizará para el producto. Puede ser unidades, kilos, metros, etc. Se pueden almacenar todas las Unidades de Medidas que necesite un producto en Configuración > Datos Principales > UdM. Estas pueden ser preseleccionadas al completar el Nuevo Producto utilizando el signo % para que aparezca una ventana emergente con el listado de UdM. Para más detalles, visitar la página [UdM](/docs/user/manual/en/stock/uom).
+  * **Unidad de Medida predeterminada:** Esta es la unidad de medida predeterminada que se utilizará para el producto. Puede ser unidades, kilos, metros, etc. Se pueden almacenar todas las Unidades de Medidas que necesite un producto en Configuración > Datos Principales > UOM. Estas pueden ser preseleccionadas al completar el Nuevo Producto utilizando el signo % para que aparezca una ventana emergente con el listado de UOM. Para más detalles, visitar la página [UOM](/docs/user/manual/en/stock/uom).
 
 ### 2.2 Opciones al crear un Producto
 * **Deshabilitado**: Si se desactiva un Producto, este no podrá ser seleccionado en ninguna transacción.
@@ -80,7 +80,7 @@ Pueden guardarse códigos de barra en los Productos para escanearlos y agregarlo
 
   <img class="screenshot" alt="Item Warranty" src="{{docs_base_url}}/assets/img/stock/item-inventory.png">
 
-* **Unidad de Medida (UdM)**: La Unidad de Medida para el Producto. Puede ser unidades, Kilos, etc. La UdM que se usa internamente puede diferir de la UdM de compra. 
+* **Unidad de Medida (UOM)**: La Unidad de Medida para el Producto. Puede ser unidades, Kilos, etc. La UOM que se usa internamente puede diferir de la UOM de compra. 
 * **Peso por Unidad**: El peso real de cada unidad del producto. Ejemplo: 1 kilo de galletas o 10 galletas por paquete. 
 * **Tipo de Solicitud de Material predeterminado**: Cuando se cree una nueva Solicitud de Material, el campo establecido aquí será seleccionado de forma predeterminada.
 * **Método de Valoración**: Seleccionar el Método de Valoración ya sea FIFO o Promedio Móvil. Para saber más sobre Métodos de Valoración hacer click [aquí](/docs/user/manual/es/stock/articles/item-valuation-fifo-and-moving-average).
@@ -104,7 +104,7 @@ Cuando las existencias de un producto caen por debajo de una cierta cantidad se 
 
 ### 3.5 Múltiples Unidades de Medida
 
-Se puede contar con distintas Unidades de Medidas para un mismo Producto. Si la UdM de venta predeterminada es unidades pero se recibe la mercadería en kilos, se pueden establecer UdM adicionales con su respectivo factor de conversión. Por ejemplo, 500 unidades de destornilladores = 1 kilo; entonces es necesario seleccionar kilo/litro como UdM y configurar el factor de conversión como 500. Para saber más respecto a vender en diferentes UdM, visitar [esta página](/docs/user/manual/es/selling/articles/Selling-in-different-UOM).
+Se puede contar con distintas Unidades de Medidas para un mismo Producto. Si la UOM de venta predeterminada es unidades pero se recibe la mercadería en kilos, se pueden establecer UOM adicionales con su respectivo factor de conversión. Por ejemplo, 500 unidades de destornilladores = 1 kilo; entonces es necesario seleccionar kilo/litro como UOM y configurar el factor de conversión como 500. Para saber más respecto a vender en diferentes UOM, visitar [esta página](/docs/user/manual/es/selling/articles/Selling-in-different-UOM).
 
 ### 3.6 Número de serie y lote
 
@@ -159,7 +159,7 @@ En esta sección se pueden definir configuraciones predeterminadas relacionadas 
 ### 3.9 Detalles de compra y reabastecimiento 
 
 * **Es un producto para compra:** Si esta opción no está tildada, no se podrá usar este producto en operaciones de compra.
-* **Unidad de Medida de Compra Predeterminada**: La UdM predeterminada que será usada en las transacciones de compra. 
+* **Unidad de Medida de Compra Predeterminada**: La UOM predeterminada que será usada en las transacciones de compra. 
 * **Cantidad mínima de la orden**: La cantidad mínima requerida para transacciones de compra como Ordenes de Compra. Si esto se configura, el sistema no permitirá avanzar en la operación de compra si la cantidad de producto pedida es menor que la establecida en este campo. 
 * **Stock de seguridad**: El “Stock de seguridad” es utilizado en el informe "Nivel recomendado de reabastecimiento de producto". De acuerdo con el Stock de seguridad, el consumo diario promedio y el tiempo de espera, el sistema sugiere el Nivel de Pedido de un producto.
 
@@ -185,7 +185,7 @@ Si se está obteniendo el producto de otro país, se pueden incluir los detalles
 
 ### 3.12 Detalles de Venta
 
-* **Unidad de Medida de Ventas Predeterminada**: La UdM predeterminada que será utilizada en las transacciones de venta.
+* **Unidad de Medida de Ventas Predeterminada**: La UOM predeterminada que será utilizada en las transacciones de venta.
 * **Descuento máximo (%)**: Se puede definir el % máximo de descuento que puede aplicarse a un producto. Por ejemplo: si se configura un 20%, no puede venderse el mencionado producto con un descuento mayor al 20%.
 * **Es un producto para venta**: Si esta opción no está tildada, no se podrá utilizar el producto en operaciones de venta. 
 
