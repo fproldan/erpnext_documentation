@@ -22,7 +22,7 @@ Para crear una Nota de Entrega de forma _manual_ (no recomendado), seguir los si
 
 1. Ir al listado de Nota de Entrega y hacer click en Nuevo.
 1. Los detalles del Producto y del Cliente pueden ser tomados desde la Orden de Venta haciendo click en "Obtener Productos de > Orden de Venta".
-1. La UdM y los Precios serán tomados automáticamente.
+1. La UOM y los Precios serán tomados automáticamente.
 1. Guardar y Validar.
 
     <img class="screenshot" alt="Delivery Note" src="{{docs_base_url}}/assets/img/stock/delivery-note.png">
@@ -80,7 +80,7 @@ Para saber respecto a administrar transacciones en distintas monedas, hacer clic
 
 * **Plantilla de Impuesto de Producto**: Se puede configurar una Plantilla de Impuesto de Producto para aplicar un Impuesto específico a este Producto en particular. Para saber más, visitar [esta página](/docs/user/manual/es/accounts/item-tax-template).
 
-* Si hubiesen sido configurados allí, los Detalles de Peso del Producto por unidad y Peso en UdM serán tomados del Producto.
+* Si hubiesen sido configurados allí, los Detalles de Peso del Producto por unidad y Peso en UOM serán tomados del Producto.
 
 * **Almacén y Referencia**: Se muestra el Almacén desde el cual se envían los Productos al Cliente. A su vez, si la Nota de Entrega se creó de la siguiente forma "Orden de Venta > Nota de Entrega", también se mostrará la Orden de Venta. 
 
