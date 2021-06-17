@@ -25,8 +25,7 @@ Normalmente el cheque propio se registra en el sistema al realizar un pago, por 
 Luego de Validar la Entrada de pago, el cheque pasará a estado **Entregado**.
 
 > IMPORTANTE:
-> - No se puede crear una Entrada de pago de dos o más chequeras distintas que tengan dos bancos distintos, ya que solo puede debitar de una cuenta de banco llegada a la fecha. En ese caso se deberá generar una Entrada de pago por cada chequera.
-> - No puede en una misma Entrada de pago haber cheques propios y de tercero, ya que se tiene una sola cuenta de destino.
+> - La chequera, así como si se trata de un cheque propio o de terceros, se definen para la Entrada de pago. Por lo tanto, si se utilizan dos o más chequeras, distintas, o bien si se trata de operaciones que incolucren cheques propios y de terceros, deberán emitirse dos o más Entradas de Pago (según corresponda). 
 
 ### 2.1.2. Creación desde el listado
 
