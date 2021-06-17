@@ -38,7 +38,7 @@ La mayoría de estos detalles se obtendrán automáticamente si se genera la Lis
 ### 3.1 Tabla de Productos
 
 * Si es un Producto en Lote, es necesario seleccionar el Número de Lote.
-* La Cantidad, Unidad de Medida, Peso Neto y Peso en UdM se obtendrán de la Nota de Entrega.
+* La Cantidad, Unidad de Medida, Peso Neto y Peso en UOM se obtendrán de la Nota de Entrega.
 * Salto de Página creará un salto de página justo antes de este producto al imprimir.
 
 ### 3.2 Detalles de peso del paquete
@@ -49,7 +49,7 @@ Estos detalles se verán al imprimir la Lista de Embalaje.
 
 **Peso bruto**: Este es el peso final total, incluye el peso de los materiales de embalaje utilizados. 
 
-**Peso bruto de la unidad de medida (UdM)**: Aquí puede configurarse una UdM para el peso final del producto.
+**Peso bruto de la unidad de medida (UOM)**: Aquí puede configurarse una UOM para el peso final del producto.
 
 ### 3.3 Membrete
 Se puede imprimir la Lista de Embalaje en papel con el membrete de la empresa. Saber más [aquí](/docs/user/manual/es/setting-up/print/letter-head).
