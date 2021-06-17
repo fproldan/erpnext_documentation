@@ -54,7 +54,7 @@ Al Validar el asiento, el cheque pasará a estado **Depositado**.
 
 ### 2.4 Cobro de cheque propio
 
-El caso más común es que se entregue el cheque a un tercero y este lo cobre; aunque también es posible que quien emitió el cheque vuelva a tenerlo En mano y necesite cobrarlo.
+Bajo ciertas condiciones, podría un tercero cobrar el cheque, aunque también es posible que quien emitió el cheque vuelva a tenerlo En mano y necesite cobrarlo.
 
 Para ambos casos se puede utilizar la [Conciliación bancaria](/docs/user/manual/es/accounts/bank-reconciliation#conciliación-de-cheques-propios-desde-la-herramienta-de-conciliación-bancaria) o mediante la acción *Cobrar* del cheque.
 
