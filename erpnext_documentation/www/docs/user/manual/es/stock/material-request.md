@@ -61,7 +61,7 @@ Los estados en que puede encontrarse una Solicitud de Material son:
 
 * **Escanear Código de Barra**: Se pueden añadir Productos a la tabla de Productos al escanear sus códigos de barra si se cuenta con un lector de código de barra. Para aprender a rastrearlos click [aquí](/docs/user/manual/es/stock/articles/track-items-using-barcode)
 
-* La UdM, el Factor de Conversión, y el Monto serán obtenidos. Se cambia el Almacén para el cuál se realiza la Solicitud de material. 
+* La UOM, el Factor de Conversión, y el Monto serán obtenidos. Se cambia el Almacén para el cuál se realiza la Solicitud de material. 
 
 * Detalles contables como la Cuenta de Gastos y Dimensiones Contables pueden ser configurados para los Productos. 
 
