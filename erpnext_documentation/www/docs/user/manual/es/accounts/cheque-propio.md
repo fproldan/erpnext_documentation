@@ -71,7 +71,7 @@ Por más que el cheque esté vencido, el sistema permite registrar el cobro del 
 
 ### 2.6. Rechazo de cheque propio
 
-Se puede registrar en el sistema el rechazo de cheques en estado Depositado o Entregado. A continuación se detallan los últimos dos casos.
+Se puede registrar en el sistema el rechazo de cheques.
 
 #### 2.6.1. Rechazo de cheque entregado
 
