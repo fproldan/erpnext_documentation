@@ -24,7 +24,7 @@ Normalmente el cheque propio se registra en el sistema al realizar un pago, por 
     
 Luego de Validar la Entrada de pago, el cheque pasará a estado **Entregado**.
 
-> IMPORTANTE: La chequera, así como si se trata de un cheque propio o de terceros, se definen para la Entrada de pago. Por lo tanto, si se utilizan dos o más chequeras, distintas, o bien si se trata de operaciones que incolucren cheques propios y de terceros, deberán emitirse dos o más Entradas de Pago (según corresponda). 
+> IMPORTANTE: La chequera, así como si se trata de un cheque propio o de terceros, se definen para la Entrada de pago. Por lo tanto, si se utilizan dos o más chequeras distintas, o bien si se trata de operaciones que incolucren cheques propios y de terceros, deberán emitirse dos o más Entradas de Pago (según corresponda). 
 
 ### 2.1.2. Creación desde el listado
 
@@ -38,6 +38,8 @@ Así el cheque se creará con estado **En mano**.
 
 > IMPORTANTE: el cheque aparece como tal en sistema pero aún sin impacto contable. Por lo tanto, deberá ser ingresado en la Entrada de pago/Asiento contable, según corresponda, para registrar su impacto contable.
 
+¿Cuándo tiene sentido crear un cheque con estado **En mano**? En aquellas empresas en las cuales los procesos de negocio de pago y firma de valores están escindidos. Por ejemplo, si un tesorero firma los cheques para que un analista de administración pague a proveedores, o bien si se libran para destinar fondos a los distintos sectores mediante transferencias internas.
+
 ### 2.2 Anulación de un cheque propio
 
 En el caso de que el cheque propio haya quedado con estado En mano (no esté vinculado a ninguna transacción validada) y se desee que el sistema no lo tenga en cuenta para futuras operaciones, se puede ingresar al mismo y hacer click en *Acciones > Anular*. Luego de confirmar la acción el cheque pasará a estado **Anulado** y ya no podrá ser utilizado.
@@ -46,7 +48,9 @@ En el caso de que el cheque propio haya quedado con estado En mano (no esté vin
 
 El caso más común es que se entregue el cheque a un tercero y este lo deposite en su cuenta.
 
-Para registrar esto se puede utilizar la [Conciliación bancaria](/docs/user/manual/es/accounts/bank-reconciliation#conciliación-de-cheques-propios-desde-la-herramienta-de-conciliación-bancaria). Al Validar el asiento de conciliación, el cheque pasará a estado **Depositado**.
+Para registrar esto se puede utilizar la [Conciliación bancaria](/docs/user/manual/es/accounts/bank-reconciliation#conciliación-de-cheques-propios-desde-la-herramienta-de-conciliación-bancaria). 
+
+Al Validar el asiento de conciliación, el cheque pasará a estado **Depositado**.
 
 ### 2.4 Cobro de cheque propio
 
@@ -59,7 +63,7 @@ Al Validar el asiento, el cheque pasará a estado **Cobrado**.
 
 ### 2.5 Vencimiento de un cheque propio
 
-Si bien no son los casos más usuales, en el supuesto de que se tenga un cheque propio En mano y supere el plazo de pago, es decir, se exceda en más de 30 días corridos la Fecha de pago; este pasará a estado **Vencido**. El sistema corre un proceso automático diario mediante el cual va cambiando los estados para aquellos cheques que correspondan. 
+Si bien no son los casos más usuales, bajo el supuesto de que se tenga un cheque propio En mano y supere el plazo de pago, es decir, se exceda en más de 30 días corridos la Fecha de pago; este pasará a estado **Vencido**. El sistema corre un proceso automático diario mediante el cual va cambiando los estados para aquellos cheques que correspondan. 
 
 #### 2.5.1. Actualización de fecha
 
