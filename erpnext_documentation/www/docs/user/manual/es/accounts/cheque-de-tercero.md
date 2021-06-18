@@ -44,7 +44,7 @@ Así el cheque se creará con estado **En mano**.
 
 > IMPORTANTE: el cheque aparece como tal en sistema pero aún sin impacto contable. Por lo tanto, deberá ser ingresado en la Entrada de pago/Asiento contable, según corresponda, para registrar su impacto contable.
 
-Puede ser necesario crear cheques con estado **En mano** en aquellas empresas en las cuales los procesos de negocio de pago/cobro e ingreso en sistema de valores están escindidos. Por ejemplo, si un analista de administración ingresa los cheques para que luego otro colaborador realice una Entrada de pago, utilizando los mismos, de manera mas agil y rápida (evitando realizar todo el procedimiento junto a la emisión de la Entrada de Pago). 
+Puede ser necesario crear cheques con estado **En mano** en aquellas empresas en las cuales los procesos de negocio de pago/cobro e ingreso en sistema de valores están escindidos. Por ejemplo, si un analista de administración ingresa los cheques para que luego otro colaborador realice una Entrada de pago utilizando los mismos, de manera más ágil y rápida (evitando realizar todo el procedimiento junto a la emisión de la Entrada de Pago). 
 
 ### 2.2. Pago con cheque de tercero
 
@@ -112,13 +112,9 @@ Se puede registrar en el sistema el rechazo de cheques en estado Vencido (explic
 
 Un cheque depositado en la cuenta bancaria de la empresa puede ser rechazado por diferentes motivos: falta de fondos, defectos formales, plazos vencidos, etc.
 
-Hay dos opciones para reflejar en sistema el rechazo de un cheque depositado en la cuenta bancaria. 
-
-La primera consiste en ingresar al cheque y hacer click en *Acciones > Rechazar Depositado*. Esto llevará a la creación de un Asiento contable de tipo Cheque Rechazado, donde la cuenta de débito por defecto será la definida como Cuenta de Cheques Rechazados en la Compañía. Al Validar el Asiento, el cheque pasará a estado **Rechazado**.
+Para reflejar esto en el sistema se debe ingresar al cheque y hacer click en *Acciones > Rechazar Depositado*. Esto llevará a la creación de un Asiento contable de tipo Cheque Rechazado, donde la cuenta de débito por defecto será la definida como Cuenta de Cheques Rechazados en la Compañía. Al Validar el Asiento, el cheque pasará a estado **Rechazado**.
 
 > IMPORTANTE: se debe crear la Nota de débito con el producto Cheque rechazado para volver a generar la deuda del Cliente ya que el pago queda anulado.
-
-La segunda opción consiste en realizar el depósito desde la conciliación bancaria. Se sugiere revisar la documentación de [Conciliación bancaria](/docs/user/manual/es/accounts/bank-reconciliation#conciliación-de-cheques-de-terceros-desde-la-herramienta-de-conciliación-bancaria), en particular, el apartado de cheques.
 
 #### 2.6.2. Rechazo de cheque entregado
 
