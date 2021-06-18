@@ -31,7 +31,7 @@ Para representar el rechazo de un cheque en el sistema se debe contar con:
 
 ## 3. Cuentas por defecto
 
-Se deberán especificar en la [Compañía](docs/user/manual/es/setting-up/company-setup) las cuentas que serán tomadas por defecto para las diferentes transacciones que se relizarán involucrando cheques (recepción, pago, cobro, depósito, rechazo, etc.).
+Se deberán especificar en la [Compañía](docs/user/manual/es/setting-up/company-setup) las cuentas que serán tomadas por defecto para las diferentes transacciones que se realizarán involucrando cheques (recepción, pago, cobro, depósito, rechazo, etc.).
 
 (Imagen con las cuentas a setear)
 
