@@ -12,7 +12,7 @@ A continuación se detalla el ciclo de vida de un cheque propio en el sistema.
 
 ### 2.1. Pago con un cheque propio
 
-### 2.1.1. Creación desde la Entrada de pago
+#### 2.1.1. Creación desde la Entrada de pago
 
 Normalmente el cheque propio se registra en el sistema al realizar un pago, por ejemplo, a un Proveedor.
 
@@ -26,7 +26,7 @@ Luego de Validar la Entrada de pago, el cheque pasará a estado **Entregado**.
 
 > IMPORTANTE: La chequera, así como si se trata de un cheque propio o de terceros, se definen para la Entrada de pago. Por lo tanto, si se utilizan dos o más chequeras distintas, o bien si se trata de operaciones que incolucren cheques propios y de terceros, deberán emitirse dos o más Entradas de Pago (según corresponda). 
 
-### 2.1.2. Creación desde el listado
+#### 2.1.2. Creación desde el listado
 
 También es posible crear el cheque propio desde el listado de cheques para usarlo luego en la operación que corresponda.
 
@@ -38,7 +38,7 @@ Así el cheque se creará con estado **En mano**.
 
 > IMPORTANTE: el cheque aparece como tal en sistema pero aún sin impacto contable. Por lo tanto, deberá ser ingresado en la Entrada de pago/Asiento contable, según corresponda, para registrar su impacto contable.
 
-¿Cuándo tiene sentido crear un cheque con estado **En mano**? En aquellas empresas en las cuales los procesos de negocio de pago y firma de valores están escindidos. Por ejemplo, si un tesorero firma los cheques para que un analista de administración pague a proveedores, o bien si se libran para destinar fondos a los distintos sectores mediante transferencias internas.
+Puede ser necesario crear cheques con estado **En mano** en aquellas empresas en las cuales los procesos de negocio de pago y firma de valores están escindidos. Por ejemplo, si un tesorero firma los cheques para que un analista de administración pague a proveedores, o bien si se libran para destinar fondos a los distintos sectores mediante transferencias internas.
 
 ### 2.2 Anulación de un cheque propio
 
@@ -77,14 +77,12 @@ Por más que el cheque esté vencido, el sistema permite registrar el cobro del 
 
 Se puede registrar en el sistema el rechazo de cheques.
 
-#### 2.6.1. Rechazo de cheque entregado
-
 Un cheque entregado a un tercero (por ejemplo, a un proveedor) puede ser rechazado por diferentes motivos: falta de fondos, defectos formales, plazos vencidos, etc.
 
 Para esto ingresar al cheque y hacer click en *Acciones > Rechazar Entregado*. Esto llevará a la creación de un Asiento contable de tipo Cheque Rechazado, donde la cuenta de débito por defecto será la definida como Cuenta de Cheques Rechazados en la Compañía. Al Validar el Asiento, el cheque pasará a estado **Rechazado**.
 
 > IMPORTANTE: se debe crear la Nota de débito en sistema, cuando el Proveedor remita el documento fiscal correspondiente, con el producto Cheque rechazado para volver a generar la deuda con el Proveedor ya que el pago queda anulado.
 
-### 2.7. Transferencia interna con cheques propio
+### 2.7. Transferencia interna con cheques propios
 
 Se puede realizar una Entrada de pago de tipo Transeferencia interna, con Método de pago de tipo Cheque, en el caso de que se desee pasar cheques en estado En mano o Vencido de la cuenta en la que se encuentran a otra, sin afectar el estado del cheque.
