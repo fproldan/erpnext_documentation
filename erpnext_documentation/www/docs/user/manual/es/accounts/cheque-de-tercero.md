@@ -44,6 +44,8 @@ Así el cheque se creará con estado **En mano**.
 
 > IMPORTANTE: el cheque aparece como tal en sistema pero aún sin impacto contable. Por lo tanto, deberá ser ingresado en la Entrada de pago/Asiento contable, según corresponda, para registrar su impacto contable.
 
+Puede ser necesario crear cheques con estado **En mano** en aquellas empresas en las cuales los procesos de negocio de pago/cobro e ingreso en sistema de valores están escindidos. Por ejemplo, si un analista de administración ingresa los cheques para que luego otro colaborador realice una Entrada de pago, utilizando los mismos, de manera mas agil y rápida (evitando realizar todo el procedimiento junto a la emisión de la Entrada de Pago). 
+
 ### 2.2. Pago con cheque de tercero
 
 Es posible utilizar el cheque recibido para pagar, por ejemplo, a un Proveedor.
