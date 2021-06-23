@@ -22,7 +22,7 @@ Antes de crear y utilizar una Orden de Venta se recomienda crear lo siguiente:
 1. Ir al listado de Orden de Venta y hacer click en Nuevo.
 1. Seleccionar el Cliente
 1. Configurar la "Fecha de entrega" (se aplica a todo el pedido).
-1. En Tipo de Orden se puede establecer si se trata de una Orden de Venta, una Orden de Mantenimiento, o si proviene de una operación online [Carrito de compras](/docs/user/manual/en/website/shopping-cart) desde el sitio web. La configuración predeterminada la va a establecer como "Ventas".
+1. En Canal de Venta se puede establecer si se trata de una venta Local, Mayorista, mediante Sitio Web como [Carrito de compras](/docs/user/manual/en/website/shopping-cart), etc. Se pueden crear más Canales de venta y seleccionar uno de ellos como predeterminado.
 1. En la sección "Orden de Compra del Cliente" se puede agregar el número de Orden de Compra u otros detalles que puedan ser útiles como referencia. 
 1. Añadir los productos y cantidades a ser enviados en la tabla correspondiente. Si los precios de los productos ya fueron configurados, el campo Precio se completará automáticamente. Si no, es necesario introducir los precios de los productos manualmente. También se puede modificar la tarifa completada automáticamente en caso de que deban hacerse cambios en su valor. 
 1. Hacer click en "Guardar" para guardar un borrador de la Orden de Venta. 
