@@ -43,6 +43,10 @@ Si hay muchas Oportunidades con un estado distinto a Abierto, las mismas serán 
 
 Las cotizaciones realizadas para los clientes solo son válidas durante una cierta cantidad de días. En la Cotización se puede actualizar de forma manual la Fecha de Validez. De forma predeterminada, la misma será establecida en 30 días desde la fecha de realización de la Cotización. Se puede cambiar esa cantidad de días en este campo de acuerdo a las características del negocio. 
 
+### 2.5 Canal de Venta por Defecto
+
+En este campo se puede especificar el Canal de ventas que aparecerá por defecto al crear una nueva Orden de venta.
+
 ## 3. Configuración de requisitos
 ### 3.1 Se requiere Orden de venta para la creación de Facturas de venta y Notas de entrega
 
