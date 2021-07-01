@@ -1,66 +1,45 @@
 <!-- add-breadcrumbs -->
-# Advance Payment Entry
+# Pagos adelantados
 
-Los pagos realizados por el cliente antes de recibir el envío del producto se
-denominan Anticipos. Para ordenes de alto costo, los negocios esperan recibir
-dcho tipos de pago.
+**Pagos realizados por el Cliente/Proveedor antes del envío de la factura son considerados Pagos adelantados.**
 
+Generalmente, el pago adelantado se realiza en casos de importes elevados. Por ejemplo, en el caso de que un Cliente ordene un mueble de lujo cuyo precio es de $24.000 y se le pide que pague por adelantado una determinada suma antes de que se inicie la confección de dicho producto.
 
-__Por Ejemplo:__ Consider a customer- Jane D'souza placing an order for a double
-bed costing $10000 She is asked to give some advance before the furniture
-house begins work on her order. She gives them $5000 in cash.
+En ERPNext, el pago adelantado se registra por medio de una Entrada de pago. Si existe una Orden de venta, se puede crear directamente una Entrada de pago por el monto del adelanto. O sino, se puede crear una Entrada de pago independiente para el Cliente. De la misma forma se pueden crear Entradas de pago para Proveedores por medio de Ordenes de compra.
 
+![PE from SO](/docs/assets/img/accounts/advance-payment-1.png)
 
-Go to Accounts and open a new Journal Entry to make the advance entry.
+> Nota: si el pago no está vinculado a una factura, se lo considera como un pago adelantado. Los pagos adelantados se ven reflejados en las Cuentas a cobrar y reportes de pagos.
 
-> Accounting > Documents > Journal Entry > New Journal Entry
+## 1. Prerequisitos
+Para crear un pago adelantado, se necesita tener previamente creado lo siguiente:
 
-Mention the voucher type as cash voucher. This differs for different
-customers. If somebody pays by cheque the voucher type will be Bank Voucher.
-Then select the customer account and make the respective debit and credit
-entries.
+* Entidad (Cliente/Proveedor)
+* Cuenta de pago (Banco o Efectivo)
 
-Since the customer has given $5000 as cash advance,it will be recorded as a
-credit entry against the customer. To balance it with the debit entry [Double
-accounting Entry] enter $5000 as debit against the company's cash account. In
-the row "Is Advance" click 'Yes'.
+## 2. Creación de Pagos adelantados
+Una vez que se validan las Ordenes de venta o compra, aparece la opción para crear un Pago contra la misma. También se puede crear una nueva Entrada de pago y manualmente seleccionar los valores correspondientes (como entidad y cuentas de pago). A continuación se listan los pasos para la creación de Pagos adelantados contra Ordenes de venta.
 
-#### Figure 1 : Journal Entry -Advance Entry
-
-<img class="screenshot" alt="Advace Payment" src="{{docs_base_url}}/assets/img/accounts/advance-payment-1.png">
-
-### Double Entry Accounting
-
-Double entry bookkeeping is a system of accounting in which every transaction
-has a corresponding positive and negative entry : debits and credits. Every
-transaction involves a debit entry in one account
-and a credit
-entry in another
-account. This means that every transaction must be recorded in two accounts;
-one account will be debited because it receives value and the other account
-will be credited because it has given value.
+1. Ir a la Orden de venta y hacer click en **Crear > Pago**.
+1. Seleccionar/tildar las cuentas.
+1. Guardar y validar.
 
 
-#### Figure 2: Transaction and Difference Entry
+Cualquier Entrada de pago que no está vinculada a una factura es considerada como pago adelantado.
 
-<img class="screenshot" alt="Advace Payment" src="{{docs_base_url}}/assets/img/accounts/advance-payment-2.png">
+Si el Cliente pagó $5.000 en efectivo como adelanto, esto será registrado como una entrada de crédito contra la cuenta a cobrar del cliente. Para balancear esto (según el sistema contable de doble entrada), se debitarán $5.000 de la cuenta de efectivo de la compañía.
 
-Save and submit the JV. If this document is not saved it will not be pulled in
-other accounting documents.
+### 2.2 Asignación de Pagos adelantados en la factura
 
-When you make a new Sales Invoice for the same customer, mention the advance
-in the Sales Invoice Form.
-
-To link the Sales Invoice to the Journal Entry which mentions the advance
-payment entry, click on ‘Get Advances Received’.  Allocate the amount of
-advance in the advances table. The accounting will be adjusted accordingly.
-
-#### Figure 3: Receive Advance
+Al crear una factura, se debe chequear si existe un Pago adelantado para esa entidad.
 
 <img class="screenshot" alt="Advace Payment" src="{{docs_base_url}}/assets/img/accounts/advance-payment-3.png">
 
-Save and submit the Sales Invoice.
+Al hacer click en el botón **Obtener anticipos recibidos** serán traídas a la factura las Entradas de pago de la entidad. Luego, se puede asignar el monto del anticipo contra la factura. La asignación reducirá el monto pendiente de la factura de forma inmediata.
 
-**Trabajo en progreso.**
+Guardar y validar la Factura de venta.
 
-{next}
+### 3. Temas relacionados
+1. [Factura de venta](/docs/user/manual/es/accounts/sales-invoice)
+1. [Asiento contable](/docs/user/manual/es/accounts/journal-entry)
+1. [Entrada de pago](/docs/user/manual/es/accounts/payment-entry)

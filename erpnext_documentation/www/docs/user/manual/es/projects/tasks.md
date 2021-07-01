@@ -1,62 +1,90 @@
 <!-- add-breadcrumbs -->
 # Tareas
 
-Proyecto es dividido en Tareas.
-En ERPNext, puedes crear las tareas de forma independiente.
+**En la administración de proyectos, una tarea es una unidad de acción o actividad que debe ser completada.**
 
-<img class="screenshot" alt="Task" src="{{docs_base_url}}/assets/img/project/task.png">
+<img class="screenshot" alt="Task" src="{{docs_base_url}}/assets/img/project/projects-task.png">
 
-### Estado de una Tarea
+Para acceder a Tareas ir a:
 
-Una tarea puede tener uno de los siguientes estados - Abierto, Trabajando, Pendiente de Revisión, Cerrado, o Cancelado.
+> Inicio > Proyectos > Proyectos > Tarea
 
-<img class="screenshot" alt="Task - Status" src="{{docs_base_url}}/assets/img/project/task_status.png">
+## 1. Creación de una Tarea
 
-* Por defecto, cada nueva tarea creada se le establece el estado 'Abierto'.
+  1. Ir al listado de Tarea y hacer click en Nueva.
+  2. Añadir el asunto de la Tarea.
+  3. Guardar.
+  
+  <img class="screenshot" alt="Task" src="{{docs_base_url}}/assets/img/project/projects-task-creation-main.gif">
 
-* Si un registro de tiempo es realizado sobre una tarea, su estado es asignado a 'Working'.
+De forma alternativa, también puede crearse una tarea desde un Proyecto de la siguiente forma: 
 
-### Tarea Dependiente
+  1. Ir al Proyecto para el cual se desea crear la tarea. 
+  2. Ir a Tarea en la sección Proyecto del Tablero. El signo más '+' que se encuentra allí redirige a la página de creación de tareas.  
+  3. Añadir el asunto de la tarea.
+  4. Guardar.
+  
+  <img class="screenshot" alt="Task" src="{{docs_base_url}}/assets/img/project/projects-task-creation.gif">
 
-Puedes especificar una lista de tareas dependientes en la sección 'Depende de'
+### 1.1 Opciones adicionales al crear una Tarea
 
-<img class="screenshot" alt="Depends On" src="{{docs_base_url}}/assets/img/project/task_depends_on.png">
+Al editar una nueva tarea, pueden añadirse los siguientes detalles:
 
-* No puedes cerrar una tarea padre hasta que todas las tareas dependientes esten cerradas.
+  * **Estado**: Se puede añadir el estado del Proyecto o cambiarlo cuando sea necesario, por ejemplo de "Abierto" a "Trabajando", "Atrasado", "Pendiente de Revisión", "Completado", o "Cancelado".
+  * **Proyecto**: En caso de que una tarea sea agregada de forma independiente, se puede elegir vincular la tarea a un Proyecto en particular. Si la tarea es creada desde un Proyecto, los detalles del Proyecto serán añadidos de forma automática. 
+  * **Prioridad**: Se puede elegir definir la prioridad de la tarea, entre Baja, Media, Alta o Urgente. 
+  * **Incidencia**: Si la tarea es una acción que deviene de una Incidencia, la misma puede ser etiquetada aquí. 
+  * **Peso**: Si una tarea en particular posee determinado peso dentro de un proyecto, o no, el peso puede especificarse aquí. El peso se calcula en el Método de Porcentaje de Completitud de Tareas de acuerdo con el Peso de las Tareas.
+  * **Tipo**: Si la tarea puede ser definida bajo algún Tipo de Tareas en particular como Entrenamiento de Usuario, o Demostración de Usuario, se puede ingresar el Tipo de Tarea aquí. Se puede utilizar para filtrar las tareas de acuerdo con Tipos de Tareas. 
+  * **Color**: Cada tarea puede ser reconocida por un color diferente. Esto ayuda a identificar una tarea al crear los Gráficos de Gantt. 
+  * **Es Grupo**: Esta opción puede ser seleccionada para indicar que una tarea es principal, y que puede ser dividida posteriormente en muchas sub tareas.
+  * **Es Plantilla**: Se puede tildar esta opción para indicar que la tarea es una plantilla y que debe ser utilizada en una Plantilla de proyecto.
+  * **Tarea Padre**: Si una tarea en particular es parte de un grupo de tareas, la tarea principal puede ser vinculada a la tarea desde este campo.
+  
+  <img class="screenshot" alt="Task" src="{{docs_base_url}}/assets/img/project/timesheet/project-task.png">
 
-* Si una tarea dependiente se encuentra en retraso y se sobrepone con la fecha esperada de inicio de la tarea padre, el sistema va a re calandarizar la tarea padre.
+## 2. Características
 
-### Manejando el tiempo
+### 2.1. Cronograma y detalles
 
-ERPNext usa [Time Log](/docs/user/manual/es/projects/time-log-batch) para seguir el progreso de una tarea.
-Puedes crear varios registros de tiempo para cada tarea.
-El tiempo de inicio y fin actual junto con el costo es actualizado en base al Registro de Tiempo.
+* **Fecha prevista de inicio**: Se puede ingresar aquí la fecha en la cuál se espera iniciar la Tarea.
+* **Fecha prevista de finalización**: Se puede ingresar aquí la fecha en la cuál se espera finalizar la Tarea.
+* **Tiempo previsto**: Se puede ingresar el número de horas que se espera invertir en esta tarea.
+* **% Progreso**: Se puede ingresar el Porcentaje de Progreso de una Tarea.
+* **Es una meta**: Esta casilla de verificación puede seleccionarse en caso de que una tarea en particular sea una Meta en un Proyecto. 
+* **Descripción de la tarea**: Se puede añadir una descripción de la tarea aquí.
 
-* Para ver el Registro de tiempo realizado a una tarea, dar click en 'Time Logs'
+  <img class="screenshot" alt="Task" src="{{docs_base_url}}/assets/img/project/projects-task-timeline.png">
 
-<img class="screenshot" alt="Task - View Time Log" src="{{docs_base_url}}/assets/img/project/task_view_time_log.png">
+### 2.2. Dependencias y Tiempo Real
 
-<img class="screenshot" alt="Task - Time Log List" src="{{docs_base_url}}/assets/img/project/task_time_log_list.png">
+* **Tareas Dependientes**: Tareas Dependientes indica que una tarea en particualar depende de otra tarea, y que la primera no puede completarse sino se completa la otra. 
 
-* Puedes también crear un Registro de Tiempo directamente y luego asociarlo a una Tarea.
+  La dependencia de Tareas puede verse en el Gráfico de Gantt de la siguiente forma.
 
-<img class="screenshot" alt="Task - Link Time Log" src="{{docs_base_url}}/assets/img/project/task_time_log_link.png">
+  <img class="screenshot" alt="Task" src="{{docs_base_url}}/assets/img/project/projects-task-gantt.png">
 
-### Gestión de gastos
+* **Fecha de inicio real**: La fecha y hora real en la cual se inicia la Tarea se registra de acuerdo con el [Registro de horas](/docs/user/manual/es/projects/timesheets/).
+* **Fecha de finalización real**: La fecha y hora real en la cual se finaliza la tarea se registra aquí a través del Registro de horas.
 
-Puede reservar la [Reclamación de gastos](/docs/user/manual/en/human-resources/expense-claim.html) contra una tarea de proyecto.
-El sistema actualizará el monto total de las reclamaciones de gastos en la sección de costos del proyecto.
+  <img class="screenshot" alt="Task" src="{{docs_base_url}}/assets/img/project/projects-task-dependencies.png">
 
-* Para ver las reclamaciones de gastos realizadas en un proyecto, haga clic en 'Reclamaciones de gastos'
+### 2.3. Presupuesto
 
-<img class="screenshot" alt="Task - View Expense Claim" src="{{docs_base_url}}/assets/img/project/task_view_expense_claim.png">
+* **Monto Total de Costos**: El Monto Total de Costos se obtiene de los Registros de horas validados por el usuario mientras se trabajaba en esta tarea.
+* **Monto Total de Facturación**: El Monto Total que se facturará al [Cliente](/docs/user/manual/es/CRM/customer) por la realización de esta tarea se registra en este campo desde los Registros de horas. 
+* **Total Reembolsos**: El Monto Total de Gastos Reclamado por un Empleado para la realización de esta Tarea se registra y refleja aquí. 
 
-* También puede crear un Reclamo de gastos directamente y vincularlo al Proyecto.
+### 2.4. Más Información
 
-<img class="screenshot" alt="Task - Link Expense Claim" src="{{docs_base_url}}/assets/img/project/task_expense_claim_link.png">
+* **Departamento**: Se puede ingresar el Departamento Principal para la tarea. Esto no se relaciona con el Departamento Principal de un Proyecto ya que cada tarea es llevada a cabo por un departamento distinto.
+* **Compañía**: Se puede cambiar la Compañía para la cual se está realizando la Tarea. Esto puede utilizarse en casos donde una compañía realiza una Tarea para una Empresa Relacionada o para su Empresa Principal o para una Filial. 
 
-* El monto total de los Reclamos de gastos reservados contra un proyecto se muestra en 'Reclamo de gastos totales' en la Sección de Costos del proyecto
+  <img class="screenshot" alt="Task" src="{{docs_base_url}}/assets/img/project/projects-task-costing.png">
 
-<img class="screenshot" alt="Task - Total Expense Claim" src="{{docs_base_url}}/assets/img/project/task_total_expense_claim.png">
+## 3. Temas Relacionados
+
+  1. [Proyecto](/docs/user/manual/es/projects/project)
+  2. [Registros de horas](/docs/user/manual/es/projects/timesheets)
 
 {next}

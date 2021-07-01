@@ -1,0 +1,91 @@
+{% set doc=[
+	{
+		"links": [
+			{
+				"content": "Una Iniciativa es un potencial cliente que puede llegar a tener interés en los productos o servicios que comercializa la empresa.",
+				"link": "/docs/user/manual/es/CRM/lead",
+				"title": "Iniciativa"
+			},
+			{
+				"content": "Una Oportunidad es una Iniciativa calificada, por ejemplo, cuando decide considerar la oferta.",
+				"link": "/docs/user/manual/es/CRM/opportunity",
+				"title": "Oportunidad"
+			},
+			{
+				"content": "Un Cliente es quien recibe los bienes, servicios, productos o ideas de un vendedor, a cambio de una retribución monetaria.",
+				"link": "/docs/user/manual/es/CRM/customer",
+				"title": "Cliente"
+			},
+			{
+				"content": "Un Contacto representa a una persona en el sistema, y puede ser asociado a un Cliente, Proveedor o Compañía.",
+				"link": "/docs/user/manual/es/CRM/contact",
+				"title": "Contacto"
+			},
+			{
+				"content": "Se pueden registrar Direcciones asociadas con una Iniciativa, un Cliente, Proveedor, Accionista, Socio de ventas o Almacén.",
+				"link": "/docs/user/manual/es/CRM/address",
+				"title": "Dirección"
+			},
+			{
+				"content": "Una Campaña es la implementación a gran escala de una estrategia de ventas para promover un producto o servicio.",
+				"link": "/docs/user/manual/es/CRM/campaign",
+				"title": "Campaña"
+			}
+		],
+		"title": "Ventas"
+	},
+	{
+		"links": [
+			{
+				"content": "La Fuente de la Iniciativa es desde donde se generan los clientes potenciales.",
+				"link": "/docs/user/manual/es/CRM/lead_source",
+				"title": "Fuente de la Iniciativa"
+			},
+			{
+				"content": "El Tipo de Oportunidad indica la amplia categoría de oportunidades como Ventas, Asistencia, Mantenimiento, Sociedades, etc.",
+				"link": "/docs/user/manual/es/CRM/opportunity_type",
+				"title": "Tipo de Oportunidad"
+			},
+			{
+				"content": "Una Etapa de Venta indica el nivel en el cual se encuentra una oportunidad en el ciclo de ventas.",
+				"link": "/docs/user/manual/es/CRM/sales-stage",
+				"title": "Etapas de Venta"
+			},
+			{
+				"content": "Un Vendedor es una persona que vende productos o servicios para una empresa.",
+				"link": "/docs/user/manual/es/CRM/sales-person",
+				"title": "Vendedor"
+			},
+			{
+				"content": "Una Categoría de Clientes es un conjunto de clientes que, de alguna forma, son similares.",
+				"link": "/docs/user/manual/es/CRM/customer-group",
+				"title": "Categoría de Clientes"
+			},
+			{
+				"content": "Se puede analizar el embudo de ventas y cuantificar el número de prospectos en cada etapa del proceso y así hacerse una idea de los clientes potenciales.",
+				"link": "/docs/user/manual/es/CRM/articles/sales_funnel",
+				"title": "Estadísticas CRM"
+			},
+			{
+				"content": "La Cita puede ser usada para calendarizar y gestionar la interacción con Iniciativas y Oportunidades.",
+				"link": "/docs/user/manual/es/CRM/appointment",
+				"title": "Cita"
+			},
+			{
+				"content": "Publicación en Redes Sociales es utilizado para crear y programar las publicaciones para LinkedIn y Twitter.",
+				"link": "/docs/user/manual/es/CRM/social-media-post",
+				"title": "Publicaciones en Redes Sociales"
+			}
+		],
+		"title": "Configuración"
+	}
+] %}
+
+{% from "erpnext_documentation/templates/includes/macros.html" import doc_page %}
+
+{{ doc_page(
+	'CRM',
+	'Seguimiento del proceso de preventa desde la captación de Iniciativas, seguimiento de las Oportunidades abiertas, hasta los correos electrónicos y las llamadas',
+	doc,
+	'/docs/user/manual/es/CRM/contents/'
+) }}

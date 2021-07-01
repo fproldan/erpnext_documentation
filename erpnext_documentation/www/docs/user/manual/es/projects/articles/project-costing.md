@@ -1,41 +1,34 @@
 <!-- add-breadcrumbs -->
-# Costeo de proyectos
+# Costos de Proyecto
 
-Cada proyecto tiene multiples tareas asociadas a el. Para hacer el seguimiento del costo actual de un proyecto, primeramente en términos de servicios, el usuario
-tiene que crear un registro de tiempo basado en el tiempo que invirtió en una tarea del proyecto. Siguiendo los pasos de como puedes hacer el seguimiento del costo actual de un servicio usando el proyecto.
+Cada proyecto tiene muchas tareas asociadas al mismo. Para registrar el costo real de un Proyecto, principalmente en términos de servicios, un Usuario debe crear un Registro de horas basada en el tiempo invertido en una Tarea dentro de un Proyecto. Se puede rastrear el costo de servicio de un Proyecto de las siguientes maneras.
 
-#### Tipo de actividad
+## Tipo de Actividad
 
-Tipo de actividad es un maestro de los servicios ofrecidos por su personal. Puedes agregar un nuevo Tipo de Actividad desde:
+[Tipo de Actividad](/docs/user/manual/es/projects/activity-type) es un plano general de los servicios ofrecidos por el personal de la empresa.
 
-`Project > Activity Type > New`	
+## Costo de Actividad
 
-#### Costo de actividad
+El Costo de Actividad es una función donde se pueden rastrear las tarifas de facturación y costo para cada Empleado, por cada Tipo de Actividad.
 
-Costo de actividad es un maestro donde puedes hacer el seguimiento de los montos de facturación y costo de cada empleado, y por cada tipo de Tipo de Actividad.
+<img class="screenshot" alt="Activity Cost" src="{{docs_base_url}}/assets/img/project/projects-activity-cost.png">
 
-<img alt="Activity Cost" class="screenshot" src="{{docs_base_url}}/assets/img/articles/Screen Shot 2015-06-11 at 4.57.01 pm.png">
+## Registro de horas
 
-#### Registro de Tiempo
+De acuerdo con el tiempo invertido en el Proyecto o Tarea, un empleado creará un [Registro de horas](/docs/user/manual/es/projects/timesheets).
 
-Basados en el tiempo actual invertido en una Tarea del Proyecto, El empleado va a crear un registro de tiempo.
+<img class="screenshot" alt="Timesheet" src="{{docs_base_url}}/assets/img/project/projects-timesheet.png">
 
-<img alt="Time Log" class="screenshot" src="{{docs_base_url}}/assets/img/articles/Screen Shot 2015-06-11 at 4.59.49 pm.png">
+Al seleccionar el Tipo de Actividad en el Registro de horas, las Tarifas de Facturación y Costo serán obtenidas para ese Empleado con el respectivo [Costo de Actividad](/docs/user/manual/es/projects/activity-cost).
 
-Al momento de seleccionar el Tipo de Actividad en el Registro de tiempo, el monto de Facturación y Costo del empleado va a ser traído de su respectivo registro en el master de Costo de Actividad.
+Multiplicar el total de esas tarifas por el total de horas otorga el Monto Total de Costo y Facturación para el Registro de horas específico. 
 
-<img alt="Time Log Costing" class="screenshot" src="{{docs_base_url}}/assets/img/articles/Screen Shot 2015-06-11 at 5.00.06 pm.png">
+## Costo en Proyectos y Tareas
 
-Multiplicando esos montos con el total de número de horas en el registro de tiempo, nos da el monto de costos y Facturación para el registro de tiempo específico.
+Tomando como referencia todos los Registro de horas creadas para Tareas específicas, su costo será actualizado en la Tarea respectiva. 
 
-#### Costeo en Proyectos y Tareas
+<img class="screenshot" alt="Task" src="{{docs_base_url}}/assets/img/project/projects-task-costing.png">
 
-Basados en el total de registros de tiempos creados por una tarea en específico, su costo va a ser actualizado en el registro maestro de la tarea, o sea, en el detalle de la tarea.
+De la misma forma, el costo del Proyecto será actualizado en base a los Registro de horas creadas para sus tareas asociadas y el costo del Proyecto se actualizará automáticamente. 
 
-<img alt="Costing in Task" class="screenshot" src="{{docs_base_url}}/assets/img/articles/Screen Shot 2015-06-11 at 5.02.54 pm.png">
-
-De la misma manera, el detalle del Proyecto va a actualizar su costo basado en el total de registros de tiempo a ese proyecto, y las tareas asociadas a ese proyecto.
-
-<img alt="Costing in Project" class="screenshot" src="{{docs_base_url}}/assets/img/articles/Screen Shot 2015-06-11 at 5.02.29 pm.png">
-
-<!-- markdown -->
+<img class="screenshot" alt="Project - Costing" src="{{docs_base_url}}/assets/img/project/projects-costing-and-billing.png">

@@ -1,111 +1,118 @@
 <!-- add-breadcrumbs -->
 # Proyecto
 
-El manejo de proyectos en ERPNext se hace a traves de tareas. Puedes crear un proyecto y asignar varias tareas al mismo.
+**Un Proyecto es un trabajo planeado que ha sido diseñado para obtener información respecto a algo, para producir algo nuevo o para mejorar algo.**
 
-<img class="screenshot" alt="Project" src="{{docs_base_url}}/assets/img/project/project.png">
+En ERPNext, un Proyecto tiene un amplio alcance y por ende puede ser dividido en tareas. Cuestiones como diseñar, generar prototipos, probar, enviar, etc, se convierten en tareas del proyecto. 
 
-También puedes hacer el seguimiento del % completado del proyecto usando diferentes métodos.
+Mientras cada tarea dentro de un Proyecto puede ser asignada a un individuo o a un grupo de individuos, la asignación también puede hacerse a un nivel de proyecto. 
 
-  1. Tareas Completadas
-  2. Progreso de tareas
-  3. Peso de tarea
+Estas Tareas pueden crearse desde un Proyecto en sí o también una [Tarea](/docs/user/manual/en/projects/tasks.html) puede crearse de forma separada.
 
-<img class="screenshot" alt="Project" src="{{docs_base_url}}/assets/img/project/project-percent-complete.png">
+Para acceder a Proyectos ir a:
 
-Algunos ejemplos de como el % completado es cálculado basado en tareas.
+> Inicio > Proyectos > Proyectos > Proyecto
 
-<img class="screenshot" alt="Project" src="{{docs_base_url}}/assets/img/project/percent-complete-calc.png">
+<img class="screenshot" alt="Project" src="{{docs_base_url}}//assets/img/project/projects-project-intro.png">
 
-<img class="screenshot" alt="Project" src="{{docs_base_url}}/assets/img/project/percent-complete-formula.png">
+## 1. Creación de un Proyecto
 
-### Manejando tareas
+  1. Ir al listado de Proyecto y hacer click en Nuevo.
+  2. Añadir los siguientes detalles:
+      * **Nombre del Proyecto**: Título del Proyecto.
+      * **Estado**: El estado predeterminado de un Proyecto será "Abierto", el cual luego puede cambiarse a "Completado" o "Cancelado".
+      * **Fecha prevista de finalización**: Ingresar la fecha en la cual se planea terminar el proyecto.
+  3. Guardar.
 
-Los proyecto pueden ser divididos en multiples tareas.
-Las tareas pueden ser creadas a traves del documento de Proyecto o pueden ser creadas via [Tarea](/docs/user/manual/en/projects/tasks.html)
+### 1.1 Opciones Adicionales al crear un Proyecto
 
-<img class="screenshot" alt="Project" src="{{docs_base_url}}/assets/img/project/project_task.png">
+  1. **Desde Plantilla**: Si se cuenta con una [Plantilla de Proyecto](/docs/user/manual/es/projects/project-template), se puede elegir crear el proyecto utilizandola. 
+  2. **Fecha prevista de inicio**: Si se posee una línea temporal fijada para el proyecto, se pueden definir tanto la "Fecha prevista de inicio" y la "Fecha prevista de finalización" en el formulario.
+  3. **Tipo de Proyecto**: Se pueden clasificar los proyectos en diferentes [tipos](/docs/user/manual/es/projects/project-type), por ejemplo, Internos o Externos. 
+  4. **Prioridad**: Se puede seleccionar el nivel de prioridad del Proyecto de acuerdo a qué tan crucial sea. También se pueden añadir más niveles de prioridad. 
+  5. **Departamento**: Si el proyecto proviene de o pertenece a un [Departamento](/docs/user/manual/en/human-resources/department) de la compañía, se puede indicar en este campo.
+  6. **Está Activo**: se puede cambiar el valor de Si/No en etapas posteriores. 
+  7. **% Método completado**: Se puede rastrear el % de finalización del proyecto en base a uno de estos tres métodos **Manual, Finalización de Tareas, Progreso de Tareas y Peso de Tareas**. 
+  
+  <img class="screenshot" alt="Project 2" src="{{docs_base_url}}/assets/img/project/project-proj.png">
 
-* Para ver las tareas creadas a un proyecto click en 'Tasks'
+ Algunos ejemplos de cómo se calcula el Porcentaje de Finalización en base a Tareas: 
 
-<img class="screenshot" alt="Project - View Task" src="{{docs_base_url}}/assets/img/project/project_view_task.png">
+  | Proyecto     | Actividad    | % Progreso     | Peso     | Estado      |
+  |:-----------:|:------------:|:--------------:|:----------:|:----------:|
+  | SC001       | Construir    | 100            | 0.4        | Completa   |
+  | SC001       | Operar       | 100            | 0.2        | Completa   |
+  | SC001       | Transferir   | 50             | 0.2        | Abierta    |
 
-<img class="screenshot" alt="Project - Task List" src="{{docs_base_url}}/assets/img/project/project_task_list.png">
-
-* También puedes ver las tareas desde la misma vista del proyecto.
-
-<img class="screenshot" alt="Project - Task Grid" src="{{docs_base_url}}/assets/img/project/project_task_grid.png">
-
-* Para agregar peso a las tareas puedes seguir los pasos siguientes
-
-<img class="screenshot" alt="Project - Task Grid" src="{{docs_base_url}}/assets/img/project/tasks.png">
-<img class="screenshot" alt="Project - Task Grid" src="{{docs_base_url}}/assets/img/project/task-weights.png">
+  | Método              | Fórmula                                            | Cálculo                   | % Finalización de Tareas     |
+  |:-------------------:|:--------------------------------------------------:|:----------------------------------:|:--------------------:|
+  | **Manual**          | -                                                  |-                                    | Manual              |
+  | **Finalización de Tareas** | Tareas Finalizadas / Número Total de Tareas  | 2/3                                 | 66.66               |
+  | **Progreso de Tareas** | Suma % Progreso de las Tareas / N° Total de Tareas| (100+100+50)/3                | 83.33               |
+  | **Peso de Tareas** | Suma de (Peso de Tareas * % Progreso)           | (0.4 * 100 + 0.2 * 100 + 0.2 * 50)| 70                   |
 
 
-### Manejando tiempo
+**Observación:** Si el peso total de las Tareas no es 100, entonces el resultado calculado se dividirá por el peso total.
+Por ejemplo, si el peso total de las tareas es 70, entonces el porcentaje de finalización será = (70/0.8)% = 87.5%.
 
-ERPNext usa Time Log para hacer el seguimiento del progreso de un Proyecto.
-Puedes crear registros de tiempo sobre cada Tarea.
-El tiempo actual de inicio y finalización junto con el costo deben ser actualizados basados en los Registros de Tiempo.
 
-* Para ver los Registros de Tiempo realizados a un proyecto, dar click en 'Time Logs'
+## 2. Características
 
-<img class="screenshot" alt="Project - View Time Log" src="{{docs_base_url}}/assets/img/project/project_view_time_log.png">
+### 2.1. Detalles del Cliente, Usuarios y Observaciones
 
-<img class="screenshot" alt="Project - Time Log List" src="{{docs_base_url}}/assets/img/project/project_time_log_list.png">
+* **Cliente**: Si un Proyecto está siendo llevado a cabo para un Cliente en particular, los detalles pueden ser ingresados aquí. 
+* **Orden de Venta**: Si un Proyecto está basado en una [Orden de Venta](/docs/user/manual/es/selling/sales-order) de un Cliente, se pueden obtener los detalles aquí. Esto permitirá actualizar al Cliente respecto al Progreso del proyecto de acuerdo con la Orden de Venta emitida. 
+* **Usuarios**: Se pueden añadir [usuarios del sitio web](/docs/user/manual/es/setting-up/users-and-permissions/adding-users) para darles acceso a este Proyecto. Por ejemplo, se puede añadir al cliente como Usuario del Sitio Web para permitirle acceder al proyecto a fin de monitorear el progreso y/o realizar aportes/comentarios. De forma similar, un Proveedor o un Empleado por Contrato/Freelancer que esté involucrado en el proyecto, puede ser añadido como usuario.  
 
-* Puedes agregar un registro de tiempo directamente y luego asociarlo con el proyecto.
+  Además, se puede expandir la ventana y seleccionar si se desea enviar un Correo Electrónico de Bienvenida a algún usuario en particular o darles derechos para Visualizar Adjuntos. 
 
-<img class="screenshot" alt="Project - Link Time Log" src="{{docs_base_url}}/assets/img/project/project_time_log_link.png">
+  Se puede aprender más respecto a permitir a usuarios ver proyectos [aquí](/docs/user/manual/es/projects/project-customer-portal).
 
-### Gestión de gastos
+* **Notas**: Se pueden añadir observaciones adicionales al proyecto. 
 
-Puede reservar la [Reclamación de gastos](/docs/user/manual/en/human-resources/expense-claim.html) contra una tarea de proyecto.
-El sistema actualizará el monto total de las reclamaciones de gastos en la sección de costos del proyecto.
+  <img class="screenshot" alt="Project - Costing" src="{{docs_base_url}}/assets/img/project/projects-customer-users-notes.png">
 
-* Para ver las reclamaciones de gastos realizadas en un proyecto, haga clic en 'Reclamaciones de gastos'
+### 2.2. Fechas de Inicio y Finalización
 
-<img class="screenshot" alt="Project - View Expense Claim" src="{{docs_base_url}}/assets/img/project/project_view_expense_claim.png">
+* **Fecha de inicio real**: Marca el Inicio Real del proyecto, rastreado a través de Registro de Horas, la Fecha y Hora Real de Inicio del Proyecto serán registradas de forma automática.  
+* **Fecha de finalización real**: Marca la Finalización Real del proyecto, rastreada a través de las últimas actualizaciones de los Registro de Horas, la Fecha y Hora Reales de Finalización del proyecto serán registradas de forma automática. Para saber más respecto a Registro de Horas hacer click [aquí](/docs/user/manual/es/projects/timesheets/).
 
-* También puede crear un Reclamo de gastos directamente y vincularlo al Proyecto.
+  <img class="screenshot" alt="Project - Costing" src="{{docs_base_url}}/assets/img/project/projects-start-time-end-time.png">
 
-<img class="screenshot" alt="Project - Link Expense Claim" src="{{docs_base_url}}/assets/img/project/project_expense_claim_link.png">
+### 2.3. Cálculo de Costos y Facturación
 
-* El monto total de los Reclamos de gastos reservados contra un proyecto se muestra en 'Reclamo de gastos totales' en la Sección de Costos del proyecto
+* **Costo Estimado**: Ingresar el Costo Estimado del Proyecto.
+* **Monto Total de Ventas**: Si ya se ha vinculado el Proyecto con una Orden de Venta, el Monto Total de la Orden de Venta será completado automáticamente aquí. 
+* **Monto Total de Costos**: El sistema tomará automáticamente el Monto Total de Costos desde todos los Registro de Horas vinculados a este proyecto. 
+* **Monto Total Facturable**: El sistema tomará automáticamente el Monto Total Facturable desde todos los Registro de Horas vinculados a este proyecto. 
+* **Total Reembolso**: De acuerdo con los gastos reclamados por un [Empleado](/docs/user/manual/es/human-resources/employee) para la finalización de un Proyecto, se calculará automáticamente el Total de Reembolso.
+* **Monto Total Facturado**: El Monto Total Facturado se completa de forma automática en el sistema utilizando la Factura de Venta creada desde la Orden de Venta. 
+* **Costo Total de Compra**: El Costo Total de Compra de un Proyecto es el costo tomado desde las Facturas de Compra, que se crean desde Órdenes de Compra enviadas para la provisión de Materiales requeridos para un Proyecto. 
+* **Costo Total del Material Consumido**: Utilizando las Entradas de inventario realizadas de acuerdo con el requerimiento de Materiales en el proyecto, se captura el Costo Total de Material Consumido.
 
-<img class="screenshot" alt="Project - Total Expense Claim" src="{{docs_base_url}}/assets/img/project/project_total_expense_claim.png">
 
-### Centro de Costo
+### 2.4. Margen
 
-Puedes crear un [Cost Center](/docs/user/manual/en/accounts/cost-center) sobre un proyecto o usar un centro de costo existente para hacer el seguimiento de todos los gastos realizados al proyecto.
+* **Margen Bruto**: El Margen Bruto será el margen existente entre el Monto Total de Costo y el Monto Total Facturado.
 
-<img class="screenshot" alt="Project - Cost Center" src="{{docs_base_url}}/assets/img/project/project_cost_center.png">
+  **Margen Bruto = (Monto Total de Ventas + Monto Total Facturable) - Monto Total de Costos + Monto Total Facturable + Total de Gastos Reclamados + Costos Totales de Compra + Costo Total de Material Consumido)**
 
-###Costeo del proyecto
+* **Margen Bruto %**: El porcentaje del Monto Total Facturado gastado en el Monto Total de Costo resulta en el % Bruto.
 
-La sección Costeo del proyecto le ayuda a rastrear el tiempo y los gastos incurridos en relación con el proyecto.
+  **((Monto Total de Ventas + Monto Total Facturable) - Monto Total de Costos + Monto Total Facturable + Total de Gastos Reclamados + Costos Totales de Compra + Costo Total de Material Consumido) / Monto Total de Ventas)* 100**
 
-<img class="screenshot" alt="Project - Costing" src="{{docs_base_url}}/assets/img/project/project_costing.png">
+  <img class="screenshot" alt="Project - Costing" src="{{docs_base_url}}/assets/img/project/projects-costing-and-billing.png">
 
-* La sección de cálculo de costos se actualiza según los registros de tiempo realizados.
+### 2.5. Monitorear el Progreso
 
-* El margen bruto es la diferencia entre el monto total de costos y el monto total de facturación
+Al habilitar la opción "Rastrear Progreso" haciendo click en la casilla de verificación, se permitirá añadir detalles de monitoreo al proyecto. Se enviará un informe respecto del progreso del proyecto a todos sectores involucrados en el proyecto.
 
-###Facturación
+* **Lista de festividades**: Se puede seleccionar la [Lista de festividades](/docs/user/manual/es/human-resources/holiday-list) para la compañía. Esto permitirá obtener los Informes de Progreso solo en los Días Laborales. 
+* **Frecuencia**: Se puede configurar la frecuencia con la cuál se desea obtener los informes. Puede ser configurado por hora, dos veces al día o de forma semanal. 
 
-Puedes crear/enlazar una [Sales Order](/docs/user/manual/en/selling/sales-order.html) a un proyecto. Una vez asociada puedes usar el módulo de ventas para facturar a un cliente sobre el proyecto.
+  <img class="screenshot" alt="Project - Costing" src="{{docs_base_url}}/assets/img/project/projects-monitor-progress.png">
 
-<img class="screenshot" alt="Project - Sales Order" src="{{docs_base_url}}/assets/img/project/project_sales_order.png">
-
-###Gantt Chart
-
-Un Gantt Chart muestra la planificación del proyecto.
-ERPNext te provee con una vista para visualizar las tareas de forma calendarizada usando un Gantt Chart (Hoja de Gantt).
-
-* Para visualizar el gantt chart de un proyecto, ve hasta el proyecto y dar click en 'Gantt Chart'
-
-<img class="screenshot" alt="Project - View Gantt Chart" src="{{docs_base_url}}/assets/img/project/project_view_gantt_chart.png">
-
-<img class="screenshot" alt="Project - Gantt Chart" src="{{docs_base_url}}/assets/img/project/project_gantt_chart.png">
-
-{next}
+## 3. Temas Relacionados
+  1. [Tarea](/docs/user/manual/es/projects/tasks)
+  2. [Tipo de Proyecto](/docs/user/manual/es/projects/project-type)
+  3. [Plantilla de Proyecto](/docs/user/manual/es/projects/project-template)

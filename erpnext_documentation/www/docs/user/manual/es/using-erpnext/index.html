@@ -1,0 +1,107 @@
+<!-- title: Using ERPNext -->
+
+{% set doc=[
+	{
+		"title": "Herramientas",
+		"links": [
+			{
+				"content": "Tareas es una herramienta simple donde se pueden definir actividades a realizar. La Lista de Tareas enumerará todas las actividades asignadas a una persona, ya sea por otras o por ella misma.",
+				"link": "/docs/user/manual/es/using-erpnext/to-do",
+				"title": "Tareas"
+			},
+			{
+				"content": "Se puede usar para guardar notas extensas y se pueden establecer los permisos apropiados para elegir con quién compartir cada nota.",
+				"link": "/docs/user/manual/es/using-erpnext/notes",
+				"title": "Notas"
+			},
+			{
+				"content": "El Calendario es una Herramienta que permite crear, compartir y realizar un seguimiento de eventos en la cuenta ERPNext.",
+				"link": "/docs/user/manual/es/using-erpnext/calendar",
+				"title": "Calendario"
+			},
+			{
+				"content": "Se puede enviar y recibir mensajes desde el sistema usando la herramienta de Mensajes.",
+				"link": "/docs/user/manual/es/using-erpnext/chat",
+				"title": "Chat"
+			},
+			{
+				"content": "El Tablero provee un vistazo rápido de los indicadores de desempeño relevantes para el proceso de negocios.",
+				"link": "/docs/user/manual/es/using-erpnext/dashboard",
+				"title": "Tablero"
+			}
+		]
+	},
+	{
+		"title": "Herramientas de Colaboración",
+		"links": [
+			{
+				"content": "'Asignar a' es una funcionalidad que permite asignar un documento en particular a un usuario específico, quien deberá realizar algún trabajo en ese documento.",
+				"link": "/docs/user/manual/es/using-erpnext/assignment",
+				"title": "Asignación"
+			},
+			{
+				"content": "Utilizar Etiquetas es la forma fácil de clasificar diferentes tipos de documentos en sus respectivas categorías.",
+				"link": "/docs/user/manual/es/using-erpnext/tags",
+				"title": "Etiquetas"
+			},
+			{
+				"content": "El Tablero Kanban es una herramienta que otorga un diseño descriptivo de los datos en ERPNext de acuerdo con estados y un tablero virtual.",
+				"link": "/docs/user/manual/es/customize-erpnext/kanban-board",
+				"title": "Tablero Kanban"
+			},
+			{
+				"content": "Filtro de Búsqueda es una opción que permite filtrar los registros de acuerdo con un valor particular de un campo específico en un Documento.",
+				"link": "/docs/user/manual/es/using-erpnext/search-filter",
+				"title": "Filtro de Búsqueda"
+			},
+			{
+				"content": "Guardar Filtro es una herramienta que permitirá guardar un conjunto de filtros que son aplicados de forma frecuente en un listado de documentos o en un informe, de forma tal que puedan ser reutilizados.",
+				"link": "/docs/user/manual/es/using-erpnext/save-filter",
+				"title": "Guardar Filtro"
+			}
+		]
+	},
+	{
+		"title": "Artículos",
+		"links": [
+			{
+				"content": "Esta herramienta permite verificar si el documento actual está vinculado a otros documentos y provee una lista de todos los vínculos hacia los mismos.",
+				"link": "/docs/user/manual/es/using-erpnext/articles/check-link-between-documents",
+				"title": "Verificar Vínculos entre Documentos"
+			},
+			{
+				"content": "El Registro de Acceso es una función de seguridad que almacena todas las exportaciones de datos realizadas por todos los usuarios en el sistema.",
+				"link": "/docs/user/manual/es/using-erpnext/access-log",
+				"title": "Registro de Acceso"
+			},
+			{
+				"content": "Duplicar es una función que permite copiar valores de documentos existentes hacia un nuevo documento.",
+				"link": "/docs/user/manual/es/using-erpnext/articles/duplicate-record",
+				"title": "Duplicar Registros"
+			},
+			{
+				"content": "Utilizando la herramienta Renombrar en Grupo, se puede rectificar/cambiar el identificador de muchos documentos a la vez. Esta herramienta sólo es accesible para el Usuario que tenga asignado el rol de Administrador de Sistema.",
+				"link": "/docs/user/manual/es/using-erpnext/articles/bulk-rename",
+				"title": "Renombrar en Grupo"
+			},
+			{
+				"content": "Utilizando la función Renombrar, se puede cambiar el nombre de documentos como Producto, Almacén, Cuenta, etc.",
+				"link": "/docs/user/manual/es/using-erpnext/articles/renaming-documents",
+				"title": "Renombrar Documentos"
+			},
+			{
+				"content": "La Búsqueda Global es una poderosa operación de procesamiento de texto en ERPNext que ayudará en la búsqueda de un Tipo de Documento o Documento en particular.",
+				"link": "/docs/user/manual/es/using-erpnext/articles/Global-search",
+				"title": "Búsqueda Global"
+			},
+			{
+				"content": "En ERPNext, se puede borrar un documento si ya no resulta necesario. Dichos documentos pueden ser funcionalidades generales como Productos, Clientes, o transacciones como Orden de Venta, Entradas de Pago, etc.",
+				"link": "/docs/user/manual/es/using-erpnext/restore-deleted-docs",
+				"title": "Eliminar y Restaurar Documentos"
+			}
+		]
+	}
+] %}
+
+{% from 'erpnext_documentation/templates/includes/macros.html' import doc_page %}
+{{ doc_page('Uso de ERPNext', 'En esta sección se explica cómo navegar por la interfaz de usuario y las distintas funcionalidades', doc, '/docs/user/manual/es/using-erpnext/contents') }}

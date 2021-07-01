@@ -1,0 +1,147 @@
+<!-- title: Accounts -->
+{% set doc=[
+	{
+		"links": [
+			{
+				'title': 'Entradas contables',
+				'content': 'Las Entradas contables son fuentes de información clave usadas para preparar, verificar y/o auditar los Estados financieros.',
+				'link': '/docs/user/manual/es/accounts/accounting-entries',
+			},
+			{
+				'title': 'Plan de cuentas',
+				'content': 'El Plan de cuentas es un gráfico de árbol que muestra los nombres de las cuentas (y grupos) que una compañía necesita para administrar la contabilidad.',
+				'link': '/docs/user/manual/es/accounts/chart-of-accounts',
+			},
+			{
+				'title': 'Punto de Venta',
+				'content': 'El Punto de Venta de AFIP es uno de los requisitos para la emisión de comprobantes fiscales.',
+				'link': '/docs/user/manual/es/accounts/punto-de-venta',
+			},
+			{
+				'title': 'Dimensiones contables',
+				'content': 'Las Dimensiones contables permiten mantener por separado transacciones según múltiples aspectos como Sucursal, Unidad de negocio, etc.',
+				'link': '/docs/user/manual/es/accounts/accounting-dimensions',
+			},
+			{
+				'title': 'Configuraciones de cheques',
+				'link': '/docs/user/manual/es/accounts/configuraciones-cheques',
+				'content': 'Aquí se detallan las configuraciones necesarias para hacer uso del módulo de Cheques.'
+			}
+		],
+		"title": "Introducción y configuración"
+	},
+	{
+		"links": [
+			{
+				'title': 'Asiento contable',
+				'link': '/docs/user/manual/es/accounts/journal-entry',
+				'content': 'Un Asiento contable es una transacción estándar que afecta múltiples Cuentas, en la cual la suma de los débitos es igual a la suma de los créditos.'
+			},
+			{
+				'title': 'Plantilla de asientos contables',
+				'link': '/docs/user/manual/es/accounts/journal-entry-template',
+				'content': 'Una Plantilla de asientos contables permite definir y seleccionar una lista predeterminada de cuentas y opciones durante la creación de un Asiento contable.'
+			},
+			{
+				'title': 'Entrada de pago',
+				'link': '/docs/user/manual/es/accounts/payment-entry',
+				'content': 'Entradas contables que pueden realizarse contra Facturas, Ordenes de compra y de venta, etc.'
+			},
+			{
+				'title': 'Solicitud de pago',
+				'link': '/docs/user/manual/es/accounts/payment-request',
+				'content': 'Este documento es utilizado para solicitar a los Clientes el pago de Ordenes o Facturas de venta.'
+			},
+			{
+				'title': 'Pagos adelantados',
+				'link': '/docs/user/manual/es/accounts/advance-payment-entry',
+				'content': 'Pagos realizados por el Cliente/Proveedor antes del envío de la factura son considerados Pagos adelantados.'
+			},
+		],
+		"title": "Asientos contables y pagos"
+	},
+	{
+		"title": "Facturación y precios",
+		"links": [
+			{
+				'title': 'Facturas de venta',
+				'link': '/docs/user/manual/es/accounts/sales-invoice',
+				'content': 'Una Factura de venta es un documento que se envía a los Clientes contra el cual se realizará el pago.'
+			},
+			{
+				'title': 'Facturas de compra',
+				'link': '/docs/user/manual/es/accounts/purchase-invoice',
+				'content': 'Una Factura de compra es un recibo que el Proveedor envía por los productos o servicios brindados.'
+			},
+			{
+				'title': 'Punto de venta POS',
+				'link': '/docs/user/manual/es/accounts/point-of-sales',
+				'content': 'Un Punto de venta hace referencia al momento y lugar en el que se realiza una transacción de venta minorista.'
+			},
+			{
+				'title': 'Notas de crédito',
+				'link': '/docs/user/manual/es/accounts/credit-note',
+				'content': 'Una Nota de Crédito es un documento enviado por el vendedor al Cliente notificando que se generó un crédito en su cuenta contra los bienes devueltos.'
+			},
+			{
+				'title': 'Notas de débito',
+				'link': '/docs/user/manual/es/accounts/debit-note',
+				'content': 'Una Nota de Débito es un documento enviado al Cliente notificando que se ha registrado una deuda o saldo para con la Compañía.'
+			},
+			{
+				'title': 'Regla de precios',
+				'link': '/docs/user/manual/es/accounts/pricing-rule',
+				'content': 'Una Regla de precios define el descuento/precio que se aplicará en base a una serie de condiciones.'
+			}
+		]
+	},
+	{
+		"title": "Herramientas",
+		"links": [
+			{
+				'title': 'Conciliación bancaria',
+				'link': '/docs/user/manual/es/accounts/bank-reconciliation',
+				'content': 'La Conciliación bancaria explica la diferencia en una fecha determinada entre el saldo bancario que aparece en el extracto bancario de la Compañía.'
+			},
+			{
+				'title': 'Conciliación de pagos',
+				'link': '/docs/user/manual/es/accounts/payment-reconciliation',
+				'content': 'Ayuda a confirmar si el dinero que sale de una cuenta coincide con el importe que se ha gastado, y garantiza que ambos estén equilibrados al final del período'
+			},
+			{
+				'title': 'Reportes contables',
+				'link': '/docs/user/manual/es/accounts/accounting-reports',
+				'content': 'El módulo de contabilidad posee múltiples reportes como Estado de pérdidas y ganancias, Hoja de balance, etc.'
+			},
+			{
+				'title': 'Procesamiento de Estados de cuentas',
+				'link': '/docs/user/manual/es/accounts/process-statement-of-accounts',
+				'content': 'Esta herramienta permite enviar Estados de cuentas a los Clientes de forma masiva por medio de correo electrónico de forma periódica ya sea manual o automáticamente.'
+			}
+		]
+	},
+	{
+		"title": "Contabilidad avanzada",
+		"links": [
+			{
+				'title': 'Contabilidad con múltiples divisas',
+				'link': '/docs/user/manual/es/accounts/multi-currency-accounting',
+				'content': 'Se pueden realizar asientos contables en varias monedas, tener una cuenta bancaria en moneda extranjera y realizar transacciones en esa moneda.'
+			},
+			{
+				'title': 'Suscripción',
+				'link': '/docs/user/manual/es/accounts/subscription',
+				'content': 'Para servicios que requieren una renovación cada cierto período se puede usar la Suscripción para generar las facturas de forma automática.'
+			},
+			{
+				'title': 'Descuento de facturas',
+				'link': '/docs/user/manual/es/accounts/invoice_discounting',
+				'content': 'El Descuento de facturas es la práctica de usar las facturas de venta impagas como garantía para préstamos a corto plazo generado por un banco o entidad financiera.'
+			},
+		]
+	}
+] %}
+
+{% from 'erpnext_documentation/templates/includes/macros.html' import doc_page %}
+
+{{ doc_page('Contabilidad', 'Administración de cuentas, transacciones e impuestos', doc, '/docs/user/manual/es/accounts/contents') }}

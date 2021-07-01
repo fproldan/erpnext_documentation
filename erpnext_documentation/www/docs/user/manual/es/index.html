@@ -1,0 +1,77 @@
+---
+full_width: 1
+title: DiamoERP Manual de Usuario
+---
+
+{% from "templates/includes/macros.html" import cards %}
+
+{{ web_blocks([
+	{
+		'template': 'Hero',
+		'values': {
+			'title': 'Manual de Usuario',
+			'subtitle': 'Aquí se detallan los distintos módulos que componen DiamoERP'
+		},
+		'add_bottom_padding': 0,
+		'add_container': 0
+	}
+]) }}
+
+<section class="section section-padding-top">
+	<h2 class="section-title">Básico</h2>
+	{{ cards([
+		{
+			'title': 'Configuraciones',
+			'content': 'En esta sección se explica cómo configurar DiamoERP según la estructura de la Compañía u Organización',
+			'link': '/docs/user/manual/es/setting-up',
+		},
+		{
+			'title': 'Uso de ERPNext',
+			'content': 'En esta sección se explica cómo navegar por la interfaz de usuario y las distintas funcionalidades',
+			'link': '/docs/user/manual/es/using-erpnext',
+		},
+	]) }}
+</section>
+
+	
+<section class="section section-padding-top">
+	<h2 class="section-title">Módulos principales</h2>
+	{{ cards([
+		{
+			'title': 'Contabilidad',
+			'link': '/docs/user/manual/es/accounts',
+			'content': 'Contabilidad financiera, desde la configuración hasta la facturación, los registros, libros contables e informes'
+		},
+		{
+			'title': 'Almacén',
+			'link': '/docs/user/manual/es/stock',
+			'content': 'Gestión de inventarios con árbol jerárquico de ubicaciones, movimientos de stock, series y lotes'
+		},
+		{
+			'title': 'CRM',
+			'link': '/docs/user/manual/es/CRM',
+			'content': 'Seguimiento del proceso de preventa desde la captación de Iniciativas, seguimiento de las Oportunidades abiertas, hasta los correos electrónicos y las llamadas'
+		},
+		{
+			'title': 'Ventas',
+			'link': '/docs/user/manual/es/selling',
+			'content': 'La venta abarca operaciones como Cotizaciones, Ordenes de venta y el seguimiento de las entregas'
+		},
+		{
+			'title': 'Compras',
+			'link': '/docs/user/manual/es/buying',
+			'content': 'Gestionar las compras desde la Solicitud de material, las Cotizaciones de los proveedores hasta las Ordenes de compra'
+		},
+		{
+			'title': 'Proyectos',
+			'link': '/docs/user/manual/es/projects',
+			'content': 'Gestión de Proyectos y tareas e integración completa con facturación y Centros de costos'
+		},
+		{
+			'title': 'Activos',
+			'link': '/docs/user/manual/es/asset',
+			'content': 'Gestión de activos fijos y seguimiento de las depreciaciones, asignación de activos y movimiento de los mismos'
+		},
+	])
+	}}
+</section>

@@ -1,0 +1,61 @@
+{% set doc=[
+	{
+		"links": [
+			{
+				"content": "Los Proveedores son empresas o individuos que proveen productos o servicios.",
+				"link": "/docs/user/manual/es/buying/supplier",
+				"title": "Proveedor"
+			},
+			{
+				"content": "Una Solicitud de Cotización es un documento que envía una empresa a uno o más proveedores pidiendo una cotización para determinados productos.",
+				"link": "/docs/user/manual/es/buying/request-for-quotation",
+				"title": "Solicitud de Cotización"
+			},
+			{
+				"content": "Una Cotización de Proveedor es un documento de un potencial proveedor donde se especifica el costo de bienes o servicios que proveerán en un período específico.",
+				"link": "/docs/user/manual/es/buying/supplier-quotation",
+				"title": "Cotización de Proveedor"
+			},
+			{
+				"content": "Una Orden de Compra es un contrato vinculante con el Proveedor, al cual se le promete comprar una serie de productos bajo ciertas condiciones.",
+				"link": "/docs/user/manual/es/buying/purchase-order",
+				"title": "Orden de Compra"
+			}
+		],
+		"title": "Básico"
+	},
+	{
+		"links": [
+			{
+				"content": "La Configuración de Compras es donde se pueden definir las propiedades que luego serán aplicadas a las transacciones del módulo de Compra.",
+				"link": "/docs/user/manual/es/buying/buying-settings",
+				"title": "Configuración de Compras"
+			},
+			{
+				"content": "Un proveedor puede distinguirse de un contratista o subcontratista, quien por lo general realiza un aporte especializado a los productos.",
+				"link": "/docs/user/manual/es/buying/supplier-group",
+				"title": "Grupo de Proveedores"
+			},
+			{
+				"content": "Las plantillas creadas desde este formulario pueden ser utilizadas en Ordenes de Compra y Facturas de Compra para registros internos.",
+				"link": "/docs/user/manual/es/buying/purchase-taxes-and-charges-template",
+				"title": "Plantilla de Impuestos (Compra)"
+			},
+			{
+				"content": La Calificación de Proveedores es una herramienta de evaluación que se utiliza para analizar el desempeño de los mismos.",
+				"link": "/docs/user/manual/es/buying/supplier-scorecard",
+				"title": "Calificación del Proveedor"
+			}
+		],
+		"title": "Configuraciones"
+	}
+] %}
+
+{% from "erpnext_documentation/templates/includes/macros.html" import doc_page %}
+
+{{ doc_page(
+	'Compras',
+	'Gestionar las compras desde la Solicitud de material, las Cotizaciones de los proveedores hasta las Ordenes de compra',
+	doc,
+	'/docs/user/manual/es/buying/contents/'
+) }}

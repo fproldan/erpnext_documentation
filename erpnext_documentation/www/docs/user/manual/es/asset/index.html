@@ -1,0 +1,66 @@
+{% set doc=[
+	{
+		"links": [
+			{
+				"content": "Todas las transacciones relacionadas con Activos como compras, ventas, depreciaciones, descartes, movimientos, o mantenimientos son administradas desde el registro de Activos.",
+				"link": "/docs/user/manual/es/asset/asset",
+				"title": "Activo"
+			},
+			{
+				"content": "ERPNext provee funciones para rastrear los detalles de tareas individuales de mantenimiento/calibración de activos.",
+				"link": "/docs/user/manual/es/asset/asset-maintenance",
+				"title": "Mantenimiento de Activos"
+			},
+			{
+				"content": "Se puede rastrear la ubicación de un activo, a quién es asignado, o si fue trasladado de una Ubicación a otra.",
+				"link": "/docs/user/manual/es/asset/asset-movement",
+				"title": "Movimiento de Activos"
+			}
+		],
+		"title": "Administración de Activos"
+	},
+	{
+		"links": [
+			{
+				"content": "En el caso de la administración de activos fijos, a veces el valor de un activo necesita algún ajuste.",
+				"link": "/docs/user/manual/es/asset/asset-value-adjustment",
+				"title": "Ajuste del valor del Activo"
+			},
+			{
+				"content": "Se puede seguir el ciclo de compra por defecto tras asegurarse de que existe la categoría de activos adecuada.",
+				"link": "/docs/user/manual/es/asset/purchasing-an-asset",
+				"title": "Compra de un Activo"
+			},
+			{
+				"content": "Se puede vender un activo e incluso hacer todos los documentos necesarios, como una factura de venta.",
+				"link": "/docs/user/manual/es/asset/selling-an-asset",
+				"title": "Venta de un Activo"
+			}
+		],
+		"title": "Transacciones con Activos"
+	},
+	{
+		"links": [
+			{
+				"content": "El sistema crea automáticamente un cronograma para la depreciación de acuerdo con el método y otros campos relacionados del Activo.",
+				"link": "/docs/user/manual/es/asset/asset-depreciation",
+				"title": "Depreciación de Activos"
+			},
+			{
+				"content": "Cuando un activo ya no es utilizable, se lo puede desechar utilizando el botón "Desechar Activo" en el activo correspondiente.",
+				"link": "/docs/user/manual/es/asset/scrapping-an-asset",
+				"title": "Desechar un Activo"
+			}
+		],
+		"title": "Descartar Activos"
+	}
+] %}
+
+{% from "erpnext_documentation/templates/includes/macros.html" import doc_page %}
+
+{{ doc_page(
+	'Activo',
+	'Gestión de activos fijos y seguimiento de las depreciaciones, asignación y movimiento de los mismos',
+	doc,
+	'/docs/user/manual/es/asset/contents'
+) }}
