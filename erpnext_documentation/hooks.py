@@ -42,7 +42,7 @@ website_context = {
 # ----------
 
 # application home page (will override Website Settings)
-home_page = "index"
+home_page = "docs/user/manual/es/index"
 
 # website user home page (by Role)
 # role_home_page = {
