@@ -13,7 +13,7 @@ Para acceder a Reglas de Asignacion ir a:
 Para configurar una asignación:
 
 1. Ir al listado de Regla de Asignación y hacer click en Nuevo.
-1. Seleccionar el Tipo de Documento que se quiere asignar automáticamente (por ejemplo **Incidencia**).
+1. Seleccionar el Tipo de Documento que se quiere asignar automáticamente (por ejemplo **Ticket**).
 1. Ingresar la "Descripción" que será agregada a Tareas Pendientes.
 1. Seleccionar la condición para la asignación.
     Se pueden escribir expresiones simples en Python para asignaciones automáticas en `Condición de asignación`, `Condición de desasignación` y `Condición de cierre`. Se tendrá acceso a todas las propiedades del documento y se podrán usar operadores como >, <, ==, etc, así como también distintas condiciones como `y` y `o`.
@@ -46,7 +46,7 @@ Se pueden usar propiedades del documento en el campo Descripción que serán par
 
 Ejemplo:
 
-Se ha asignado la Incidencia de Alta Prioridad *Archivo Cargado pero que no funciona*.
+Se ha asignado el Ticket de Alta Prioridad *Archivo Cargado pero que no funciona*.
 
 ### 1.1 Reglas de Asignación Múltiples
 
