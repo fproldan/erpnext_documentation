@@ -17,7 +17,7 @@ Las Reglas de Puntos de Energía almacenan la información respecto a la activid
 
 Las Reglas tienen los siguientes campos:
 
- * **DocType de Referencia:** tipo de documento sobre el cual se quiere aplicar la regla, por ejemplo: Tarea, Tarea Pendiente, Incidencia, etc.
+ * **DocType de Referencia:** tipo de documento sobre el cual se quiere aplicar la regla, por ejemplo: Tarea, Tarea Pendiente, Ticket, etc.
  * **Para Evento de Documento:** opciones: Guardar, Validar, Cancelar, y Personalizar.
     **Observación:** si la opción "Personalizar" está seleccionada, entonces el campo "Condiciones" se vuelve obligatorio.
  * **Puntos:** puntos a asignar.
@@ -39,7 +39,7 @@ Ver el siguiente ejemplo de una regla:
 
 <img class="screenshot" src="/docs/assets/img/setup/energy-point-system/issue-closed-rule.png">
 
-La captura de pantalla de más arriba es la regla para **Cerrar Incidencia**. De esta forma, cuando un usuario cierra la incidencia, el/ella recibirá **10** puntos.
+La captura de pantalla de más arriba es la regla para **Cerrar Ticket**. De esta forma, cuando un usuario cierra el ticket, el/ella recibirá **10** puntos.
 
 Otros casos pueden ser tratados de forma similar.
 
