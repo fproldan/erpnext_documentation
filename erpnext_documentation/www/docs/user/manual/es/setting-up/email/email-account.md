@@ -56,7 +56,7 @@ Se encuentran disponibles las siguientes opciones para emails entrantes:
 
 #### Anexar Correos Electrónicos a Documentos
 
-Esta característica crea documentos cuando un correo electrónico se envía a una cuenta en particular. Por ejemplo, se puede anexar asistencia@ejemplo.com al doctype Incidencia. Al hacer esto, cada vez que un email es enviado a asistencia@ejemplo.com, el sitema creará una Incidencia para el mismo. De forma similar, si se vincula trabajos@ejemplo.com, cuando se envíen correos a trabajos@ejemplo.com, se creará un documento de Solicitante de Empleo.
+Esta característica crea documentos cuando un correo electrónico se envía a una cuenta en particular. Por ejemplo, se puede anexar asistencia@ejemplo.com al doctype Ticket. Al hacer esto, cada vez que un email es enviado a asistencia@ejemplo.com, el sitema creará un Ticket para el mismo. De forma similar, si se vincula trabajos@ejemplo.com, cuando se envíen correos a trabajos@ejemplo.com, se creará un documento de Solicitante de Empleo.
 
 Tildar la opción "Habilitar la vinculación automática en documentos", vinculará los correos a documentos. Para saber más hacer click [aquí](/docs/user/manual/es/setting-up/email/linking-emails-to-document).
 
