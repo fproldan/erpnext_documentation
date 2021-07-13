@@ -33,7 +33,7 @@ Al editar una nueva tarea, pueden añadirse los siguientes detalles:
   * **Estado**: Se puede añadir el estado del Proyecto o cambiarlo cuando sea necesario, por ejemplo de "Abierto" a "Trabajando", "Atrasado", "Pendiente de Revisión", "Completado", o "Cancelado".
   * **Proyecto**: En caso de que una tarea sea agregada de forma independiente, se puede elegir vincular la tarea a un Proyecto en particular. Si la tarea es creada desde un Proyecto, los detalles del Proyecto serán añadidos de forma automática. 
   * **Prioridad**: Se puede elegir definir la prioridad de la tarea, entre Baja, Media, Alta o Urgente. 
-  * **Incidencia**: Si la tarea es una acción que deviene de una Incidencia, la misma puede ser etiquetada aquí. 
+  * **Ticket**: Si la tarea es una acción que deviene de un Ticket, el mismo puede ser etiquetado aquí. 
   * **Peso**: Si una tarea en particular posee determinado peso dentro de un proyecto, o no, el peso puede especificarse aquí. El peso se calcula en el Método de Porcentaje de Completitud de Tareas de acuerdo con el Peso de las Tareas.
   * **Tipo**: Si la tarea puede ser definida bajo algún Tipo de Tareas en particular como Entrenamiento de Usuario, o Demostración de Usuario, se puede ingresar el Tipo de Tarea aquí. Se puede utilizar para filtrar las tareas de acuerdo con Tipos de Tareas. 
   * **Color**: Cada tarea puede ser reconocida por un color diferente. Esto ayuda a identificar una tarea al crear los Gráficos de Gantt. 
