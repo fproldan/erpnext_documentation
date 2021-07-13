@@ -11,12 +11,12 @@ Para acceder a Rastreador de Objetivos ir a:
 ## 1. Creación de un Rastreador de Objetivos
 
 1. Hacer click en Nuevo.
-1. Configurar el Tipo de Documento a rastrear (por ejemplo: "Incidencia"). 
+1. Configurar el Tipo de Documento a rastrear (por ejemplo: "Ticket"). 
 1. Configurar el campo que representa las etapas (ejemplo: "Estado").
 
 > Observación: Una etapa de objetivos puede ser definida a través de Link o Seleccionar Propiedades. 
 
-Una vez configurado esto, se creará un nuevo registro de **Objetivo** cada vez que se cambie el estado de cualquier Incidencia. 
+Una vez configurado esto, se creará un nuevo registro de **Objetivo** cada vez que se cambie el estado de cualquier Ticket. 
 
 El objetivo puede ser visto en la línea de tiempo de la vista:
 
