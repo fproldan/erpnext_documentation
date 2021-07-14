@@ -1,6 +1,6 @@
 # Retenciones
 
-Una retención es un valor adicional que se aplica a facturas fiscales a cuenta de algún impuesto, dependiendo de las condiciones impositivas de la Compañía y del Cliente/Proveedor.
+Una retención es un monto que se retiene cuando se realiza una operación de pago/cobro a cuenta de algún impuesto, dependiendo de las condiciones impositivas de la Compañía y del Cliente/Proveedor.
 
 ## Retenciones emitidas
 
@@ -14,7 +14,7 @@ Las retenciones emitidas de **Ingresos brutos** y de **Ganancias** se calculará
 
 Ir a *Inicio > Contabilidad > Maestros contables > Compañía* e ingresar a la Compañía que se desee configurar.
 
-Dentro de la sección **Datos fiscales** se deberá tildar la opción **Agente de Retención IIBB** y completar los campos **CIT ARBA** y **Ambiente ARBA**.
+Dentro de la sección **Datos fiscales** se deberá tildar la opción **Agente de Retención IIBB** y completar los campos **CIT ARBA** y **Ambiente ARBA** (si correspondiese).
 
 #### 1.1.2 Impuestos de Retención
 
