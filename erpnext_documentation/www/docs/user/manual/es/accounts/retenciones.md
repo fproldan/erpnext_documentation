@@ -1,10 +1,10 @@
 # Retenciones
 
-Una retención es un valor adicional que se aplica a una factura a cuenta de algún impuesto, dependiendo de las condiciones impositivas de la Compañía y del Cliente/Proveedor.
+Una retención es un valor adicional que se aplica a facturas fiscales a cuenta de algún impuesto, dependiendo de las condiciones impositivas de la Compañía y del Cliente/Proveedor.
 
 ## Retenciones emitidas
 
-Las retenciones emitidas se calcularán automáticamente en el momento de emisión de la Entrada de pago, dependiendo de las características impositivas del Proveedor.
+Las retenciones emitidas de **Ingresos brutos** y de **Ganancias** se calcularán **automáticamente** en el momento de emisión de la Entrada de pago, dependiendo de las características impositivas del Proveedor. Las retenciones emitidas de IVA y de Seguridad social se deben agregar manualmente.
 
 ### 1. Configuración
 
@@ -22,7 +22,7 @@ Ir a *Inicio > Contabilidad > Configuración Factura Electrónica > Impuesto de 
 
   - **Nombre**: nombre identificable del impuesto, por ejemplo, Ingresos Brutos Santa Fe.
   - **Compañía**: la cual hará uso del impuesto, permite tener diferentes configuraciones de impuesto por Compañía.
-  - **Categoría**: es el tipo de impuesto, ya sea Ingresos Brutos, Ganancias, IVA, Seguridad Social. Es importante categorizar correctamente el impuesto.
+  - **Categoría**: es el tipo de impuesto, ya sea Ingresos Brutos, Ganancias, IVA o Seguridad Social. Es importante categorizar correctamente el impuesto.
   - **Código de Tipo de Impuesto**: según documentación de AFIP. Se utiliza para reportes.
   - **Código de impuesto**: según documentación de AFIP. Se utiliza para reportes.
   - **Jurisdicción**: jurisdicción por la cual corresponde retener. Se configurará un impuesto de retención por cada jurisdicción ante la cual se actúe como agente.
@@ -65,10 +65,10 @@ En la sección **Configuración de Retenciones** se debe especificar:
 - **Porcentaje Exento**: porcentaje de exención del impuesto.
 - **Fecha hasta de exención**: fecha de fin de la exención del impuesto, si se deja en blanco no tiene fecha de fin.
 
-Alícuotas desde Padrón
-- **Alícuota Retención**: 
-- **Fecha Desde**:
-- **Fecha Hasta**:
+Alícuotas desde Padrón (estos datos son completados automátcamente al realizarse la primera retención con impuestos de jurisdicciones que usan padrón)
+- **Alícuota Retención**: alícuota con la cual se calculará la retención.
+- **Fecha Desde**: fecha de inicio de vigencia.
+- **Fecha Hasta**: fecha de fin de vigencia.
 
 **Porcentajes por Convenio Multilateral**
 - **Jurisdicción**: jurisidicción en la que opera el proveedor y sobre la cual se es agente de retención.
@@ -88,13 +88,15 @@ Ir a *Inicio > Contabilidad > Configuración Factura Electrónica > Impuesto de 
 
   - **Nombre**: nombre identificable del impuesto, por ejemplo, Retención de ganancias.
   - **Compañía**: la cual hará uso del impuesto, permite tener diferentes configuraciones de impuesto por Compañía.
-  - **Categoría**: es el tipo de impuesto, ya sea Ingresos Brutos, Ganancias, IVA, Seguridad Social. Es importante categorizar correctamente el impuesto.
+  - **Categoría**: es el tipo de impuesto, ya sea Ingresos Brutos, Ganancias, IVA o Seguridad Social. Es importante categorizar correctamente el impuesto.
   - **Código de Tipo de Impuesto**: según documentación de AFIP. Se utiliza para reportes.
   - **Descripción**: descripción opcional del impuesto.
  
 **Cuentas**
   - **Cuenta de Venta / Cuenta de Compra**: son las cuentas que se utilizarán en las deducciones al momento de efectuar una retención Emitida / Sufrida.
   - **Centro de costos**: centro de costos que aplicará en la deducción.
+
+Estos mismos campos son los que se deben completar para los Impuestos de retención de IVA y de Seguridad social, por más que el cálculo de estos tipos de retención no sea automático. 
 
 #### 1.2.3 Escala de ganancias
 
@@ -121,20 +123,44 @@ En la sección **Configuración de Retenciones** se debe especificar:
 
 ### 2. Emisión de retenciones
 
-### 2.1 Entrada de pago
+#### 2.1 Entrada de pago
 
-Después de guardar la Entrada de Pago, si la Compañía es Agente de retención de Ingresos brutos o de Ganancias, aparecerá arriba a la derecha el botón **Generar retenciones**. Al hacer click aquí se ejecutará el cálculo automático y aparecerá la tabla de Retenciones y la de Deducciones o Pérdida con los impuestos y montos correspondientes. Luego de validar la Entrada de Pago se guardará efectivamente la Retención, la cual puede encontrarse en listado escribiendo Retencion en el campo de búsqueda.
+Después de guardar la Entrada de Pago, si la Compañía es Agente de retención de Ingresos brutos o de Ganancias, aparecerá arriba a la derecha el botón **Generar retenciones**. Al hacer click aquí se ejecutará el cálculo automático y aparecerá la tabla de Retenciones y la de Deducciones o Pérdida con los impuestos y montos correspondientes.
+
+Además, de ser necesario, es posible agregar manualmente a la tabla de Retenciones los impuestos de IVA y de Seguridad social con sus montos correspondientes.
+
+Luego de validar la Entrada de Pago se guardarán efectivamente las Retenciones, las cuales pueden encontrarse en el listado escribiendo Retencion en el campo de búsqueda.
 
 Si se cancela una Entrada de Pago con retenciones, las mismas serán también canceladas, y no aparecerán en los reportes.
 
-### 2.2 Retención
+#### 2.2 Retención
+
+Por cada retención generada se crea un documento, el cual posee los siguientes datos:
+  - Datos del Impuesto de retención y vínculo al mismo.
+  - Datos del Régimen y vínculo al mismo en el caso de retenciones de Ganancias.
+  - Fecha en la que se generó.
+  - Importe base, Alícuota Aplicada (en retenciones de Ingresos brutos o Ganancias) y Monto.
+
+En todas las retenciones hay un botón arriba a la derecha para "Ver Entrada de Pago", el cual lleva a la transacción en la que se generó.
 
 ---
 
-### 3. Reportes de retenciones
+## Retenciones sufridas
+
+Las retenciones sufridas de cualquier tipo se deben agregar manualmente en las Entradas de pago generadas contra Facturas de venta.
+
+Luego de guardar la Entrada de pago se debe agregar los impuestos que corresponda retener con sus datos correspondientes.
+
+Al igual que con las retenciones emitidas, estas se guardan efectivamente una vez validada la Entrada de pago. Se las puede ver en el listado de retenciones, todas ellas llevan el nombre de "SUFRIDAS".
+
+También son canceladas al cancelarse la Entrada de pago.
+
+---
+
+## Reportes de retenciones
 
 Las retenciones generadas se muestran en los siguientes reportes:
 
-  - Reporte SIRCAR
-  - Reporte SICORE
-  - Informe de retenciones
+  - [Reporte SIRCAR](/docs/user/manual/es/accounts/reporte-sircar)
+  - [Reporte SICORE](/docs/user/manual/es/accounts/reporte-sicore)
+  - [Informe de retenciones](/docs/user/manual/es/accounts/informe-de-retenciones)
