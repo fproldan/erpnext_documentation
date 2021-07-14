@@ -28,6 +28,10 @@ Ir a *Inicio > Contabilidad > Configuración Factura Electrónica > Impuesto de 
   - **Jurisdicción**: jurisdicción por la cual corresponde retener. Se configurará un impuesto de retención por cada jurisdicción ante la cual se actúe como agente.
   - **Descripción**: descripción opcional del impuesto.
 
+**Cuentas**
+  - **Cuenta de Venta / Cuenta de Compra**: son las cuentas que se utilizarán en las deducciones al momento de efectuar una retención Emitida / Sufrida.
+  - **Centro de costos**: centro de costos que aplicará en la deducción.
+
 **Configuración General**
    - **Alícuota**: alícuota general a retener del impuesto, se utilizará cuando el proveedor no tenga una actividad específica que determine otra alícuota.
    - **Mínimo imponible**: monto del pago a partir del cual se aplicará el impuesto, si el monto del pago (sin deducciones) es inferior no se efectúa retención.
@@ -45,10 +49,7 @@ Ir a *Inicio > Contabilidad > Configuración Factura Electrónica > Impuesto de 
  **Actividades**
    - **Actividad**: determinada actividad de la jurisdicción.
    - **Alícuota**: alícuota definida para la actividad.
- 
-**Cuentas**
-  - **Cuenta de Venta / Cuenta de Compra**: son las cuentas que se utilizarán en las deducciones al momento de efectuar una retención Emitida / Sufrida.
-  - **Centro de costos**: centro de costos que aplicará en la deducción.
+   - **Regimen SIRCAR**: regimen SIRCAR al cual corresponde la actividad. Dato no obligatorio pero necesario para que la retención aparezca en el [Reporte SIRCAR](/docs/user/manual/es/accounts/reporte-sircar).
 
 #### 1.1.3 Proveedor
 
@@ -63,9 +64,8 @@ En la sección **Configuración de Retenciones** se debe especificar:
 - **Categoría de Impuesto**: campo de sólo lectura que indica el tipo de impuesto del impuesto elegido, en este caso Ingresos Brutos.
 - **Porcentaje Exento**: porcentaje de exención del impuesto.
 - **Fecha hasta de exención**: fecha de fin de la exención del impuesto, si se deja en blanco no tiene fecha de fin.
-- **Predeterminado**: indica que el impuesto es predeterminado, esto es útil cuando se necesita configurar más de un impuesto por Jurisdicción.
 
-**Alícuotas desde Padrón**
+Alícuotas desde Padrón
 - **Alícuota Retención**: 
 - **Fecha Desde**:
 - **Fecha Hasta**:
@@ -90,6 +90,7 @@ Ir a *Inicio > Contabilidad > Configuración Factura Electrónica > Impuesto de 
   - **Compañía**: la cual hará uso del impuesto, permite tener diferentes configuraciones de impuesto por Compañía.
   - **Categoría**: es el tipo de impuesto, ya sea Ingresos Brutos, Ganancias, IVA, Seguridad Social. Es importante categorizar correctamente el impuesto.
   - **Código de Tipo de Impuesto**: según documentación de AFIP. Se utiliza para reportes.
+  - **Descripción**: descripción opcional del impuesto.
  
 **Cuentas**
   - **Cuenta de Venta / Cuenta de Compra**: son las cuentas que se utilizarán en las deducciones al momento de efectuar una retención Emitida / Sufrida.
@@ -122,7 +123,9 @@ En la sección **Configuración de Retenciones** se debe especificar:
 
 ### 2.1 Entrada de pago
 
+Después de guardar la Entrada de Pago, si la Compañía es Agente de retención de Ingresos brutos o de Ganancias, aparecerá arriba a la derecha el botón **Generar retenciones**. Al hacer click aquí se ejecutará el cálculo automático y aparecerá la tabla de Retenciones y la de Deducciones o Pérdida con los impuestos y montos correspondientes. Luego de validar la Entrada de Pago se guardará efectivamente la Retención, la cual puede encontrarse en listado escribiendo Retencion en el campo de búsqueda.
 
+Si se cancela una Entrada de Pago con retenciones, las mismas serán también canceladas, y no aparecerán en los reportes.
 
 ### 2.2 Retención
 
@@ -130,17 +133,8 @@ En la sección **Configuración de Retenciones** se debe especificar:
 
 ### 3. Reportes de retenciones
 
-### 3.1 Libro de IVA Digital
+Las retenciones generadas se muestran en los siguientes reportes:
 
-
-
-### 3.2 SIRCAR
-
-
-
-### 3.3 SICORE
-
-### 3.4 Informe de retenciones
-
-
-***
+  - Reporte SIRCAR
+  - Reporte SICORE
+  - Informe de retenciones
