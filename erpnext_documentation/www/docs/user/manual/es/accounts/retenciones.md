@@ -74,6 +74,8 @@ Alícuotas desde Padrón (estos datos son completados automátcamente al realiza
 - **Jurisdicción**: jurisidicción en la que opera el proveedor y sobre la cual se es agente de retención.
 - **Porcentaje**: coeficiente unificado de retención de dicha jurisdicción.
 
+---
+
 ### 1.2 Configuración para Ganancias
 
 #### 1.2.1 Compañía
@@ -120,6 +122,7 @@ En la sección **Configuración de Retenciones** se debe especificar:
 - **Régimen de ganancias**: se retendrá sobre el régimen indicado.
 
 ---
+
 
 ### 2. Emisión de retenciones
 
