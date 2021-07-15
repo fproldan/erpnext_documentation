@@ -18,7 +18,7 @@ Dentro de la sección **Datos fiscales** se deberá tildar la opción **Agente d
 
 #### 1.1.2 Impuestos de Retención
 
-Ir a *Inicio > Contabilidad > Configuración Factura Electrónica > Impuesto de Retención* y hacer click en Nuevo.
+Ir a *Inicio > Contabilidad > Configuración Factura Electrónica > Impuesto de Retención* y hacer click en Agregar Impuesto de Retención.
 
   - **Nombre**: nombre identificable del impuesto, por ejemplo, Ingresos Brutos Santa Fe.
   - **Compañía**: la cual hará uso del impuesto, permite tener diferentes configuraciones de impuesto por Compañía.
