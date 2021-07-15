@@ -45,10 +45,12 @@ Ir a *Inicio > Contabilidad > Configuración Factura Electrónica > Impuesto de 
    - **Retención mínima**: permite especificar una retención mínima. Luego de realizado el cálculo de la retención, si ésta no supera el monto especificado en el campo Retención mínima, la retención no se aplica.
    - **Tipo de cálculo**: existen tres métodos de cálculo:
       * **Por monto de pago**: en Entradas de pago parciales, calcula la retención del pago total, pero solo se efectúa la retención por la proporción del pago que se está cancelando. De esta forma, al cancelarse el saldo de la factura, también se efectuará el saldo de retención.
-       * **Por comprobante**: en Entradas de pago que incluyen más de una factura, excluirá del cálculo de la base imponible aquellas facturas cuyo monto sea inferior al mínimo imponible.
+      * **Por comprobante**: en Entradas de pago que incluyen más de una factura, excluirá del cálculo de la base imponible aquellas facturas cuyo monto sea inferior al mínimo imponible.
       * **Por pago**: en Entradas de pago parciales, efectúa la retención por el total del monto a pagar y no por el pago parcial. De esta forma, al cancelarse el saldo restante no se hará retención, dado que se retuvo en su totalidad.
 
+
  **Actividades**
+ 
    - **Actividad**: determinada actividad de la jurisdicción.
    - **Alícuota**: alícuota definida para la actividad.
    - **Regimen SIRCAR**: regimen SIRCAR al cual corresponde la actividad. Dato no obligatorio pero necesario para que la retención aparezca en el [Reporte SIRCAR](/docs/user/manual/es/accounts/reporte-sircar).
@@ -60,6 +62,7 @@ Ir a *Inicio > Contabilidad > Proveedor > Proveedor* e ingresar al que se desee 
 En la sección **Configuración de Retenciones** se debe especificar:
 
 **Impuestos de Retención**
+
 - **Compañía**: indica qué Compañía hará uso de este impuesto.
 - **Impuesto**: impuesto de retención a aplicar al Proveedor.
 - **Actividad**: actividad (definida dentro del impuesto de retención) que aplica para el Proveedor. En el caso de que no se tenga una actividad definida para el Proveedor dejar en blanco y se tomará la alícuota general del impuesto.
@@ -68,11 +71,13 @@ En la sección **Configuración de Retenciones** se debe especificar:
 - **Fecha hasta de exención**: fecha de fin de la exención del impuesto, si se deja en blanco no tiene fecha de fin.
 
 Alícuotas desde Padrón (estos datos son completados automátcamente al realizarse la primera retención con impuestos de jurisdicciones que usan padrón)
+
 - **Alícuota Retención**: alícuota con la cual se calculará la retención.
 - **Fecha Desde**: fecha de inicio de vigencia.
 - **Fecha Hasta**: fecha de fin de vigencia.
 
 **Porcentajes por Convenio Multilateral**
+
 - **Jurisdicción**: jurisidicción en la que opera el proveedor y sobre la cual se es agente de retención.
 - **Porcentaje**: coeficiente unificado de retención de dicha jurisdicción.
 
@@ -97,6 +102,7 @@ Ir a *Inicio > Contabilidad > Configuración Factura Electrónica > Impuesto de 
   - **Descripción**: descripción opcional del impuesto.
  
 **Cuentas**
+
   - **Cuenta de Venta / Cuenta de Compra**: son las cuentas que se utilizarán en las deducciones al momento de efectuar una retención Emitida / Sufrida.
   - **Centro de costos**: centro de costos que aplicará en la deducción.
 
@@ -145,6 +151,7 @@ Si se cancela una Entrada de Pago con retenciones, las mismas serán también ca
 Ir a *Inicio > Contabilidad > Configuración Factura Electrónica > Retención*
 
 Por cada retención generada se crea un documento, el cual posee los siguientes datos:
+
   - Datos del Impuesto de retención y vínculo al mismo.
   - Datos del Régimen y vínculo al mismo en el caso de retenciones de Ganancias.
   - Fecha en la que se generó.
