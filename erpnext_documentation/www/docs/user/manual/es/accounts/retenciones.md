@@ -29,22 +29,24 @@ Ir a *Inicio > Contabilidad > Configuración Factura Electrónica > Impuesto de 
   - **Descripción**: descripción opcional del impuesto.
 
 **Cuentas**
+
   - **Cuenta de Venta / Cuenta de Compra**: son las cuentas que se utilizarán en las deducciones al momento de efectuar una retención Emitida / Sufrida.
   - **Centro de costos**: centro de costos que aplicará en la deducción.
 
 **Configuración General**
+
    - **Alícuota**: alícuota general a retener del impuesto, se utilizará cuando el proveedor no tenga una actividad específica que determine otra alícuota.
    - **Mínimo imponible**: monto del pago a partir del cual se aplicará el impuesto, si el monto del pago (sin deducciones) es inferior no se efectúa retención.
    - **Base Imponible**: especifica cómo se calcula la base, las opciones son: 
-     - **Neto**: toma como base imponible para el cálculo de la retención el monto de la factura libre de impuestos.  
-     - **Total**: toma como base imponible el valor final de la factura, posterior a los cargos e impuestos. 
-     - **Porcentaje sobre neto**: sobre el valor neto de la factura, utiliza solo un porcentaje como base imponible. 
+     * **Neto**: toma como base imponible para el cálculo de la retención el monto de la factura libre de impuestos.  
+     * **Total**: toma como base imponible el valor final de la factura, posterior a los cargos e impuestos. 
+     * **Porcentaje sobre neto**: sobre el valor neto de la factura, utiliza solo un porcentaje como base imponible. 
    - **Porcentaje**: este campo solo aparece si en el campo *Base Imponible* se eligió *Porcentaje sobre el neto* y nos permite determinar cuál será el porcentaje del neto que se tomará como base imponible del impuesto.
    - **Retención mínima**: permite especificar una retención mínima. Luego de realizado el cálculo de la retención, si ésta no supera el monto especificado en el campo Retención mínima, la retención no se aplica.
    - **Tipo de cálculo**: existen tres métodos de cálculo:
-      - **Por monto de pago**: en Entradas de pago parciales, calcula la retención del pago total, pero solo se efectúa la retención por la proporción del pago que se está cancelando. De esta forma, al cancelarse el saldo de la factura, también se efectuará el saldo de retención.
-       - **Por comprobante**: en Entradas de pago que incluyen más de una factura, excluirá del cálculo de la base imponible aquellas facturas cuyo monto sea inferior al mínimo imponible.
-      - **Por pago**: en Entradas de pago parciales, efectúa la retención por el total del monto a pagar y no por el pago parcial. De esta forma, al cancelarse el saldo restante no se hará retención, dado que se retuvo en su totalidad.
+      * **Por monto de pago**: en Entradas de pago parciales, calcula la retención del pago total, pero solo se efectúa la retención por la proporción del pago que se está cancelando. De esta forma, al cancelarse el saldo de la factura, también se efectuará el saldo de retención.
+       * **Por comprobante**: en Entradas de pago que incluyen más de una factura, excluirá del cálculo de la base imponible aquellas facturas cuyo monto sea inferior al mínimo imponible.
+      * **Por pago**: en Entradas de pago parciales, efectúa la retención por el total del monto a pagar y no por el pago parcial. De esta forma, al cancelarse el saldo restante no se hará retención, dado que se retuvo en su totalidad.
 
  **Actividades**
    - **Actividad**: determinada actividad de la jurisdicción.
