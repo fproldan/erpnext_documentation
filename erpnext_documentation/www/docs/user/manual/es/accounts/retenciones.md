@@ -18,7 +18,7 @@ Dentro de la sección **Datos fiscales** se deberá tildar la opción **Agente d
 
 #### 1.1.2 Impuestos de Retención
 
-Ir a *Inicio > Contabilidad > Configuración Factura Electrónica > Impuesto de Retención* y hacer click en Agregar Impuesto de Retención.
+Ir a *Inicio > Contabilidad > Configuración Factura Electrónica > Impuesto de Retención* y hacer click en Nuevo.
 
   - **Nombre**: nombre identificable del impuesto, por ejemplo, Ingresos Brutos Santa Fe.
   - **Compañía**: la cual hará uso del impuesto, permite tener diferentes configuraciones de impuesto por Compañía.
@@ -102,11 +102,13 @@ Estos mismos campos son los que se deben completar para los Impuestos de retenci
 
 #### 1.2.3 Escala de ganancias
 
-Ir a *Inicio > Contabilidad > Configuración Factura Electrónica > Impuesto de Retención* y hacer click en Nuevo.
+Ir a *Inicio > Contabilidad > Configuración Factura Electrónica > Escala de Ganancias* y hacer click en Nuevo.
 
 Aquí se deben cargar las escalas tomando como referencia el [Anexo de la RG830](https://www.afip.gob.ar/noticias/documentos/anexo16052018.pdf) que serán necesarias para la "Alícuota monto ganancias".
 
 #### 1.2.4 Alícuota monto ganancias
+
+Ir a *Inicio > Contabilidad > Configuración Factura Electrónica > Alícuota Monto Ganancias* y hacer click en Nuevo.
 
 Cada documento "Alícuota monto ganancias" representa un régimen en el cual la compañía retiene, tomando como referencia el [Anexo de la RG830](https://www.afip.gob.ar/noticias/documentos/anexo16052018.pdf).
 
@@ -132,11 +134,13 @@ Después de guardar la Entrada de Pago, si la Compañía es Agente de retención
 
 Además, de ser necesario, es posible agregar manualmente a la tabla de Retenciones los impuestos de IVA y de Seguridad social con sus montos correspondientes.
 
-Luego de validar la Entrada de Pago se guardarán efectivamente las Retenciones, las cuales pueden encontrarse en el listado escribiendo Retencion en el campo de búsqueda.
+Luego de validar la Entrada de Pago se guardarán efectivamente las Retenciones, las cuales pueden encontrarse en *Inicio > Contabilidad > Configuración Factura Electrónica > Retención*.
 
 Si se cancela una Entrada de Pago con retenciones, las mismas serán también canceladas, y no aparecerán en los reportes.
 
 #### 2.2 Retención
+
+Ir a *Inicio > Contabilidad > Configuración Factura Electrónica > Retención*
 
 Por cada retención generada se crea un documento, el cual posee los siguientes datos:
   - Datos del Impuesto de retención y vínculo al mismo.
